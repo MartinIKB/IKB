@@ -1,0 +1,45 @@
+#region Prolog
+MinorErrorLogMax = -1;
+OnMinorErrorDoItemSkip = 1;
+SetInputCharacterSet('TM1CS_ISO_8859_1');
+
+NumRowsRead = 0;
+NumRowsProcessed = 0;
+sCube = 'KST';
+sDim = 'Kostenstellen';
+vLogOutput = '';
+
+IF (CubeExists(sCube) <> 0);
+  CurrentLogSetting = CubeGetLogChanges(sCube);
+  CubeSetLogChanges(sCube, 0);
+ENDIF;
+
+#endregion
+#region Metadata
+    NumRowsRead = NumRowsRead + 1;
+    vLogOutput = vLogOutput | 'EDIT Datensatz # ' | NumberToString(NumRowsRead) | ' --> ' | vParent | ';' | vChild | '#####' ;
+    IF ( DimensionElementExists ( sDim, vChild ) = 0 );
+      NumRowsRead = NumRowsRead + 1;
+      vLogOutput = vLogOutput | 'INSERT Datensatz # ' | NumberToString(NumRowsRead) | ' --> ' | vParent | ';' | vChild | '#####' ;
+      DimensionElementInsert ( sDim , '', vChild, 'N' );
+      NumRowsProcessed = NumRowsProcessed + 1;
+    ENDIF;
+    DimensionElementDelete(sDim, vChild);
+    DimensionElementComponentAdd ( sDim , vParent, vChild, 1 );    
+    NumRowsProcessed = NumRowsProcessed + 1;
+
+#endregion
+#region Data
+AttrPutS (vAlias, sDim, vChild, 'Bezeichnung');
+
+#endregion
+#region Epilog
+If (pResult @<> '');
+  TextOutput(pResult, 'Anzahl gelesener Datensaetze: ' | NumberToString(NumRowsRead) | 'Anzahl verarbeiteter Datensaetze: ' | NumberToString(NumRowsProcessed));
+  TextOutput(pResult, vLogOutput);
+EndIf;
+
+IF (CubeExists(sCube) <> 0);
+  CubeSetLogChanges(sCube, CurrentLogSetting);
+ENDIF;
+#endregion

@@ -1,0 +1,14 @@
+#region Prolog
+MinorErrorLogMax = -1;
+OnMinorErrorDoItemSkip = 1;
+sCube= 'KST';
+CurrentLogSetting = CubeGetLogChanges(sCube);
+CubeSetLogChanges(sCube, 0);
+NumRowsRead = 0;
+NumRowsProcessed = 0;
+SetInputCharacterSet('TM1CS_ISO_8859_1');
+CubeClearData(sCube);
+#endregion
+#region Epilog
+
+#endregion

@@ -1,0 +1,36 @@
+#region Prolog
+
+#ODBC Verbindung aufbauen
+ODBCOpen('co1', 'f_prod_data','access_prod'); 
+ODBCOutput('co1','DELETE from allg_hierarchie WHERE dimension=''Kostenart'''); 
+
+#endregion
+#region Metadata
+
+#Parent Element ermitteln
+IF (vKostenart@='Kostenarten');
+  vParent='NULL';
+ELSE;
+  vParent=''''|ELPAR('Kostenarten', vKostenart,1)|'''';
+ENDIF;
+
+#Bezeichnung (Alias) der Kostenart ermitteln
+IF (ATTRS('Kostenarten', vKostenart, 'Bezeichnung')@='');
+  vAlias='NULL';
+ELSE;
+  vAlias=''''|ATTRS('Kostenarten', vKostenart, 'Bezeichnung' )|''''; 
+ENDIF;
+
+vChild=''''|vKostenart|'''';
+vKonsolidierungsfaktor=''''|numbertostring(ElementWeight('Kostenarten', 'Kostenarten',ELPAR('Kostenarten', vKostenart,1 ), vKostenart ))|'''';
+vAttribut1='NULL';
+
+#Daten in die Tabelle allg_hierarchie schreiben   
+vSQL='insert into allg_hierarchie values (''Kostenart'', '|vChild|','|vAlias|','|vParent|','|vKonsolidierungsfaktor|','|vAttribut1|',sysdate)';
+ODBCOutput('co1', vSQL);
+#endregion
+#region Epilog
+
+#ODBC Verbindung schließen
+ODBCClose('co1');
+#endregion
