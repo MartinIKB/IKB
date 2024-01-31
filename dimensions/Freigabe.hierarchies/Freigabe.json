@@ -1,0 +1,33 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Freigabe",
+	"Elements":
+	[
+		{
+			"Name":"Freigabe",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Test",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Entwicklung",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Freigabe",
+			"ComponentName":"Test",
+			"Weight":0
+		},
+		{
+			"ParentName":"Freigabe",
+			"ComponentName":"Entwicklung",
+			"Weight":0
+		}
+	],
+	"Subsets@Code.links":[]
+}

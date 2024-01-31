@@ -1,0 +1,6 @@
+#region Metadata
+
+#Alle A Elemente aus Vertrieb löschen
+
+DimensionElementDelete( 'Vertrieb', vVertrieb);
+#endregion
