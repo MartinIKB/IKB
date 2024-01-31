@@ -1,2 +1,2 @@
 # IKB
-IKB IBm Planning Analytics Repository
+IKB IBM Planning Analytics Repository
