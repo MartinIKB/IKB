@@ -1,5 +1,0 @@
-{
-	"@type":"Subset",
-	"Name":"Alle A Elemente",
-	"Expression":"{{TM1FILTERBYPATTERN(TM1SubsetAll([Vertrieb].[Vertrieb]),\"A_*\",\"MEMBER_NAME\")}}"
-}
