@@ -1,0 +1,27 @@
+#region Prolog
+
+DimensionElementDelete( 'Vertrieb', 'Vertrieb' );
+DimensionElementInsert( 'Vertrieb','', 'Vertrieb', 'C' );
+   
+
+
+#endregion
+#region Metadata
+if (vChild@<>'Vertrieb');
+
+  DimensionElementInsert( 'Vertrieb', '', vParent, 'C' );
+  DimensionElementInsert( 'Vertrieb', '', vChild, 'C' );
+  
+  DimensionElementComponentAdd ('Vertrieb' , vPARENT ,  vChild, stringtonumber(vKonsolidierungsfaktor));
+
+endif;
+
+
+
+#endregion
+#region Data
+
+AttrPuts (vAlias , 'Vertrieb' , vChild , 'Bezeichnung');
+AttrPutS( vAttribut1, 'Vertrieb', vChild, 'Typ' );
+
+#endregion

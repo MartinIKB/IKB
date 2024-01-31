@@ -1,0 +1,30 @@
+#region Prolog
+##### Misc
+s_View_target = 'Load_Kennzahlen';
+s_Subset_target = s_View_target |'_Subset' ;
+
+
+# Create target
+
+ViewCreate ( 'BER_23' , s_View_target , 1);
+
+###### Subsets
+
+
+SubsetCreatebyMDX( s_Subset_target, '{FILTER( {TM1SUBSETALL( [Zeit] )}, Instr([Zeit].[Flag_Aktueller_Monat], "Kalkulation") > 0 )}', 1 );
+SubsetCreatebyMDX( 'sEntwicklung', '{[Freigabe].[Freigabe].[Test]}', 1 );
+
+ViewSubsetAssign ( 'BER_23' , s_View_target , 'Zeit' , s_Subset_target );
+ViewSubsetAssign ( 'BER_23' , s_View_target , 'Freigabe' , 'sEntwicklung' );
+
+ViewZeroOut ( 'BER_23' , s_View_target );
+#endregion
+#region Metadata
+if (CellIsUpdateable ('BER_23', vVertrieb, vProdukte, vZeit, 'Ist_EUR', 'Test',vKennzahlen)=1);
+    IF( VALUE_IS_STRING = 1 );
+        CellPutS(SValue,'BER_23', vVertrieb, vProdukte, vZeit, 'Ist_EUR', 'Test',vKennzahlen);
+    ELSE; 
+        CellPutN(NValue,'BER_23', vVertrieb, vProdukte, vZeit, 'Ist_EUR', 'Test',vKennzahlen);  
+    ENDIF;
+endif;
+#endregion
