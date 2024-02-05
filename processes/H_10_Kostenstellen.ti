@@ -11,7 +11,7 @@ ENDIF;
 
 DimensionElementInsert ( sDim, '', 'Kostenstellen', 'C' );
 
-AttrInsert ( sDim, '', 'Bezeichnung', 'A' );
+AttrInsert ( sDim, '', 'Caption', 'A' );
 
 
 
@@ -24,7 +24,7 @@ DimensionElementComponentAdd ( sDim , vParent, vChild, 1 );
 
 #endregion
 #region Data
-AttrPutS ( vAlias_Child, sDim, vChild, 'Bezeichnung' );
+AttrPutS ( vAlias_Child, sDim, vChild, 'Caption' );
 
 
 

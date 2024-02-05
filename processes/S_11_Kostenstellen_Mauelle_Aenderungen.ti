@@ -30,7 +30,7 @@ ENDIF;
 
 #endregion
 #region Data
-AttrPutS (vAlias, sDim, vChild, 'Bezeichnung');
+AttrPutS (vAlias, sDim, vChild, 'Caption');
 
 #endregion
 #region Epilog
