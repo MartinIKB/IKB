@@ -1,0 +1,37 @@
+{
+	"@type":"Cube",
+	"Name":"BER",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Vertrieb')"
+		},
+		{
+			"@id":"Dimensions('Produkte')"
+		},
+		{
+			"@id":"Dimensions('Zeit')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Freigabe')"
+		},
+		{
+			"@id":"Dimensions('Kennzahlen')"
+		}
+	],
+	"Rules@Code.link":"BER.rules",
+	"MeasuresDimension":
+	{
+		"@id":"Dimensions('Version')"
+	},
+	"Views@Code.links":
+	[
+		"BER.views/Einzelliste_BER.json",
+		"BER.views/Prüfung_BER_24.json",
+		"BER.views/View_BER_Entwicklung.json",
+		"BER.views/View_BER_Test.json"
+	]
+}
