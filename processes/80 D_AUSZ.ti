@@ -1,0 +1,65 @@
+#region Prolog
+
+##### Misc
+s_View_target = 'Load_Kennzahlen';
+s_Subset_target = s_View_target |'_Subset' ;
+
+
+# Create target
+
+ViewCreate ( 'MER' , s_View_target , 1);
+
+
+
+
+###### Subsets
+
+
+SubsetCreatebyMDX( s_Subset_target, '{FILTER( {TM1SUBSETALL( [Zeit] )}, Instr([Zeit].[Flag_Aktueller_Monat], "Kalkulation") > 0 )}', 1 );
+SubsetCreatebyMDX( 'sEntwicklung', '{[Freigabe].[Freigabe].[Entwicklung]}', 1 );
+
+ViewSubsetAssign ( 'MER' , s_View_target , 'Zeit' , s_Subset_target );
+ViewSubsetAssign ( 'MER' , s_View_target , 'Freigabe' , 'sEntwicklung' );
+
+ViewZeroOut ( 'MER' , s_View_target );
+
+
+#endregion
+#region Data
+
+
+CellIncrementN( vVol_Liquiditaetswirksame_Auszahlungen,'MER', 'Vol_Liquiditaetswirksame_Auszahlungen', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vVol_Gebuehren_und_Provisionen,'MER', 'Vol_Gebuehren_und_Provisionen', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vVol_Disagio,'MER', 'Vol_Disagio', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vVol_Buergschaften,'MER', 'Vol_Buergschaften', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vVol_Programmkredite,'MER', 'Vol_Programmkredite', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vVol_Umschuldungen_ohne_Laufzeitverlaengerung,'MER', 'Vol_Umschuldungen_ohne_Laufzeitverlaengerung', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vFundingkosten,'MER', 'Fundingkosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vErgebnis_kalk_Prov,'MER', 'Ergebnis_kalk_Prov', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vRisikokosten,'MER', 'Risikokosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vProzesskosten,'MER', 'Prozesskosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vEK_Kosten,'MER', 'EK_Kosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vBarwert_eff_Kap,'MER', 'Barwert_eff_Kap', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vEK_gebunden,'MER', 'EK_gebunden', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vNominalkapital,'MER', 'Nominalkapital', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vEffektives_Kapital,'MER', 'Effektives_Kapital', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vMLZ,'MER', 'MLZ', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vNeugeschaeftsvolumen_Eigenmittel,'MER', 'Neugeschaeftsvolumen_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vNeugeschaeftsvolumen_Foerdermittel,'MER', 'Neugeschaeftsvolumen_Foerdermittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vZinsmarge_nach_Risikokosten_Eigenmittel,'MER', 'Zinsmarge_nach_Risikokosten_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vZinsmarge_nach_Risikokosten_Foerdermittel,'MER', 'Zinsmarge_nach_Risikokosten_Foerdermittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vBarwert_eff_Kap_Eigenmittel,'MER', 'Barwert_eff_Kap_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vBarwert_eff_Kap_Foerdermittel,'MER', 'Barwert_eff_Kap_Foerdermittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vEffektives_Kapital_Eigenmittel,'MER', 'Effektives_Kapital_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vEffektives_Kapital_Foerdermittel,'MER', 'Effektives_Kapital_Foerdermittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vNominalkapital_Eigenmittel,'MER', 'Nominalkapital_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vNominalkapital_Foerdermittel,'MER', 'Nominalkapital_Foerdermittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vZentrale_Kosten,'MER', 'Zentrale_Kosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vWertbeitrag_Floor,'MER', 'Wertbeitrag_Floor', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vLeerkosten,'MER', 'Leerkosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+
+CellIncrementN( vZinsmarge+vFundingkosten-vWertbeitrag_Floor,'MER', 'Konditionenbeitrag', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+
+
+
+#endregion

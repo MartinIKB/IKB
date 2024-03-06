@@ -1,0 +1,28 @@
+#region Prolog
+
+#endregion
+#region Data
+
+
+CellPutN( vFundingkosten,'MER', 'Fundingkosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vErgebnis_kalk_Prov,'MER', 'Ergebnis_kalk_Prov', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vRisikokosten,'MER', 'Risikokosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vProzesskosten,'MER', 'Prozesskosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vEK_Kosten,'MER', 'EK_Kosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vBarwert_eff_Kap,'MER', 'Barwert_eff_Kap', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vEK_gebunden,'MER', 'EK_gebunden', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vNominalkapital,'MER', 'Nominalkapital', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vEffektives_Kapital,'MER', 'Effektives_Kapital', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vVOL_Neue_Zusagen_Revolver,'MER', 'VOL_Neue_Zusagen_Revolver', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vVOL_Neue_Zusagen_Ohne_Revolver,'MER', 'VOL_Neue_Zusagen_Ohne_Revolver', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vZentrale_Kosten,'MER', 'Zentrale_Kosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vWertbeitrag_Floor,'MER', 'Wertbeitrag_Floor', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vLeerkosten,'MER', 'Leerkosten', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+
+CellPutN( vZinsmarge+vFundingkosten-vWertbeitrag_Floor,'MER', 'Konditionenbeitrag', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+
+# Zusätzlich Einladen der Volumina in Sichtweise Auszahlungen als informatorische Grösse
+CellPutN( vVOL_Neue_Zusagen_Revolver,'MER', 'VOL_Neue_Zusagen_Revolver', vVersion, 'Auszahlungen', vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vVOL_Neue_Zusagen_Ohne_Revolver,'MER', 'VOL_Neue_Zusagen_Ohne_Revolver', vVersion, 'Auszahlungen', vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+
+#endregion

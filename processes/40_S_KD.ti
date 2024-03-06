@@ -1,0 +1,19 @@
+#region Metadata
+
+
+if (DimensionElementExists( 'Vertrieb', vKD_NR )=0);
+   DimensionElementInsertDirect( 'Vertrieb','', vKD_NR, 'C' );
+endif;
+
+if (ELPAR( 'Vertrieb', vKD_NR,1)@<>'');
+  DimensionElementComponentDeleteDirect( 'Vertrieb', ELPAR( 'Vertrieb', vKD_NR,1), vKD_NR );
+endif; 
+
+DimensionElementComponentAddDirect ('Vertrieb' , vVVS ,  vKD_NR, 1); 
+
+#endregion
+#region Data
+
+AttrPuts (vAlias , 'Vertrieb' , vKD_NR , 'Caption');
+AttrPutS( vTyp, 'Vertrieb', vKD_NR, 'Typ' );
+#endregion

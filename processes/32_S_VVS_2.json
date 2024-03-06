@@ -1,0 +1,40 @@
+{
+	"@type":"Process",
+	"Name":"32_S_VVS_2",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"32_S_VVS_2.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"ODBC",
+		"dataSourceNameForClient":"co1",
+		"dataSourceNameForServer":"co1",
+		"password":"lgOcMn9WgUw9lI2=flqVUy_8;Y6i^nB]1>nwqvpazQYR1ac?DFls@AOS0B3SwC_oo07acnuZ1bNeQ[hA0pVSz:7H1RsPjA4z1q;hbhC]kNTk:CfeTY7uMQ3<NzqH\\x7<3i\\sbk`^t=mOdXx<\\]Zv`Bx`4pn2rwzsNNconFE@RniJ}3q?Np`s<Bb[vDx[]usgA0Xo?>]O",
+		"query":"select\r\ndistinct *\r\nfrom\r\n(SELECT\r\ndistinct\r\n'A_ZU_KLAEREN',\r\n'A_'||nvl(VVS,'NA')\r\nFROM\r\ndtl_vr_auszahlungen\r\nWHERE\r\nstichtag=(select stichtag from vr_parameter)\r\n\r\nunion all\r\n\r\nselect distinct\r\n'A_ZU_KLAEREN',\r\n'A_'||nvl(vvs,'NA')\r\nfrom \r\ndtl_vr_neue_vertraege\r\nwhere stichtag=(select stichtag from vr_parameter)\r\n\r\nunion all\r\n\r\nselect distinct\r\n'A_ZU_KLAEREN',\r\n'A_'||nvl(vvs,'NA')\r\nfrom \r\ndtl_vr_bestandszusagen\r\nwhere stichtag=(select stichtag from vr_parameter)\r\n\r\nunion all\r\n\r\nselect distinct\r\n'A_ZU_KLAEREN',\r\n'A_'||nvl(vvs,'NA')\r\nfrom \r\ndtl_vr_revo_auszahlungen\r\nwhere stichtag=(select stichtag from vr_parameter)\r\n\r\nunion all\r\n\r\nselect distinct\r\n'A_ZU_KLAEREN',\r\n'A_'||nvl(vvs,'NA')\r\nfrom \r\ndtl_vr_entscheidungsvorlagen\r\nwhere stichtag=(select stichtag from vr_parameter)\r\nand bearb_dat >= to_date('01.04.2011','DD.MM.YYYY')\r\n)\r\norder by 1,2",
+		"userName":"f_prod_data",
+		"usesUnicode":true
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vParent",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vChild",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

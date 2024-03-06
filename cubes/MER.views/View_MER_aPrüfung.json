@@ -1,0 +1,46 @@
+{
+	"@type":"MDXView",
+	"Name":"View_MER_aPrüfung",
+	"MDX@Code.link":"View_MER_aPrüfung.mdx",
+	"Meta" : 
+	{
+		"Aliases" : 
+		{
+			"[Zeit].[Zeit]" : "Caption"
+		},
+		"ContextSets" : 
+		{
+			"[Cash_Flow_Datum].[Cash_Flow_Datum]" : 
+			{
+				"Expression" : "{[Cash_Flow_Datum].[Cash_Flow_Datum].MEMBERS}"
+			},
+			"[Kennzahlen].[Kennzahlen]" : 
+			{
+				"Expression" : "{[Kennzahlen].[Kennzahlen].MEMBERS}"
+			},
+			"[Sichtweise].[Sichtweise]" : 
+			{
+				"Expression" : "{[Sichtweise].[Sichtweise].MEMBERS}"
+			},
+			"[Version].[Version]" : 
+			{
+				"Expression" : "{[Version].[Version].MEMBERS}"
+			},
+			"[Zeit].[Zeit]" : 
+			{
+				"Expression" : "{{FILTER(TM1SubsetAll([Zeit].[Zeit]), ([Zeit].[Zeit].CURRENTMEMBER.PROPERTIES(\"Flag_Aktueller_Monat\") = \"Kalkulation\"))}}"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Cash_Flow_Datum].[Cash_Flow_Datum]" : false,
+			"[Freigabe].[Freigabe]" : false,
+			"[Kennzahlen].[Kennzahlen]" : false,
+			"[Produkte].[Produkte]" : false,
+			"[Sichtweise].[Sichtweise]" : false,
+			"[Version].[Version]" : false,
+			"[Vertrieb].[Vertrieb]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	}
+}

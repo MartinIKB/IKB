@@ -1,0 +1,25 @@
+#region Prolog
+
+
+
+IF ( DimensionExists ('Produkte')=0);
+   DimensionCreate ('Produkte');
+ENDIF;
+
+DimensionDeleteAllElements ('Produkte');
+
+
+DimensionElementInsert ('Produkte','','Produkte','C');
+
+AttrInsert ('Produkte' , '' , 'Caption' , 'A');
+#endregion
+#region Metadata
+
+DimensionElementInsert ('Produkte','',vParent,'C');
+DimensionElementInsert ('Produkte','',vChild,'N');
+DimensionElementComponentAdd ('Produkte' , vParent , vChild , 1);
+#endregion
+#region Data
+
+AttrPuts (vAlias , 'Produkte' , vChild , 'Caption');
+#endregion

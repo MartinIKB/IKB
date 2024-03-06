@@ -1,0 +1,33 @@
+{
+	"@type":"Hierarchy",
+	"Name":"Sichtweise",
+	"Elements":
+	[
+		{
+			"Name":"Sichtweise",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"Auszahlungen",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Neue_Zusagen",
+			"Type":"Numeric"
+		}
+	],
+	"Edges":
+	[
+		{
+			"ParentName":"Sichtweise",
+			"ComponentName":"Auszahlungen",
+			"Weight":0
+		},
+		{
+			"ParentName":"Sichtweise",
+			"ComponentName":"Neue_Zusagen",
+			"Weight":0
+		}
+	],
+	"Subsets@Code.links":[]
+}

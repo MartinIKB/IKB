@@ -1,0 +1,34 @@
+#region Prolog
+DimensionDeleteAllElements( 'Zeit' );
+DimensionElementInsert( 'Zeit','','Zeit', 'C' );
+
+IF ( DIMIX ('}Element_Attributes_' | 'Zeit', 'Flag_Aktueller_Monat' ) <> 0);
+    AttrDelete( 'Zeit', 'Flag_Aktueller_Monat' );
+endif;
+IF ( DIMIX ('}Element_Attributes_' | 'Zeit', 'Caption' ) <> 0);
+    AttrDelete( 'Zeit', 'Caption');
+endif;
+
+AttrInsert( 'Zeit','','Flag_Aktueller_Monat', 'S' );
+AttrInsert( 'Zeit','','Caption', 'A' );
+
+
+
+
+
+#endregion
+#region Metadata
+DimensionElementInsert( 'Zeit', '',vParent, 'C');
+DimensionElementComponentAdd( 'Zeit', 'Zeit',vParent,0 );
+
+DimensionElementInsert( 'Zeit', '',vChild, 'N');
+DimensionElementComponentAdd( 'Zeit', vParent, vChild,0 );
+
+
+#endregion
+#region Data
+
+AttrPutS( vAlias, 'Zeit', vChild, 'Caption', '' );
+AttrPutS( vKalkulationsflag, 'Zeit', vChild, 'Flag_Aktueller_Monat', '' );
+
+#endregion

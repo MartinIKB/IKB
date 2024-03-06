@@ -1,0 +1,19 @@
+#region Metadata
+
+if (DimensionElementExists( 'Cash_Flow_Datum', vGJ )=0);
+    DimensionElementInsertDirect( 'Cash_Flow_Datum','', vGJ, 'C' );
+    DimensionElementComponentAddDirect ('Cash_Flow_Datum' , 'Cash_Flow_Datum' ,  vGJ, 1);
+endif;
+
+
+if (DimensionElementExists( 'Cash_Flow_Datum', vParent )=0);
+    DimensionElementInsertDirect( 'Cash_Flow_Datum','', vParent, 'C' );
+    DimensionElementComponentAddDirect ('Cash_Flow_Datum' , vGJ ,  vParent, 1);
+endif;
+
+
+if (DimensionElementExists( 'Cash_Flow_Datum', vChild )=0);
+    DimensionElementInsertDirect( 'Cash_Flow_Datum','', vChild, 'N' );
+    DimensionElementComponentAddDirect ('Cash_Flow_Datum' , vParent ,  vChild, 1);
+endif;
+#endregion

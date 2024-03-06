@@ -1,0 +1,31 @@
+{
+	"@type":"MDXView",
+	"Name":"View_MER_Test",
+	"MDX@Code.link":"View_MER_Test.mdx",
+	"Meta" : 
+	{
+		"Aliases" : {},
+		"ContextSets" : 
+		{
+			"[Freigabe].[Freigabe]" : 
+			{
+				"Expression" : "{[Freigabe].[Freigabe].[Test]}"
+			},
+			"[Version].[Version]" : 
+			{
+				"Expression" : "{[Version].[Version].MEMBERS}"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Cash_Flow_Datum].[Cash_Flow_Datum]" : false,
+			"[Freigabe].[Freigabe]" : false,
+			"[Kennzahlen].[Kennzahlen]" : false,
+			"[Produkte].[Produkte]" : false,
+			"[Sichtweise].[Sichtweise]" : false,
+			"[Version].[Version]" : false,
+			"[Vertrieb].[Vertrieb]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	}
+}

@@ -1,0 +1,33 @@
+#region Prolog
+
+IF ( DimensionExists ('Kennzahlen')=0);
+   DimensionCreate ('Kennzahlen');
+ENDIF;
+
+DimensionDeleteAllElements ('Kennzahlen');
+
+
+DimensionElementInsert ('Kennzahlen','','Kennzahlen','C');
+
+AttrInsert ('Kennzahlen' , '' , 'Caption' , 'A');
+#endregion
+#region Metadata
+
+
+DimensionElementInsert ('Kennzahlen','',vParent,'C');
+DimensionElementInsert ('Kennzahlen','',vChild,'N');
+
+if (SCAN('(-)' , vKonsolidation )<>0);
+  DimensionElementComponentAdd ('Kennzahlen' , vParent , vChild , -1);
+elseif (SCAN('(~)' , vKonsolidation )<>0);  
+ DimensionElementComponentAdd ('Kennzahlen' , vParent , vChild , 0);
+else; 
+ DimensionElementComponentAdd ('Kennzahlen' , vParent , vChild , 1);
+endif;
+
+
+#endregion
+#region Data
+
+AttrPuts (vAlias , 'Kennzahlen' , vChild , 'Caption');
+#endregion

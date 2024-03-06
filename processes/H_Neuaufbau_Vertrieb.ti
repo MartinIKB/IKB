@@ -1,0 +1,33 @@
+#region Prolog
+
+
+
+IF ( DimensionExists ('Vertrieb')=0);
+   DimensionCreate ('Vertrieb');
+ENDIF;
+
+DimensionDeleteAllElements ('Vertrieb');
+
+
+DimensionElementInsert ('Vertrieb','','Vertrieb','C');
+
+AttrInsert ('Vertrieb' , '' , 'Caption' , 'A');
+AttrInsert ('Vertrieb' , '' , 'Typ' , 'S');
+AttrInsert ('Vertrieb' , '' , 'Revolver_Flag' , 'S'); 
+
+ 
+#endregion
+#region Metadata
+
+if (vTYP@<>'Kunde' & vTYP@<>'Vertrag' & vTYP@<>'Vertragsstamm');
+  DimensionElementInsert ('Vertrieb','',vParent,'C');
+  DimensionElementInsert ('Vertrieb','',vChild,'C');
+  DimensionElementComponentAdd ('Vertrieb' , vParent , vChild , 1);
+endif;
+
+
+#endregion
+#region Data
+
+AttrPuts (vAlias , 'Vertrieb' , vChild , 'Caption');
+#endregion

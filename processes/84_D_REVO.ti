@@ -1,0 +1,7 @@
+#region Data
+
+CellPutN( vVol_durch_Inanspruchnahme_Revolver,'MER', 'Vol_durch_Inanspruchnahme_Revolver', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+#endregion
+#region Epilog
+
+#endregion

@@ -1,0 +1,35 @@
+SKIPCHECK;
+
+['Bruttoergebnis_nach_Risikokosten']=['Bruttoergebnis']-['Risikokosten'];
+
+
+#### Ist_TEUR ####
+['Ist_TEUR']=if (ELISANC('Kennzahlen','Hilfsgrößen' , !Kennzahlen )=0
+,
+['Ist_EUR']/1000
+,
+['Ist_EUR']);
+
+
+#### Ist_Marge ####
+['Ist_Marge']=if (ELISANC('Kennzahlen','DB_III_kalk_Prov' , !Kennzahlen )=1
+               % !Kennzahlen@='DB_III_kalk_Prov'
+               % !Kennzahlen@='EK_Kosten'
+               % !Kennzahlen@='Zinsmarge_nach_Risikokosten'
+, ['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR']*100*['Effektives_Kapital','Ist_EUR']/['Nominalkapital','Ist_EUR']
+, if (!Kennzahlen@='RoE_DB_II'
+, ['DB_II','Ist_EUR']/['EK_Kosten','Ist_EUR']*0.06*100
+, if (!Kennzahlen@='RoE_DB_III'
+, ['DB_III_kalk_Prov','Ist_EUR']/['EK_Kosten','Ist_EUR']*0.06*100
+, if (!Kennzahlen@='Zinsmarge_nach_Risikokosten_Eigenmittel'
+, ['Ist_EUR']/['Barwert_eff_Kap_Eigenmittel','Ist_EUR']*100*['Effektives_Kapital_Eigenmittel','Ist_EUR']/['Nominalkapital_Eigenmittel','Ist_EUR']
+, if (!Kennzahlen@='Zinsmarge_nach_Risikokosten_Eigenmittel'
+, ['Ist_EUR']/['Barwert_eff_Kap_Foerdermittel','Ist_EUR']*100*['Effektives_Kapital_Foerdermittel','Ist_EUR']/['Nominalkapital_Foerdermittel','Ist_EUR'],0)))));
+
+
+Feeders;
+['Bruttoergebnis']=>['Bruttoergebnis_nach_Risikokosten'];
+['Risikokosten']=>['Bruttoergebnis_nach_Risikokosten'];
+
+['Ist_EUR']=>['Ist_TEUR'];
+['Ist_EUR']=>['Ist_Marge'];

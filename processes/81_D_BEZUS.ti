@@ -1,0 +1,13 @@
+#region Prolog
+
+#endregion
+#region Data
+
+CellPutN( vVol_Bestandszusagen_Revolver,'MER', 'Vol_Bestandszusagen_Revolver', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vVol_Bestandszusagen_ohne_Revolver,'MER', 'Vol_Bestandszusagen_ohne_Revolver', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+
+CellPutN( vVol_Bestandszusagen_Revolver,'MER', 'Vol_Bestandszusagen_Revolver', vVersion, 'Neue_Zusagen', vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vVol_Bestandszusagen_ohne_Revolver,'MER', 'Vol_Bestandszusagen_ohne_Revolver', vVersion, 'Neue_Zusagen', vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+
+
+#endregion

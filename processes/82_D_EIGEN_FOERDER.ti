@@ -1,0 +1,11 @@
+#region Prolog
+
+#endregion
+#region Data
+  
+CellPutN( vNeugeschaeftsvolumen_Foerdermittel,'MER', 'Neugeschaeftsvolumen_Foerdermittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vNeugeschaeftsvolumen_Eigenmittel,'MER', 'Neugeschaeftsvolumen_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vZinsmarge_nach_Risikokosten_Foerdermittel,'MER', 'Zinsmarge_nach_Risikokosten_Foerdermittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+CellPutN( vZinsmarge_nach_Risikokosten_Eigenmittel,'MER', 'Zinsmarge_nach_Risikokosten_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVertrieb);
+
+#endregion
