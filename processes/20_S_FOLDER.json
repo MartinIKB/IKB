@@ -1,0 +1,41 @@
+{
+	"@type":"Process",
+	"Name":"20_S_FOLDER",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"20_S_FOLDER.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"IgnoredInputVarName=V3€VarType=32€ColType=1165€"
+	],
+	"DataSource":
+	{
+		"Type":"ODBC",
+		"dataSourceNameForClient":"co1",
+		"dataSourceNameForServer":"co1",
+		"password":"z<Jb^<:xCsFJVV[x8dx:_]jbtWl>`XvOI7T1XyZjh=u_O`Se=8t@<zz_qx>\\adY?8IneCnoZOLIJc5jtQckgRhN3iYsP30cMY\\\\^H6L]Ee\\xjSceDy=62k^;<p9PNQb8Hf7{BX^tP[3vHg4y>\\c<eAEvLfjvAH]tI>j_wMut\\wpxv3\\Or0e@pacP>=_EoCa1`^19jmK",
+		"query":"select\r\ndistinct\r\n'P_TI_NA',\r\norg_zuordnung,\r\n'N'\r\nfrom\r\ndtl_kgs2_vertrag\t\r\nwhere\r\nstichtag=(select stichtag from kgs2_parameter)\r\nand (kondor_folder is not null or  portfolio is not null)\r\norder by 2\r\n",
+		"userName":"f_prod_data",
+		"usesUnicode":true
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vParent",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vChild",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

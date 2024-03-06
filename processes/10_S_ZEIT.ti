@@ -1,0 +1,28 @@
+#region Prolog
+
+
+
+
+
+#endregion
+#region Metadata
+if (DimensionElementExists( 'Zeit', vGJ )=0);
+   DimensionElementInsert( 'Zeit','', vGJ, 'C' );
+   DimensionElementComponentAdd ('Zeit' , 'Zeit' ,  vGJ, 0);
+endif;
+
+
+if (DimensionElementExists( 'Zeit', vStichtag )=0);
+   DimensionElementInsert( 'Zeit','', vStichtag, 'N' );
+   DimensionElementComponentAdd ('Zeit' , vGJ ,  vStichtag, 0);
+endif;
+
+#endregion
+#region Data
+AttrDelete( 'Zeit','Flag_aktueller_Stichtag' );
+AttrInsert( 'Zeit','','Flag_Aktueller_Stichtag', 'S' );
+
+
+AttrPutS( 'Kalkulation', 'Zeit', vStichtag, 'Flag_Aktueller_Stichtag'  );
+
+#endregion

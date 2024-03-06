@@ -1,0 +1,36 @@
+#region Prolog
+ODBCOpen( 'co1', 'f_prod_data','access_prod' ); 
+ODBCOutput( 'co1','delete from allg_hierarchie where dimension=''KGS_Produkte'''); 
+
+#endregion
+#region Metadata
+
+
+
+if (vProdukte@='Produkte');
+    vParent='NULL';
+else;
+    vParent=''''|ELPAR( 'Produkte', vProdukte,1 )|'''';
+endif;
+
+
+if (ATTRS( 'Produkte', vProdukte, 'Bezeichnung' )@='');
+    vAlias='NULL';
+else;
+    vAlias=''''|ATTRS( 'Produkte', vProdukte, 'Bezeichnung' )|''''; 
+endif;
+
+vChild=''''|vProdukte|'''';
+
+vKonsolidierungsfaktor=''''|numbertostring(ElementWeight( 'Produkte', 'Produkte',ELPAR( 'Produkte', vProdukte,1 ) , vProdukte ))|'''';
+
+
+
+
+vSQL='insert into allg_hierarchie values (''KGS_Produkte'', '|vChild|','|vAlias|','|vParent|','|vKonsolidierungsfaktor|',NULL,sysdate)';
+ODBCOutput( 'co1', vSQL );
+
+#endregion
+#region Epilog
+ODBCClose( 'co1' );
+#endregion

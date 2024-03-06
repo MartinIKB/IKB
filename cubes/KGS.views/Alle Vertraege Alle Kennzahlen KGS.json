@@ -1,0 +1,27 @@
+{
+	"@type":"MDXView",
+	"Name":"Alle Vertraege Alle Kennzahlen KGS",
+	"MDX@Code.link":"Alle Vertraege Alle Kennzahlen KGS.mdx",
+	"Meta" : 
+	{
+		"Aliases" : {},
+		"ContextSets" : 
+		{
+			"[Vorsystem].[Vorsystem]" : 
+			{
+				"Expression" : "{[Vorsystem].[Vorsystem].MEMBERS}"
+			},
+			"[Zeit].[Zeit]" : 
+			{
+				"Expression" : "{[Zeit].[Zeit].MEMBERS}"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Kennzahlen].[Kennzahlen]" : false,
+			"[Produkte].[Produkte]" : false,
+			"[Vorsystem].[Vorsystem]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	}
+}

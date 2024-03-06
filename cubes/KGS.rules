@@ -1,0 +1,12 @@
+Skipcheck;
+
+
+['NETTING_VOLUMEN']=if (!Vorsystem @='Murex'
+                      % !Vorsystem@='FinKit_Kondor'
+                      ,['RWA_KSA_VA']-['RWA_KSA_NA']
+                      ,  if (!Vorsystem@='Vorsystem'
+                          , ['NETTING_VOLUMEN','Murex']+['NETTING_VOLUMEN','FinKit_Kondor'],0));
+
+Feeders;
+['RWA_KSA_VA']=>['NETTING_VOLUMEN'];
+['RWA_KSA_NA']=>['NETTING_VOLUMEN'];

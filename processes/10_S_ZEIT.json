@@ -1,0 +1,41 @@
+{
+	"@type":"Process",
+	"Name":"10_S_ZEIT",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"10_S_ZEIT.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"IgnoredInputVarName=V3€VarType=32€ColType=1165€"
+	],
+	"DataSource":
+	{
+		"Type":"ODBC",
+		"dataSourceNameForClient":"co1",
+		"dataSourceNameForServer":"co1",
+		"password":"g?xnQnDlZ<;6``C=:9;A=mFxj_wgo6]L6:>z0q<Y[^v6Ylcj_c7xyHE;2yxua=Wo]5EdCqkIhu@<TD\\?p_b__K<qP\\{PXvXKXLkUQaK?RtYmS<ieT1FWOr<BfWLPY?[LbjXpRzMTc1qAhQzcPz3@J2YKsitnx9ea>Io_x<fdu4s^ws6TJ_2:hv8htm3eSvsfAwiGv_sC",
+		"query":"select\r\ncase\r\n  when stichtag <=to_date('31.12.2020','DD.MM.YYYY')\r\n  then\r\n    (\r\n   CASE\r\n      WHEN to_number(to_char(stichtag,'MM')) BETWEEN 4 AND 12\r\n      THEN 'GJ_'||to_char(stichtag,'YYYY')||'_'||to_char(to_number(to_char(stichtag,'YY'))+1)\r\n      WHEN to_number(to_char(stichtag,'MM')) BETWEEN 1 AND 3\r\n     THEN 'GJ_'||to_char(to_number(to_char(stichtag,'YYYY'))-1)||'_'||to_char(stichtag,'YY')\r\n   end\r\n   )\r\n   else 'GJ_'||to_char(stichtag,'YYYY')\r\nend,\r\nto_char(stichtag,'DD.MM.YYYY'),\r\n'~'\r\nfrom\r\nkgs2_parameter",
+		"userName":"f_prod_data",
+		"usesUnicode":true
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vGJ",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vStichtag",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

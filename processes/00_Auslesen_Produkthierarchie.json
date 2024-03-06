@@ -1,0 +1,29 @@
+{
+	"@type":"Process",
+	"Name":"00_Auslesen_Produkthierarchie",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"00_Auslesen_Produkthierarchie.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"Produkte:Produkte",
+		"dataSourceNameForServer":"Produkte:Produkte",
+		"subset":"All"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vProdukte",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

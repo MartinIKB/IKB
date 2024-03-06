@@ -1,0 +1,48 @@
+#region Prolog
+
+
+##### Misc
+s_View_target = 'Load_Kennzahlen';
+s_Subset_target = s_View_target |'_Subset' ;
+
+
+# Create target
+
+ViewCreate ( 'KGS' , s_View_target , 1);
+
+###### Subsets
+
+
+SubsetCreatebyMDX( s_Subset_target, '{FILTER( {TM1SUBSETALL( [Zeit] )}, Instr([Zeit].[Flag_Aktueller_Stichtag], "Kalkulation") > 0 )}', 1 );
+
+
+ViewSubsetAssign ( 'KGS' , s_View_target , 'Zeit' , s_Subset_target );
+
+ViewZeroOut ( 'KGS' , s_View_target );
+
+
+#endregion
+#region Data
+
+CellIncrementN( vEAD_AUS, 'KGS', 'EAD_AUS',vZeit,vVorsystem,vProdukte);
+CellIncrementN( vRWA_KSA_NA, 'KGS', 'RWA_KSA_NA',vZeit,vVorsystem,vProdukte);
+CellIncrementN( vRWA_KSA_VA, 'KGS', 'RWA_KSA_VA',vZeit,vVorsystem,vProdukte);
+CellIncrementN( vRWA_KSA_DURCH_NA,'KGS', 'RWA_KSA_DURCH_NA', vZeit,vVorsystem,vProdukte);
+CellIncrementN( vRWA_KSA_DURCH_VA,'KGS', 'RWA_KSA_DURCH_VA',vZeit,vVorsystem,vProdukte);
+CellIncrementN( vCLO_VOLUMEN,'KGS', 'CLO_VOLUMEN', vZeit,vVorsystem,vProdukte);
+CellIncrementN( vRWA_KSA_IMMO, 'KGS','RWA_KSA_IMMO', vZeit,vVorsystem,vProdukte);
+CellIncrementN( vRISK_BASEL_NA,'KGS', 'RISK_BASEL_NA',vZeit,vVorsystem,vProdukte);
+CellIncrementN( vRISK_BASEL_VA,'KGS', 'RISK_BASEL_VA', vZeit,vVorsystem,vProdukte);
+CellIncrementN( vEL_STICHTAG_NA,'KGS', 'EL_STICHTAG_NA',vZeit,vVorsystem,vProdukte);
+CellIncrementN( vEL_STICHTAG_VA,'KGS', 'EL_STICHTAG_VA', vZeit,vVorsystem,vProdukte);
+CellIncrementN( vRWA_VERBRIEF_AUSW, 'KGS','RWA_VERBRIEF_AUSW', vZeit,vVorsystem,vProdukte);
+CellIncrementN( vLEDIS_VOLUMEN, 'KGS','LEDIS_VOLUMEN', vZeit,vVorsystem,vProdukte);
+CellIncrementN( vEAD_NA, 'KGS', 'EAD_NA',vZeit,vVorsystem,vProdukte);
+CellIncrementN( vEAD_ANTEIL_AUSW, 'KGS', 'EAD_ANTEIL_AUSW',vZeit,vVorsystem,vProdukte);
+
+
+
+
+
+
+#endregion

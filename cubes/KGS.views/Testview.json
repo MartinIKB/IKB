@@ -1,0 +1,27 @@
+{
+	"@type":"MDXView",
+	"Name":"Testview",
+	"MDX@Code.link":"Testview.mdx",
+	"Meta" : 
+	{
+		"Aliases" : {},
+		"ContextSets" : 
+		{
+			"[Kennzahlen].[Kennzahlen]" : 
+			{
+				"Expression" : "{[Kennzahlen].[Kennzahlen].MEMBERS}"
+			},
+			"[Zeit].[Zeit]" : 
+			{
+				"Expression" : "{[Zeit].[Zeit].MEMBERS}"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Kennzahlen].[Kennzahlen]" : false,
+			"[Produkte].[Produkte]" : false,
+			"[Vorsystem].[Vorsystem]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"@type":"Cube",
+	"Name":"KGS",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Kennzahlen')"
+		},
+		{
+			"@id":"Dimensions('Zeit')"
+		},
+		{
+			"@id":"Dimensions('Vorsystem')"
+		},
+		{
+			"@id":"Dimensions('Produkte')"
+		}
+	],
+	"Rules@Code.link":"KGS.rules",
+	"MeasuresDimension":
+	{
+		"@id":"Dimensions('Kennzahlen')"
+	},
+	"Views@Code.links":
+	[
+		"KGS.views/Alle Vertraege Alle Kennzahlen KGS.json",
+		"KGS.views/Testview.json"
+	]
+}

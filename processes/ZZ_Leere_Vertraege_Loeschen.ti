@@ -1,0 +1,8 @@
+#region Metadata
+
+if (CellGetN( 'KGS', 'Kennzahlen','17.11.2023','Vorsystem',vProdukte)=0);
+   DimensionElementDelete( 'Produkte', vProdukte );
+endif; 
+
+
+#endregion

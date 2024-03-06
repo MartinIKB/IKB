@@ -1,0 +1,7 @@
+#region Prolog
+
+wert=CellGetN( 'BER_23', 'Vertrieb','Produkte','Dez_23','Ist_EUR','Entwicklung','Stichtagskreditvolumen_per_dato' );
+
+
+
+#endregion

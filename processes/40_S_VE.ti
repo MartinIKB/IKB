@@ -1,0 +1,23 @@
+#region Metadata
+
+if (DimensionElementExists('Produkte', vParent )=0);
+    DimensionElementInsert( 'Produkte','',vParent,'C' );
+    DimensionElementComponentAdd( 'Produkte', 'P_ZU_KLAEREN', vParent, 1 );
+endif;
+
+
+if (DimensionElementExists( 'Produkte', vChild )=0);
+   DimensionElementInsert( 'Produkte','', vChild, 'N' );
+else; 
+   DimensionElementDelete ('Produkte' , vChild);
+   DimensionElementInsert( 'Produkte','', vChild, 'N' );
+endif;
+
+
+
+
+DimensionElementComponentAdd ('Produkte' , vParent ,  vChild, 1);
+#endregion
+#region Data
+AttrPuts (vAlias , 'Produkte' , vChild , 'Bezeichnung');
+#endregion

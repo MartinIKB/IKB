@@ -1,0 +1,12 @@
+{
+	"@type":"Dimension",
+	"Name":"Vorsystem",
+	"Hierarchies@Code.links":
+	[
+		"Vorsystem.hierarchies/Vorsystem.json"
+	],
+	"DefaultHierarchy":
+	{
+		"@id":"Dimensions('Vorsystem')/Hierarchies('Vorsystem')"
+	}
+}
