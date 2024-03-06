@@ -1,0 +1,272 @@
+SKIPCHECK;
+
+# Plandaten auf ZZ_Plandaten übernehmen
+['Barwert_Zinsmarge_nach_Risikokosten','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Barwert_Zinsmarge_nach_Risikokosten', !Zeit, 'Planergebnis_Vertrieb'  );
+['Barwert_Zinsmarge_nach_Risikokosten','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Barwert_Zinsmarge_nach_Risikokosten', !Zeit, 'Planergebnis_NL'  );
+['Barwert_Zinsmarge_nach_Risikokosten','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Barwert_Zinsmarge_nach_Risikokosten', !Zeit, 'Planergebnis_CI'  );
+['Barwert_Zinsmarge_nach_Risikokosten','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Barwert_Zinsmarge_nach_Risikokosten', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['Provisionsergebnis','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Provisionsergebnis', !Zeit, 'Planergebnis_Vertrieb'  );
+['Provisionsergebnis','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Provisionsergebnis', !Zeit, 'Planergebnis_NL'  );
+['Provisionsergebnis','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Provisionsergebnis', !Zeit, 'Planergebnis_CI'  );
+['Provisionsergebnis','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Provisionsergebnis', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['Total_Revenues','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Total_Revenues', !Zeit, 'Planergebnis_Vertrieb'  );
+['Total_Revenues','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Total_Revenues', !Zeit, 'Planergebnis_NL'  );
+['Total_Revenues','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Total_Revenues', !Zeit, 'Planergebnis_CI'  );
+['Total_Revenues','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Total_Revenues', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['Direkte_Kosten_Produkteinheiten','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Produkteinheiten', !Zeit, 'Planergebnis_Vertrieb'  );
+['Direkte_Kosten_Produkteinheiten','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Produkteinheiten', !Zeit, 'Planergebnis_NL'  );
+['Direkte_Kosten_Produkteinheiten','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Produkteinheiten', !Zeit, 'Planergebnis_CI'  );
+['Direkte_Kosten_Produkteinheiten','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Produkteinheiten', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['Direkte_Kosten_Vertrieb','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Vertrieb', !Zeit, 'Planergebnis_Vertrieb'  );
+['Direkte_Kosten_Vertrieb','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Vertrieb', !Zeit, 'Planergebnis_NL'  );
+['Direkte_Kosten_Vertrieb','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Vertrieb', !Zeit, 'Planergebnis_CI'  );
+['Direkte_Kosten_Vertrieb','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Vertrieb', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['Direkte_Kosten_Industriegruppen','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Industriegruppen', !Zeit, 'Planergebnis_Vertrieb'  );
+['Direkte_Kosten_Industriegruppen','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Industriegruppen', !Zeit, 'Planergebnis_NL'  );
+['Direkte_Kosten_Industriegruppen','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Industriegruppen', !Zeit, 'Planergebnis_CI'  );
+['Direkte_Kosten_Industriegruppen','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Industriegruppen', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['Direkte_Kosten_Vertrieb_Industriegruppen','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Vertrieb_Industriegruppen', !Zeit, 'Planergebnis_Vertrieb'  );
+['Direkte_Kosten_Vertrieb_Industriegruppen','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Vertrieb_Industriegruppen', !Zeit, 'Planergebnis_NL'  );
+['Direkte_Kosten_Vertrieb_Industriegruppen','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Vertrieb_Industriegruppen', !Zeit, 'Planergebnis_CI'  );
+['Direkte_Kosten_Vertrieb_Industriegruppen','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Direkte_Kosten_Vertrieb_Industriegruppen', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['DB_1','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'DB_1', !Zeit, 'Planergebnis_Vertrieb'  );
+['DB_1','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'DB_1', !Zeit, 'Planergebnis_NL'  );
+['DB_1','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'DB_1', !Zeit, 'Planergebnis_CI'  );
+['DB_1','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'DB_1', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['Kosten_3_Marktfolge','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Kosten_3_Marktfolge', !Zeit, 'Planergebnis_Vertrieb'  );
+['Kosten_3_Marktfolge','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Kosten_3_Marktfolge', !Zeit, 'Planergebnis_NL'  );
+['Kosten_3_Marktfolge','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Kosten_3_Marktfolge', !Zeit, 'Planergebnis_CI'  );
+['Kosten_3_Marktfolge','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Kosten_3_Marktfolge', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['DB_2','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'DB_2', !Zeit, 'Planergebnis_Vertrieb'  );
+['DB_2','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'DB_2', !Zeit, 'Planergebnis_NL'  );
+['DB_2','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'DB_2', !Zeit, 'Planergebnis_CI'  );
+['DB_2','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'DB_2', !Zeit, 'Planergebnis_Vertrieb'  );
+
+[' Kosten_4','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', ' Kosten_4', !Zeit, 'Planergebnis_Vertrieb'  );
+[' Kosten_4','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', ' Kosten_4', !Zeit, 'Planergebnis_NL'  );
+[' Kosten_4','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', ' Kosten_4', !Zeit, 'Planergebnis_CI'  );
+['Kosten_4','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Kosten_4', !Zeit, 'Planergebnis_Vertrieb'  );
+
+[' DB_3','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', ' DB_3', !Zeit, 'Planergebnis_Vertrieb'  );
+[' DB_3','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', ' DB_3', !Zeit, 'Planergebnis_NL'  );
+[' DB_3','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', ' DB_3', !Zeit, 'Planergebnis_CI'  );
+['DB_3','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'DB_3', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['Kosten_5','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'Kosten_5', !Zeit, 'Planergebnis_Vertrieb'  );
+['Kosten_5','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'Kosten_5', !Zeit, 'Planergebnis_NL'  );
+['Kosten_5','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'Kosten_5', !Zeit, 'Planergebnis_CI'  );
+['Kosten_5','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'Kosten_5', !Zeit, 'Planergebnis_Vertrieb'  );
+
+['DB_4','Ist_EUR','Planergebnis_Vertrieb','Produkte']=DB( 'ZZ_Plandaten', 'DB_4', !Zeit, 'Planergebnis_Vertrieb'  );
+['DB_4','Ist_EUR','Planergebnis_NL','Produkte']=DB( 'ZZ_Plandaten', 'DB_4', !Zeit, 'Planergebnis_NL'  );
+['DB_4','Ist_EUR','Planergebnis_CI','Produkte']=DB( 'ZZ_Plandaten', 'DB_4', !Zeit, 'Planergebnis_CI'  );
+['DB_4','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'DB_4', !Zeit, 'Planergebnis_Vertrieb'  );
+
+
+# Berechnung Versionen
+['Ist_TEUR']=if (!Kennzahlen@='Hilfskkennzahlen'
+              % !Kennzahlen@='Ertrag_Kosten_Relation_Produkt'
+              % !Kennzahlen@='Ertrag_Kosten_Relation_Vertrieb_ohne_Übernahmefinanzierung'
+              % !Kennzahlen@='Kredit_Bestandswert_inkl_WAV'
+              % ELISANC( 'Kennzahlen', 'Hilfskennzahlen', !Kennzahlen )=1
+              ,['Ist_EUR']
+              ,['Ist_EUR']/1000);
+
+
+['Ist_Mio_EUR']=if (!Kennzahlen@='Hilfskkennzahlen'
+              % !Kennzahlen@='Ertrag_Kosten_Relation_Produkt'
+              % !Kennzahlen@='Ertrag_Kosten_Relation_Vertrieb_ohne_Übernahmefinanzierung'
+              % !Kennzahlen@='Kredit_Bestandswert_inkl_WAV'
+              % ELISANC( 'Kennzahlen', 'Hilfskennzahlen', !Kennzahlen )=1
+              ,['Ist_EUR']
+              ,['Ist_EUR']/1000000);
+
+
+['Ist_Marge']=if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten'
+                  % (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Eigenmittel' & ELISANC( 'Produkte', 'Eigenmittel', !Produkte )=1)
+                  % (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Foerdermittel' & ELISANC( 'Produkte', 'Foerdermittel', !Produkte )=1)
+                  % (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Strukturierung_Corporates' & ELISANC( 'Produkte', 'Strukturierung_Corporates', !Produkte )=1)                 
+              , ['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR']*100*['Effektives_Kapital','Ist_EUR']/['Nominalkapital','Ist_EUR']
+             
+             , if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Kredite'
+              , ['Ist_EUR']/(['Barwert_eff_Kap','Ist_EUR','Eigenmittel']+['Barwert_eff_Kap','Ist_EUR','Foerdermittel']
+                + ['Barwert_eff_Kap','Ist_EUR','Leveraged_Finance']+['Barwert_eff_Kap','Ist_EUR','Strukturierung_Corporates'])
+                * 100 * 
+                (['Effektives_Kapital','Ist_EUR','Eigenmittel']+['Effektives_Kapital','Ist_EUR','Foerdermittel']
+                + ['Effektives_Kapital','Ist_EUR','Leveraged_Finance']+['Effektives_Kapital','Ist_EUR','Strukturierung_Corporates'])
+                / (['Nominalkapital','Ist_EUR','Eigenmittel']+['Nominalkapital','Ist_EUR','Foerdermittel']
+                + ['Nominalkapital','Ist_EUR','Leveraged_Finance']+ ['Nominalkapital','Ist_EUR','Strukturierung_Corporates'])
+             
+              , if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Eigenmittel' & ELISANC( 'Produkte', 'Eigenmittel', !Produkte )=0
+              , ['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR','Eigenmittel'] * 100 * ['Effektives_Kapital','Ist_EUR','Eigenmittel']
+                /['Nominalkapital','Ist_EUR','Eigenmittel']
+  
+              , if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Foerdermittel' & ELISANC( 'Produkte', 'Foerdermittel', !Produkte )=0
+              , ['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR','Foerdermittel'] * 100 * ['Effektives_Kapital','Ist_EUR','Foerdermittel']
+                /['Nominalkapital','Ist_EUR','Foerdermittel']
+
+              , if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Leveraged_Finance' & ELISANC( 'Produkte', 'Leveraged_Finance', !Produkte )=1
+                    & abs(['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR']*100*['Effektives_Kapital','Ist_EUR']/['Nominalkapital','Ist_EUR'])>=1000
+              , 0
+              
+              , if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Leveraged_Finance' & ELISANC( 'Produkte', 'Leveraged_Finance', !Produkte )=1
+                    & abs(['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR']*100*['Effektives_Kapital','Ist_EUR']/['Nominalkapital','Ist_EUR'])<1000              
+              , ['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR']*100*['Effektives_Kapital','Ist_EUR']/['Nominalkapital','Ist_EUR']
+              
+              , if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Leveraged_Finance' & ELISANC( 'Produkte', 'Leveraged_Finance', !Produkte )=0
+                    & abs(['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR','Leveraged_Finance'] * 100 * ['Effektives_Kapital','Ist_EUR','Leveraged_Finance']
+                / ['Nominalkapital','Ist_EUR','Leveraged_Finance'])>=1000
+              , 0
+              
+              , if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Leveraged_Finance' & ELISANC( 'Produkte', 'Leveraged_Finance', !Produkte )=0
+                    & abs(['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR','Leveraged_Finance'] * 100 * ['Effektives_Kapital','Ist_EUR','Leveraged_Finance']
+                / ['Nominalkapital','Ist_EUR','Leveraged_Finance'])<1000
+              , ['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR','Leveraged_Finance'] * 100 * ['Effektives_Kapital','Ist_EUR','Leveraged_Finance']
+                / ['Nominalkapital','Ist_EUR','Leveraged_Finance']
+              
+              , if (!Kennzahlen@='Barwert_Zinsmarge_nach_Risikokosten_Strukturierung_Corporates' &  ELISANC( 'Produkte', 'Strukturierung_Corporates', !Produkte )=0
+              , ['Ist_EUR']/['Barwert_eff_Kap','Ist_EUR','Strukturierung_Corporates'] * 100 * ['Effektives_Kapital','Ist_EUR','Strukturierung_Corporates']
+                / ['Nominalkapital','Ist_EUR','Strukturierung_Corporates']
+                
+              , if (!Kennzahlen@='Volumina_Neugeschaeft_anteilig' 
+                    % !Kennzahlen@='Kredit_Volumen_Auszahlungen_Eigenmittel_anteilig'
+                    % !Kennzahlen@='Kredit_Volumen_Auszahlungen_Foerdermittel_anteilig'
+                    % !Kennzahlen@='Kredit_Volumen_Auszahlungen_Leveraged_Finance_anteilig'
+                    % !Kennzahlen@='Kredit_Volumen_Auszahlungen_Strukturierungsberatung_NL_anteilig'
+                    % !Kennzahlen@='Kredit_Volumen_Auszahlungen_Strukturierung_Corporates_anteilig'
+              , ['Ist_TEUR']
+              , 0
+                  ))))))))));
+                  
+
+# Berechnung weitere Kennzahlen Provisionen_Neugeschäft
+['Provisionen_Neugeschaeft_Produkt']=['Provisionsergebnis'];
+
+['Provisionen_Neugeschaeft_Eigenmittel']=if (!Produkte@='Eigenmittel'
+                                         % ELISANC( 'Produkte', 'Eigenmittel', !Produkte )=1
+                                         , ['Provisionsergebnis']
+                                         , if (ELISANC( 'Produkte', !Produkte, 'Eigenmittel' )=1
+                                         , ['Provisionsergebnis','Eigenmittel']
+                                         , 0
+                                          ));
+
+
+['Provisionen_Neugeschaeft_Foerdermittel']=if (!Produkte@='Foerdermittel'
+                                         % ELISANC( 'Produkte', 'Foerdermittel', !Produkte )=1
+                                         , ['Provisionsergebnis']
+                                         , if (ELISANC( 'Produkte', !Produkte, 'Foerdermittel' )=1
+                                         , ['Provisionsergebnis','Foerdermittel']
+                                         , 0
+                                          ));
+
+
+['Provisionen_Neugeschaeft_Strukturierung_Corporates']=if (!Produkte@='Corporates_Markets'
+                                         % ELISANC( 'Produkte', 'Corporates_Markets', !Produkte )=1
+                                         , ['Provisionsergebnis']
+                                         , if (ELISANC( 'Produkte', !Produkte, 'Corporates_Markets' )=1
+                                         , ['Provisionsergebnis','Corporates_Markets']
+                                         , 0
+                                          ));
+
+
+['Provisionen_Neugeschaeft_Leveraged_Finance']=if (!Produkte@='Leveraged_Finance'
+                                         % ELISANC( 'Produkte', 'Leveraged_Finance', !Produkte )=1
+                                         , ['Provisionsergebnis']
+                                         , if (ELISANC( 'Produkte', !Produkte, 'Leveraged_Finance' )=1
+                                         , ['Provisionsergebnis','Leveraged_Finance']
+                                         , 0
+                                          ));
+                                          
+                                          
+['Provisionen_Neugeschaeft_Sonstiges']=  if (!Produkte@='Immobilienfinanzierung'
+                                          % !Produkte@='Sonstiges'
+                                          % ELISANC( 'Produkte','Immobilienfinanzierung', !Produkte )=1
+                                         , ['Provisionsergebnis']
+                                         , if (!Produkte@='Kredit'
+                                         , ['Provisionsergebnis','Immobilienfinanzierung']
+                                         , if (!Produkte@='Produkte'
+                                         , ['Provisionsergebnis','Immobilienfinanzierung'] + ['Provisionsergebnis','Sonstiges']
+                                         , 0  
+                                          )));        
+
+
+['Bruttoergebnis_ohne_Uebernahmefinanzierung']=if (!Produkte@='Produkte'
+                                               , ['Total_Revenues']-['Total_Revenues','Leveraged_Finance']
+                                               , 0);
+
+
+['Ertrag_Kosten_Relation_Produkt']=['Total_Revenues','Ist_EUR']/abs(['Direkte_Kosten_Produkteinheiten','Ist_EUR']);
+
+
+['Ertrag_Kosten_Relation_Vertrieb']=if (!Vertrieb@='A_Credit_Treasury'
+                                    ,['Total_Revenues','Ist_EUR']/abs(['Direkte_Kosten_Produkteinheiten','Ist_EUR'])
+                                    ,if(!Vertrieb@='Vertrieb'
+                                      % !Vertrieb@='Planergebnis_Vertrieb'
+                                    ,['Total_Revenues','Ist_EUR']/abs(['Direkte_Kosten_Vertrieb','Ist_EUR']
+                                      + ['Direkte_Kosten_Produkteinheiten','A_Credit_Treasury','Ist_EUR'])
+                                    ,['Total_Revenues','Ist_EUR']/abs(['Direkte_Kosten_Vertrieb','Ist_EUR'])
+                                    ));
+
+
+['Ertrag_Kosten_Relation_Vertrieb_ohne_Übernahmefinanzierung']=if (!Vertrieb@='A_Credit_Treasury'
+                                                               ,['Bruttoergebnis_ohne_Uebernahmefinanzierung','Ist_EUR']  
+                                                               / abs(['Direkte_Kosten_Produkteinheiten','Ist_EUR'])
+                                                               ,if (!Vertrieb@='Vertrieb'
+                                                                  % !Vertrieb@='Planergebnis_Vertrieb'
+                                                               ,['Bruttoergebnis_ohne_Uebernahmefinanzierung','Ist_EUR']  
+                                                               / abs(['Direkte_Kosten_Vertrieb','Ist_EUR']
+                                                               +['Direkte_Kosten_Produkteinheiten','A_Credit_Treasury','Ist_EUR'])
+                                                               ,['Bruttoergebnis_ohne_Uebernahmefinanzierung','Ist_EUR']
+                                                               / abs(['Direkte_Kosten_Vertrieb','Ist_EUR'])
+                                                                ));
+          
+# Berechnung Hilfskennzahlen          
+['KEZ_GEFUELLT_COGNOS']=if (!Vertrieb@='Vertrieb'
+                        %   ['Total_Revenues','Ist_EUR']
+                          + ['Volumina_Neugeschaeft_anteilig','Ist_EUR']
+                          + ['Kredit_Bestandswert_inkl_WAV','Ist_EUR']
+                          + ['Kredit_Stichtagskreditvolumen','Ist_EUR']
+                          + ['Kundenderivate_Fair_Value','Ist_EUR']
+                          + ['KSA_RWA_Derivate_Bestand','Ist_EUR']
+                          + ['KSA_RWA_Kredit_Bestand','Ist_EUR']
+                          + ['BER_DB_3_nach_Risikovorsorge','Ist_EUR']
+                          <> 0
+                         ,1
+                         ,0
+                          );
+
+
+['KEZ_LEER']= if (['Total_Revenues','Ist_EUR']
+                + ['Volumina_Neugeschaeft','Ist_EUR']=0
+                & !Vertrieb@<>'Vertrieb'
+                ,1
+                ,0);
+
+
+['KEZ_Kunde_Vertrag']=if (ATTRS('Vertrieb',!Vertrieb,'Typ')@='Kunde'
+                      ,1
+                      ,if(ATTRS('Vertrieb',!Vertrieb,'Typ')@='AVS'
+                      ,2
+                      ,if(ATTRS('Vertrieb',!Vertrieb,'Typ')@='Vertrag'
+                      ,3
+                      ,0
+                      )));
+                          
+                          
+['KD_NR']=NUMBR(ATTRS( 'Vertrieb',!Vertrieb,'KD_NR'));
+['VVS']=NUMBR(ATTRS( 'Vertrieb',!Vertrieb,'VVS'));
+
+Feeders;
+['Ist_EUR']=>['Ist_TEUR'];
+['Ist_EUR']=>['Ist_Mio_EUR'];
+['Total_Revenues','Ist_EUR']=>['Ertrag_Kosten_Relation_Produkt'];
+['Total_Revenues','Ist_EUR']=>['Ertrag_Kosten_Relation_Vertrieb'];

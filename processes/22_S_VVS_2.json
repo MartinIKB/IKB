@@ -1,0 +1,43 @@
+{
+	"@type":"Process",
+	"Name":"22_S_VVS_2",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"22_S_VVS_2.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"IgnoredInputVarName=V3€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=V4€VarType=32€ColType=1165€",
+		"IgnoredInputVarName=V5€VarType=32€ColType=1165€"
+	],
+	"DataSource":
+	{
+		"Type":"ODBC",
+		"dataSourceNameForClient":"co1",
+		"dataSourceNameForServer":"co1",
+		"password":"d?kel`V1cv353G421wGn`[wB80OMnHE`w2Jmq?1J:[MU<iCK4@p<v96tAzUMPnQ_`I6gs1u4OZvfVQ0LoZQjNdnP@z~0`:2_7q`<?Dxbf@hDONneDQ<4<=y41mKr:`xQ:hRsBdj1xR4x6@5rmsrcz2>zSv^\\YkfrT4g?tvzEQEp]yS\\u7WFDRgEA^CnHPu3jqCF;XILi",
+		"query":"select \r\n*\r\nfrom\r\n(\r\n\r\nSELECT\r\n\r\ndistinct\r\n'A_Sonstige',\r\nreplace('A_'||NVL(VVS,'NA'),'A_0','A_NA'),\r\n'AVS',\r\n'N',\r\nvvs\r\n\r\nFROM\r\ndtl_nvr_ertraege e\r\n\r\nWHERE\r\nstichtag=(select stichtag from nvr_parameter)\r\nand vvs is not NULL\r\nAND herkunft <>'DTL_NVR_PROVISIONEN'\r\n\r\nUNION\r\n\r\nSELECT\r\n\r\ndistinct\r\n'A_Sonstige',\r\nreplace('A_'||NVL(VVS,'NA'),'A_0','A_NA'),\r\n'AVS',\r\n'N',\r\nvvs\r\n\r\nFROM\r\ndtl_nvr_provisionen_neu p\r\n\r\nWHERE\r\nstichtag=(select stichtag from nvr_parameter)\r\nand vvs is not NULL\r\n)\t",
+		"userName":"f_prod_data",
+		"usesUnicode":true
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vParent",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vChild",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

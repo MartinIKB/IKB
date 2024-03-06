@@ -1,0 +1,26 @@
+{
+	"@type":"MDXView",
+	"Name":"Eingabe_Plandaten_NVR",
+	"MDX@Code.link":"Eingabe_Plandaten_NVR.mdx",
+	"Meta" : 
+	{
+		"Aliases" : 
+		{
+			"[Vertrieb].[Vertrieb]" : "Caption",
+			"[Zeit].[Zeit]" : "Caption"
+		},
+		"ContextSets" : 
+		{
+			"[Zeit].[Zeit]" : 
+			{
+				"Expression" : "{{FILTER(TM1SubsetAll([Zeit].[Zeit]), ([Zeit].[Zeit].CURRENTMEMBER.PROPERTIES(\"Flag_Aktueller_Monat\") = \"Kalkulation\"))}}"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Vertrieb].[Vertrieb]" : false,
+			"[ZZ_Plankennzahlen].[ZZ_Plankennzahlen]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"@type":"Cube",
+	"Name":"}Hold_Business Analytics_Ralf Schulze_}}_NVR",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Kennzahlen')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Freigabe')"
+		},
+		{
+			"@id":"Dimensions('Zeit')"
+		},
+		{
+			"@id":"Dimensions('Produkte')"
+		},
+		{
+			"@id":"Dimensions('Vertrieb')"
+		},
+		{
+			"@id":"Dimensions('}Hold')"
+		}
+	],
+	"Views@Code.links":[]
+}

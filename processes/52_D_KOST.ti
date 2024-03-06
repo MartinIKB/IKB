@@ -1,0 +1,9 @@
+#region Data
+
+CellPutN( vDirekte_Kosten_Produkteinheiten, 'NVR', 'Direkte_Kosten_Produkteinheiten', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
+CellPutN( vKosten_3_Marktfolge, 'NVR', 'Kosten_3_Marktfolge', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
+CellPutN( vKosten_4, 'NVR', 'Kosten_4', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
+CellPutN( vKosten_5, 'NVR', 'Kosten_5', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
+CellPutN( vDirekte_Kosten_Vertrieb, 'NVR', 'Direkte_Kosten_Vertrieb', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
+CellPutN( vDirekte_Kosten_Industriegruppen, 'NVR', 'Direkte_Kosten_Industriegruppen', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
+#endregion

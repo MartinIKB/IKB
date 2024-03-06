@@ -1,0 +1,9 @@
+#region Metadata
+
+
+if (DimensionElementExists( 'Vertrieb', vChild )=0);
+   DimensionElementInsertDirect( 'Vertrieb','', vCHILD, 'N' );
+   DimensionElementComponentAddDirect ('Vertrieb' , vPARENT ,  vCHILD, 1);
+endif;
+
+#endregion
