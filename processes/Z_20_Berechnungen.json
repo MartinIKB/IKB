@@ -1,0 +1,16 @@
+{
+	"@type":"Process",
+	"Name":"Z_20_Berechnungen",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Z_20_Berechnungen.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"Sichtweise:Sichtweise",
+		"dataSourceNameForServer":"Sichtweise:Sichtweise",
+		"subset":"All"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

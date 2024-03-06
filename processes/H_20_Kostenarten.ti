@@ -1,0 +1,31 @@
+#region Prolog
+sDim = 'Kostenarten';
+
+IF ( DimensionExists ( sDim ) = 0 );
+	DimensionCreate ( sDim );
+ENDIF;
+
+IF ( pDelete = 1 );
+	DimensionDeleteAllElements ( sDim );
+ENDIF;
+
+DimensionElementInsert ( sDim, '', 'Kostenarten', 'C' );
+
+AttrInsert ( sDim, '', 'Caption', 'A' );
+
+
+
+#endregion
+#region Metadata
+DimensionElementInsert ( sDim , '', vParent, 'C' );
+DimensionElementInsert ( sDim , '', vChild, 'N' );
+DimensionElementComponentAdd ( sDim , vParent, vChild, 1 );
+
+
+#endregion
+#region Data
+AttrPutS ( vAlias_Child, sDim, vChild, 'Caption' );
+
+
+
+#endregion

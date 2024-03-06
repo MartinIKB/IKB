@@ -1,0 +1,48 @@
+{
+	"@type":"Process",
+	"Name":"D_60_Zeit",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"D_60_Zeit.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"ODBC",
+		"dataSourceNameForClient":"co1",
+		"dataSourceNameForServer":"co1",
+		"password":"n`g7`<Y1YX^Clkl@iy[]t`di5jXJCOUsYLRuPl@ADbAB9f3^^Slm9LTK@EKYhh\\OmBUl3sM>thgsi8=ne@UviejYf5|`2UX`q[TgXh[xHynp_[deDS:Bag@MqSK[z;lKrx?tRiTi;aOPLEMu[dDqyw=MoT2Ejwen6mnOW<@P>c`Oqc_7UxcPTU_`\\e@s?}Cj1657ip=I",
+		"query":"select monatsscheibe, UDA from dtl_kst_zeit a",
+		"userName":"f_prod_data",
+		"usesUnicode":true
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pResult",
+			"Prompt":"Anzahl der Zeitelemente die bearbeitet wurden",
+			"Value":"DTL_KST_ZEIT.blb",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vZeit",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vUDA",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

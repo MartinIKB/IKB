@@ -1,0 +1,112 @@
+SKIPCHECK;
+
+#Berechnete Positionen Kostenstellen
+['Vertrieb_Nord']=['P_100000GR']+['P_160000GR']+['P_170000GR'];
+['Vertrieb_Sued']=['P_130000GR']+['P_140000GR']+['P_150000GR']+['P_880019GR'];
+
+
+#Alternative Positionen KAV
+['AG_ohne_T2']=['AG']-['P_220180'];
+['P_220000GR_ohne_T2']=['P_220000GR']-['P_220180'];
+['P_880010GR_ohne_T2']=['P_880010GR']-['P_220180'];
+
+
+#Ressorts berechnen
+['Ressort_Wiedmann_AG']=['P_880010GR']+['P_880020GR']+['P_880030GR']+['P_880040GR']+['P_880050GR']+['P_880060GR'];
+['Ressort_Trutwein']=['P_370000GR']+['P_380000GR']+['P_410000GR'];
+
+
+#Berechnete Positionen Kostenarten
+['Berater_Gutachter_Kosten_ohne_Rating']=['21108BG.GUV']-['KTO_3440500014'];
+['Infoaufwand_ohne_kalk_Verrechnung']=['206INF.GV2']-['KTO_252']-['KTO_2520'];
+['Infrastrukturkosten']=['202RAU.GV2']+['203UNT.GUV']+['206IV.GV2'];
+['IT-Aufwand_ohne_kalk_Verrechnung']=['206IV.GV2']-['20607KAL.GUV'];
+['IT-Aufwand_ohne_kalk_Verrechung_ohne_sonst_Aufwand']=['206IV.GV2']-['20607KAL.GUV']-['20606SDV.GUV'];
+['Personalabhängige_Sachkosten']=['201PER.GUV']+['201ZEI.GUV']+['204KFZ.GV2']+['205KOM.GV2']+['206INF.GV2']+['207REI.GUV']+['208BUE.GUV']+['209AUS.GV2']+['211GES.GUV'];
+['Sachkosten_ohne_Rating']=['2S.GV2']-['KTO_3440500014'];
+['Strategische_Sachkosten']=['210WER.GV2']+['21108BG.GUV']+['21108RK.GUV'];
+['Unternehmens_Aufsichtsrechtl_Sachkosten']=['21208JAK.GUV']+['21201GRE.GUV']+['21209BMB.GUV']+['21107ESF.GUV']+['21106VER.GUV']+['212UK.GUV']+['41UML_IS'];
+
+
+#Berechnung Verhältniszahlen
+['Infrastrukturkosten_in_Proz_der_SK']=['Infrastrukturkosten']/['2S.GV2'];
+['Personalabh_SK_in_Proz_der_SK']=['Personalabhängige_Sachkosten']/['2S.GV2'];
+['Personalaufwand_in_Proz_der_VWK']=['1PGUVKALK']/['Verwaltungsaufwendungen'];
+['SK_in_Proz_der_VWK']=['2S.GV2']/['Verwaltungsaufwendungen'];
+['Strategische_SK_in_Proz_der_SK']=['Strategische_Sachkosten']/['2S.GV2'];
+['Unt_Aufsichtsrechtl_SK_in_Proz_der_SK']=['Unternehmens_Aufsichtsrechtl_Sachkosten']/['2S.GV2'];
+
+
+#GJ 2023
+['kumuliert', 'Jan_23']=['Jan_23','monatlich'];
+['kumuliert', 'Feb_23']=['Jan_23','monatlich']+['Feb_23','monatlich'];
+['kumuliert', 'Mrz_23']=['Feb_23','kumuliert']+['Mrz_23','monatlich'];
+['kumuliert', 'Apr_23']=['Mrz_23','kumuliert']+['Apr_23','monatlich'];
+['kumuliert', 'Mai_23']=['Apr_23','kumuliert']+['Mai_23','monatlich'];
+['kumuliert', 'Jun_23']=['Mai_23','kumuliert']+['Jun_23','monatlich'];
+['kumuliert', 'Jul_23']=['Jun_23','kumuliert']+['Jul_23','monatlich'];
+['kumuliert', 'Aug_23']=['Jul_23','kumuliert']+['Aug_23','monatlich'];
+['kumuliert', 'Sep_23']=['Aug_23','kumuliert']+['Sep_23','monatlich'];
+['kumuliert', 'Okt_23']=['Sep_23','kumuliert']+['Okt_23','monatlich'];
+['kumuliert', 'Nov_23']=['Okt_23','kumuliert']+['Nov_23','monatlich'];
+['kumuliert', 'Dez_23']=['Nov_23','kumuliert']+['Dez_23','monatlich'];
+['kumuliert', 'Adj_23']=['Dez_23','kumuliert']+['Adj_23','monatlich'];
+['kumuliert', 'GJ_2023']=['Adj_23','kumuliert'];
+['monatlich', 'GJ_2023']=0;
+
+
+#GJ 2024
+['kumuliert', 'Jan_24']=['Jan_24','monatlich'];
+['kumuliert', 'Feb_24']=['Jan_24','monatlich']+['Feb_24','monatlich'];
+['kumuliert', 'Mrz_24']=['Feb_24','kumuliert']+['Mrz_24','monatlich'];
+['kumuliert', 'Apr_24']=['Mrz_24','kumuliert']+['Apr_24','monatlich'];
+['kumuliert', 'Mai_24']=['Apr_24','kumuliert']+['Mai_24','monatlich'];
+['kumuliert', 'Jun_24']=['Mai_24','kumuliert']+['Jun_24','monatlich'];
+['kumuliert', 'Jul_24']=['Jun_24','kumuliert']+['Jul_24','monatlich'];
+['kumuliert', 'Aug_24']=['Jul_24','kumuliert']+['Aug_24','monatlich'];
+['kumuliert', 'Sep_24']=['Aug_24','kumuliert']+['Sep_24','monatlich'];
+['kumuliert', 'Okt_24']=['Sep_24','kumuliert']+['Okt_24','monatlich'];
+['kumuliert', 'Nov_24']=['Okt_24','kumuliert']+['Nov_24','monatlich'];
+['kumuliert', 'Dez_24']=['Nov_24','kumuliert']+['Dez_24','monatlich'];
+['kumuliert', 'Adj_24']=['Dez_24','kumuliert']+['Adj_24','monatlich'];
+['kumuliert', 'GJ_2024']=['Adj_24','kumuliert'];
+['monatlich', 'GJ_2024']=0;
+
+
+#GJ 2025
+['kumuliert', 'Jan_25']=['Jan_25','monatlich'];
+['kumuliert', 'Feb_25']=['Jan_25','monatlich']+['Feb_25','monatlich'];
+['kumuliert', 'Mrz_25']=['Feb_25','kumuliert']+['Mrz_25','monatlich'];
+['kumuliert', 'Apr_25']=['Mrz_25','kumuliert']+['Apr_25','monatlich'];
+['kumuliert', 'Mai_25']=['Apr_25','kumuliert']+['Mai_25','monatlich'];
+['kumuliert', 'Jun_25']=['Mai_25','kumuliert']+['Jun_25','monatlich'];
+['kumuliert', 'Jul_25']=['Jun_25','kumuliert']+['Jul_25','monatlich'];
+['kumuliert', 'Aug_25']=['Jul_25','kumuliert']+['Aug_25','monatlich'];
+['kumuliert', 'Sep_25']=['Aug_25','kumuliert']+['Sep_25','monatlich'];
+['kumuliert', 'Okt_25']=['Sep_25','kumuliert']+['Okt_25','monatlich'];
+['kumuliert', 'Nov_25']=['Okt_25','kumuliert']+['Nov_25','monatlich'];
+['kumuliert', 'Dez_25']=['Nov_25','kumuliert']+['Dez_25','monatlich'];
+['kumuliert', 'Adj_25']=['Dez_25','kumuliert']+['Adj_25','monatlich'];
+['kumuliert', 'GJ_2025']=['Adj_25','kumuliert'];
+['monatlich', 'GJ_2025']=0;
+
+# Kumulierte Werte auf das obere Dimensionselement Sichtweise schreiben
+['Sichtweise'] = ['kumuliert'];
+
+# Oberen Knotenpunkt in der Dimesion Kostenstellen füllen
+['Kostenstellen'] = ['K0020_HIER'];
+
+['Ist_TEUR']=['Ist_EUR'] / 1000;
+
+FEEDERS;
+['monatlich']=>['kumuliert'];
+['monatlich']=>['Sichtweise'];
+
+['Ist_EUR']=>['Ist_TEUR'];
+
+['Infrastrukturkosten']=>['Infrastrukturkosten_in_Proz_der_SK'];
+['Personalabhängige_Sachkosten']=>['Personalabh_SK_in_Proz_der_SK'];
+['1PGUVKALK']=>['Personalaufwand_in_Proz_der_VWK'];
+['2S.GV2']=>['SK_in_Proz_der_VWK'];
+['Strategische_Sachkosten']=>['Strategische_SK_in_Proz_der_SK'];
+['Unternehmens_Aufsichtsrechtl_Sachkosten']=>['Unt_Aufsichtsrechtl_SK_in_Proz_der_SK'];

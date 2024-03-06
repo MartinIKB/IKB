@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"test_siblings",
+	"Expression":"{LASTPERIODS(6 , [Zeit].[['Dez_23'])}"
+}

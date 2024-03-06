@@ -1,0 +1,48 @@
+{
+	"@type":"Process",
+	"Name":"S_20_Kostenarten",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"S_20_Kostenarten.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"ODBC",
+		"dataSourceNameForClient":"co1",
+		"dataSourceNameForServer":"co1",
+		"password":"p_KV8[M=Y?n^[XudlKqdLvh^G[vMmXl4=VVkaCO:LK=DAlSDN=2k]=dTxFxjr>PouXSl3mH=v9QgfPK\\8^k2r@CM==w@9m4]i:_qn4ARN[:@aPbeT::x]w;^oGM;W;WVk\\4rrXOK`fJEs>]Yi56rz7RVf[Fry]MVoZmOJWRHy[vD~s8>>s9YV>IuM]q4>pSjQBh3gRaA",
+		"query":"SELECT\r\nDISTINCT\r\n'Neue_Kostenarten',\r\na.kostenart\r\nFROM\r\ndtl_kst_buchungen a\r\nWHERE\r\na.geschaeftsjahr >= '2023' UNION ALL SELECT DISTINCT 'Neue_Kostenarten', b.kostenart FROM \r\ndtl_kst_plandaten b where length(b.kostenart) != 12 and b.geschaeftsjahr >= '2023'",
+		"userName":"f_prod_data",
+		"usesUnicode":true
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pResult",
+			"Prompt":"Ergebnisdatei für die Anzahl angelegter Elemente",
+			"Value":"S_10_Kostenarten.blb",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vParent",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vChild",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

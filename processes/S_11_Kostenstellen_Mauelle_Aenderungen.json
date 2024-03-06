@@ -1,0 +1,56 @@
+{
+	"@type":"Process",
+	"Name":"S_11_Kostenstellen_Mauelle_Aenderungen",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"S_11_Kostenstellen_Mauelle_Aenderungen.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"VariablesUIData":
+	[
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€",
+		"VarType=32€ColType=827€"
+	],
+	"DataSource":
+	{
+		"Type":"ODBC",
+		"dataSourceNameForClient":"co1",
+		"dataSourceNameForServer":"co1",
+		"password":"jvBFxvWWFslRpoAlZJ8RjmlD>d9DlDlyvRkzZDl18EouucC7a:D[mA]m^qIpNwZOLSHjS1RF[uS:S@8vtx?:rxY`\\7r07^UM<VFSATBwAR:a5cheTF4ARwa]8vDKtvf88Wb|2VEEO53Hg\\bA_AQcUJnX2_O:=o4p`ljOYu>J:fjZ~S7OCnYOF076UoKGBrcoqm4UdfqQ",
+		"query":"SELECT\r\na.PARENT,\r\na.CHILD,\r\na.ALIAS\r\nFROM\r\nSTG_KST_HIERARCHIE_AENDERUNGEN a",
+		"userName":"f_prod_data",
+		"usesUnicode":true
+	},
+	"Parameters":
+	[
+		{
+			"Name":"pResult",
+			"Prompt":"Ergebnisdatei für die Anzahl angelegter Elemente",
+			"Value":"S_11_Kostenstellen_Manuelle_Aenderungen.blb",
+			"Type":"String"
+		}
+	],
+	"Variables":
+	[
+		{
+			"Name":"vParent",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vChild",
+			"Type":"String",
+			"Position":2,
+			"StartByte":0,
+			"EndByte":0
+		},
+		{
+			"Name":"vAlias",
+			"Type":"String",
+			"Position":3,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

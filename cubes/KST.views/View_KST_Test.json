@@ -1,0 +1,23 @@
+{
+	"@type":"MDXView",
+	"Name":"View_KST_Test",
+	"MDX@Code.link":"View_KST_Test.mdx",
+	"Meta" : 
+	{
+		"Aliases" : 
+		{
+			"[Kostenarten].[Kostenarten]" : "Caption",
+			"[Kostenstellen].[Kostenstellen]" : "Caption"
+		},
+		"ContextSets" : {},
+		"ExpandAboves" : 
+		{
+			"[Freigabe].[Freigabe]" : false,
+			"[Kostenarten].[Kostenarten]" : false,
+			"[Kostenstellen].[Kostenstellen]" : false,
+			"[Sichtweise].[Sichtweise]" : false,
+			"[Version].[Version]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	}
+}

@@ -1,0 +1,23 @@
+#region Prolog
+MinorErrorLogMax = -1;
+OnMinorErrorDoItemSkip = 1;
+dCube= 'KST';
+sDim = 'Zeit';
+CurrentLogSetting = CubeGetLogChanges(dCube);
+CubeSetLogChanges(dCube, 0);
+NumRowsRead = 0;
+NumRowsProcessed = 0;
+SetInputCharacterSet('TM1CS_ISO_8859_1');
+
+#endregion
+#region Metadata
+NumRowsRead = NumRowsRead + 1;
+AttrPutS (vUDA, sDim, vZeit, 'Flag_Freigegeben');
+NumRowsProcessed = NumRowsProcessed + 1;
+
+#endregion
+#region Epilog
+If (pResult @<> '');
+  TextOutput(pResult, NumberToString(NumRowsRead), NumberToString(NumRowsProcessed));
+EndIf;
+#endregion
