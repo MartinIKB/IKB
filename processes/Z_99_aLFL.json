@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Z_99_aLFL",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Z_99_aLFL.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

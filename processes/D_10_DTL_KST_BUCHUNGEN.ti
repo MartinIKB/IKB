@@ -7,10 +7,28 @@ CubeSetLogChanges(dCube, 0);
 NumRowsRead = 0;
 NumRowsProcessed = 0;
 SetInputCharacterSet('TM1CS_ISO_8859_1');
+
+# Entwicklung und Test Ebene zunächst löschen
+s_View_target = 'Delete_Version';
+s_Subset_target = s_View_target |'_Subset' ;
+
+
+# Create target
+ViewCreate (dCube, s_View_target, 1);
+
+
+# Subsets erstellen
+SubsetCreatebyMDX( s_Subset_target, '{[Freigabe].[Freigabe].[Test],[Freigabe].[Freigabe].[Entwicklung]}', 1 );
+ViewSubsetAssign (dCube, s_View_target , 'Freigabe' , s_Subset_target);
+
+# Daten im Subset löschen
+ViewZeroOut (dCube, s_View_target);
+
 #endregion
 #region Data
 NumRowsRead = NumRowsRead + 1;
-CellPutN(vWert, dCube, vKostenstelle, vKostenart, vFreigabe, vSichtweise, vVersion, vMonatsscheibe);
+CellPutN(vWert, dCube, vKostenstelle, vKostenart, 'Entwicklung', vSichtweise, vVersion, vMonatsscheibe);
+CellPutN(vWert, dCube, vKostenstelle, vKostenart, 'Test', vSichtweise, vVersion, vMonatsscheibe);
 NumRowsProcessed = NumRowsProcessed + 1;
 #endregion
 #region Epilog

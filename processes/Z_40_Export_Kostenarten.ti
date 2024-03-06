@@ -14,11 +14,11 @@ ELSE;
   vParent=''''|ELPAR('Kostenarten', vKostenart,1)|'''';
 ENDIF;
 
-#Bezeichnung (Alias) der Kostenart ermitteln
-IF (ATTRS('Kostenarten', vKostenart, 'Bezeichnung')@='');
+#Caption (Alias) der Kostenart ermitteln
+IF (ATTRS('Kostenarten', vKostenart, 'Caption')@='');
   vAlias='NULL';
 ELSE;
-  vAlias=''''|ATTRS('Kostenarten', vKostenart, 'Bezeichnung' )|''''; 
+  vAlias=''''|ATTRS('Kostenarten', vKostenart, 'Caption' )|''''; 
 ENDIF;
 
 vChild=''''|vKostenart|'''';

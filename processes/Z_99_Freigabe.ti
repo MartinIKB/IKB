@@ -1,0 +1,32 @@
+#region Prolog
+s_View_target = 'KST_View_Test';
+s_Subset_target = s_View_target |'_Subset' ;
+sCube = 'KST';
+
+# Create target
+ViewCreate (sCube, s_View_target, 1);
+
+
+# Subsets erstellen
+SubsetCreatebyMDX(s_Subset_target, '{FILTER( {TM1SUBSETALL( [Zeit] )}, Instr([Zeit].[Flag_Freigegeben], "Freigegeben") > 0 )}', 1 );
+SubsetCreatebyMDX('s_Freigabe', '{[Freigabe].[Freigabe].[Freigabe]}', 1 );
+
+
+ViewSubsetAssign (sCube, s_View_target, 'Zeit', s_Subset_target);
+ViewSubsetAssign (sCube, s_View_target , 'Freigabe', 's_Freigabe');
+
+# Alle Daten auf des Subsets löschen
+ViewZeroOut (sCube, s_View_target);
+
+#endregion
+#region Metadata
+# Daten neu schreiben auf Freigabe
+IF (CellIsUpdateable (sCube, vKostenstellen, vKostenarten, 'Freigabe', vSichtweise, vVersion, vZeit)=1);
+    IF( VALUE_IS_STRING = 1 );
+        CellPutS(SValue, sCube, vKostenstellen, vKostenarten, 'Freigabe', vSichtweise, vVersion, vZeit);
+    ELSE; 
+        CellPutN(NValue, sCube, vKostenstellen, vKostenarten, 'Freigabe', vSichtweise, vVersion, vZeit);  
+    ENDIF;
+endif;
+
+#endregion

@@ -1,0 +1,6 @@
+{
+	"@type":"Subset",
+	"Name":"Subset_aktueller_Monat",
+	"Alias":"Caption",
+	"Expression":"{{FILTER(TM1SubsetAll([Zeit].[Zeit]), ([Zeit].[Zeit].CURRENTMEMBER.PROPERTIES(\"Flag_Aktueller_Monat\") = \"Kalkulation\"))}}"
+}

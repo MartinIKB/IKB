@@ -1804,26 +1804,6 @@
 			"Type":"Consolidated"
 		},
 		{
-			"Name":"P_010032",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_010033",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_010034",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_010070",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_012050",
-			"Type":"Numeric"
-		},
-		{
 			"Name":"P_015000",
 			"Type":"Numeric"
 		},
@@ -1832,47 +1812,7 @@
 			"Type":"Numeric"
 		},
 		{
-			"Name":"P_032007",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032011",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032015",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032023",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032026",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032027",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032028",
-			"Type":"Numeric"
-		},
-		{
 			"Name":"P_032039",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032079",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032082",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032140",
 			"Type":"Numeric"
 		},
 		{
@@ -1884,23 +1824,7 @@
 			"Type":"Numeric"
 		},
 		{
-			"Name":"P_032143",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032144",
-			"Type":"Numeric"
-		},
-		{
 			"Name":"P_032151",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_040038",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_040471",
 			"Type":"Numeric"
 		},
 		{
@@ -1928,10 +1852,6 @@
 			"Type":"Numeric"
 		},
 		{
-			"Name":"P_080011",
-			"Type":"Numeric"
-		},
-		{
 			"Name":"P_080013",
 			"Type":"Numeric"
 		},
@@ -1944,135 +1864,11 @@
 			"Type":"Numeric"
 		},
 		{
-			"Name":"P_099007",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099008",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099011",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099101",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099102",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099103",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099104",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099105",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099106",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099107",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099108",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099109",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099110",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099116",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099150",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099151",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099160",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_099161",
-			"Type":"Numeric"
-		},
-		{
 			"Name":"P_099170",
 			"Type":"Numeric"
 		},
 		{
 			"Name":"P_099171",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_CAM",
-			"Type":"Consolidated"
-		},
-		{
-			"Name":"P_032060",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032061",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_Grundstücksgesellschaften",
-			"Type":"Consolidated"
-		},
-		{
-			"Name":"P_014001",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_014002",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032010",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032031",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032032",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032033",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032034",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032134",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_040323",
 			"Type":"Numeric"
 		},
 		{
@@ -2109,98 +1905,6 @@
 		},
 		{
 			"Name":"P_032021",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_MOBILIEN_LEASING",
-			"Type":"Consolidated"
-		},
-		{
-			"Name":"P_020001",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020003",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020004",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020006",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020100",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020110",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020111",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020200",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020201",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020300",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020310",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020400",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020401",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020500",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020600",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020700",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020801",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020910",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_020999",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032045",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032084",
-			"Type":"Numeric"
-		},
-		{
-			"Name":"P_032085",
 			"Type":"Numeric"
 		},
 		{
@@ -2465,6 +2169,14 @@
 		},
 		{
 			"Name":"Personalaufwand_Cognos",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_804783",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_804782",
 			"Type":"Numeric"
 		}
 	],
@@ -4466,6 +4178,16 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"P_881060GR",
+			"ComponentName":"P_804782",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_881060GR",
+			"ComponentName":"P_804783",
+			"Weight":1
+		},
+		{
 			"ParentName":"P_880061K",
 			"ComponentName":"P_881060GR",
 			"Weight":1
@@ -4722,31 +4444,6 @@
 		},
 		{
 			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_010032",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_010033",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_010034",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_010070",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_012050",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
 			"ComponentName":"P_015000",
 			"Weight":1
 		},
@@ -4757,57 +4454,7 @@
 		},
 		{
 			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032007",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032011",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032015",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032023",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032026",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032027",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032028",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
 			"ComponentName":"P_032039",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032079",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032082",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032140",
 			"Weight":1
 		},
 		{
@@ -4822,27 +4469,7 @@
 		},
 		{
 			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032143",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_032144",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
 			"ComponentName":"P_032151",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_040038",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_040471",
 			"Weight":1
 		},
 		{
@@ -4877,11 +4504,6 @@
 		},
 		{
 			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_080011",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
 			"ComponentName":"P_080013",
 			"Weight":1
 		},
@@ -4897,112 +4519,12 @@
 		},
 		{
 			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099007",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099008",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099011",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099101",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099102",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099103",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099104",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099105",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099106",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099107",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099108",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099109",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099110",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099116",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099150",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099151",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099160",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_099161",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
 			"ComponentName":"P_099170",
 			"Weight":1
 		},
 		{
 			"ParentName":"Summe_Konzern_IKB",
 			"ComponentName":"P_099171",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_CAM",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_Grundstücksgesellschaften",
 			"Weight":1
 		},
 		{
@@ -5017,72 +4539,12 @@
 		},
 		{
 			"ParentName":"Summe_Konzern_IKB",
-			"ComponentName":"P_MOBILIEN_LEASING",
-			"Weight":1
-		},
-		{
-			"ParentName":"Summe_Konzern_IKB",
 			"ComponentName":"P_PartnerFonds-Gesellschaften",
 			"Weight":1
 		},
 		{
 			"ParentName":"Summe_Konzern_IKB",
 			"ComponentName":"P_PE",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_CAM",
-			"ComponentName":"P_032060",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_CAM",
-			"ComponentName":"P_032061",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_014001",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_014002",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_032010",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_032031",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_032032",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_032033",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_032034",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_032134",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_Grundstücksgesellschaften",
-			"ComponentName":"P_040323",
 			"Weight":1
 		},
 		{
@@ -5118,116 +4580,6 @@
 		{
 			"ParentName":"P_IMAS",
 			"ComponentName":"P_032021",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020001",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020003",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020004",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020006",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020100",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020110",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020111",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020200",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020201",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020300",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020310",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020400",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020401",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020500",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020600",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020700",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020801",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020910",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_020999",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_032045",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_032084",
-			"Weight":1
-		},
-		{
-			"ParentName":"P_MOBILIEN_LEASING",
-			"ComponentName":"P_032085",
 			"Weight":1
 		},
 		{

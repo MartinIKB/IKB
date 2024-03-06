@@ -5,7 +5,7 @@
 	[
 		{
 			"Name":"Freigabe",
-			"Type":"Consolidated"
+			"Type":"Numeric"
 		},
 		{
 			"Name":"Test",
@@ -14,19 +14,6 @@
 		{
 			"Name":"Entwicklung",
 			"Type":"Numeric"
-		}
-	],
-	"Edges":
-	[
-		{
-			"ParentName":"Freigabe",
-			"ComponentName":"Test",
-			"Weight":1
-		},
-		{
-			"ParentName":"Freigabe",
-			"ComponentName":"Entwicklung",
-			"Weight":1
 		}
 	],
 	"Subsets@Code.links":[]

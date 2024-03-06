@@ -478,5 +478,8 @@
 			"Weight":1
 		}
 	],
-	"Subsets@Code.links":[]
+	"Subsets@Code.links":
+	[
+		"Zeit.subsets/Subset_aktueller_Monat.json"
+	]
 }

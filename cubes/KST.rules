@@ -14,8 +14,6 @@ SKIPCHECK;
 #Ressorts berechnen
 ['Ressort_Wiedmann_AG']=['P_880010GR']+['P_880020GR']+['P_880030GR']+['P_880040GR']+['P_880050GR']+['P_880060GR'];
 ['Ressort_Trutwein']=['P_370000GR']+['P_380000GR']+['P_410000GR'];
-['Ressort_Müller']=['P_400000GR']+['P_350000GR']+['P_430000GR'];
-['Ressort_Momburg_AG']=['P_880011GR']+['P_880016GR']+['P_881800GR']+['P_880019GR']+['P_430490GR'];
 
 
 #Berechnete Positionen Kostenarten
@@ -88,14 +86,27 @@ SKIPCHECK;
 ['kumuliert', 'Okt_24']=['Sep_24','kumuliert']+['Okt_24','monatlich'];
 ['kumuliert', 'Nov_24']=['Okt_24','kumuliert']+['Nov_24','monatlich'];
 ['kumuliert', 'Dez_24']=['Nov_24','kumuliert']+['Dez_24','monatlich'];
-['kumuliert', 'Adj_23']=['Dez_24','kumuliert']+['Adj_24','monatlich'];
+['kumuliert', 'Adj_24']=['Dez_24','kumuliert']+['Adj_24','monatlich'];
 ['kumuliert', 'GJ_2024']=['Adj_24','kumuliert'];
 ['monatlich', 'GJ_2024']=0;
 
 # Kumulierte Werte auf das obere Dimensionselement Sichtweise schreiben
 ['Sichtweise'] = ['kumuliert'];
 
-# Die Ergebnisse von Entwicklung auf Test kopieren
-['Test'] = ['Entwicklung'];
+# Oberen Knotenpunkt in der Dimesion Kostenstellen füllen
 ['Kostenstellen'] = ['K0020_HIER'];
 
+['Ist_TEUR']=['Ist_EUR'] / 1000;
+
+FEEDERS;
+['monatlich']=>['kumuliert'];
+['monatlich']=>['Sichtweise'];
+
+['Ist_EUR']=>['Ist_TEUR'];
+
+['Infrastrukturkosten']=>['Infrastrukturkosten_in_Proz_der_SK'];
+['Personalabhängige_Sachkosten']=>['Personalabh_SK_in_Proz_der_SK'];
+['1PGUVKALK']=>['Personalaufwand_in_Proz_der_VWK'];
+['2S.GV2']=>['SK_in_Proz_der_VWK'];
+['Strategische_Sachkosten']=>['Strategische_SK_in_Proz_der_SK'];
+['Unternehmens_Aufsichtsrechtl_Sachkosten']=>['Unt_Aufsichtsrechtl_SK_in_Proz_der_SK'];

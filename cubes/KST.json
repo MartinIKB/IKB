@@ -27,5 +27,9 @@
 	{
 		"@id":"Dimensions('Version')"
 	},
-	"Views@Code.links":[]
+	"Views@Code.links":
+	[
+		"KST.views/V_KST_Entwicklung.json",
+		"KST.views/View_KST_Test.json"
+	]
 }

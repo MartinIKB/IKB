@@ -178,6 +178,20 @@
 		},
 		{
 			"Step":12,
+			"Parameters":
+			[
+				{
+					"Name":"pResult",
+					"Value":"DTL_KST_ZEIT.blb"
+				}
+			],
+			"Process":
+			{
+				"@id":"Processes('D_60_Zeit')"
+			}
+		},
+		{
+			"Step":13,
 			"Parameters":[],
 			"Process":
 			{
@@ -185,7 +199,7 @@
 			}
 		},
 		{
-			"Step":13,
+			"Step":14,
 			"Parameters":[],
 			"Process":
 			{

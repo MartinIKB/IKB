@@ -10,7 +10,8 @@ SetInputCharacterSet('TM1CS_ISO_8859_1');
 #endregion
 #region Data
 NumRowsRead = NumRowsRead + 1;
-CellPutN(vWert, dCube, vKostenstelle, vKostenart, vFreigabe, vSichtweise, vVersion, vMonatsscheibe);
+CellPutN(vWert, dCube, vKostenstelle, vKostenart, 'Entwicklung', vSichtweise, vVersion, vMonatsscheibe);
+CellPutN(vWert, dCube, vKostenstelle, vKostenart, 'Test', vSichtweise, vVersion, vMonatsscheibe);
 NumRowsProcessed = NumRowsProcessed + 1;
 #endregion
 #region Epilog

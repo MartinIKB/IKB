@@ -1,0 +1,30 @@
+{
+	"@type":"MDXView",
+	"Name":"V_KST_Entwicklung",
+	"MDX@Code.link":"V_KST_Entwicklung.mdx",
+	"Meta" : 
+	{
+		"Aliases" : 
+		{
+			"[Kostenarten].[Kostenarten]" : "Caption",
+			"[Kostenstellen].[Kostenstellen]" : "Caption",
+			"[Zeit].[Zeit]" : "Caption"
+		},
+		"ContextSets" : 
+		{
+			"[Sichtweise].[Sichtweise]" : 
+			{
+				"Expression" : "{[Sichtweise].[Sichtweise].[monatlich]}"
+			}
+		},
+		"ExpandAboves" : 
+		{
+			"[Freigabe].[Freigabe]" : false,
+			"[Kostenarten].[Kostenarten]" : false,
+			"[Kostenstellen].[Kostenstellen]" : false,
+			"[Sichtweise].[Sichtweise]" : false,
+			"[Version].[Version]" : false,
+			"[Zeit].[Zeit]" : false
+		}
+	}
+}

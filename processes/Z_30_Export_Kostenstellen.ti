@@ -14,11 +14,11 @@ ELSE;
   vParent=''''|ELPAR('Kostenstellen', vKostenstelle,1)|'''';
 ENDIF;
 
-#Bezeichnung (Alias) der Kostenstelle ermitteln
-IF (ATTRS('Kostenstellen', vKostenstelle, 'Bezeichnung')@='');
+#Caption (Alias) der Kostenstelle ermitteln
+IF (ATTRS('Kostenstellen', vKostenstelle, 'Caption')@='');
   vAlias='NULL';
 ELSE;
-  vAlias=''''|ATTRS('Kostenstellen', vKostenstelle, 'Bezeichnung' )|''''; 
+  vAlias=''''|ATTRS('Kostenstellen', vKostenstelle, 'Caption' )|''''; 
 ENDIF;
 
 vChild=''''|vKostenstelle|'''';

@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"Z_90_Berechnungen",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Z_90_Berechnungen.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}
