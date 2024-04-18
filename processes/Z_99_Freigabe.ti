@@ -21,6 +21,7 @@ ViewZeroOut (sCube, s_View_target);
 #endregion
 #region Metadata
 # Daten neu schreiben auf Freigabe
+
 IF (CellIsUpdateable (sCube, vKostenstellen, vKostenarten, 'Freigabe', vSichtweise, vVersion, vZeit)=1);
     IF( VALUE_IS_STRING = 1 );
         CellPutS(SValue, sCube, vKostenstellen, vKostenarten, 'Freigabe', vSichtweise, vVersion, vZeit);

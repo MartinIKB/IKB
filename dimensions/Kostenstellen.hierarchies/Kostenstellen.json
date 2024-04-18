@@ -2178,6 +2178,50 @@
 		{
 			"Name":"P_804782",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"P_420000GR",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"P_422090GR",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"P_ 422090",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_422190GR",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"P_422190",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_422290GR",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"P_422290",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_422390GR",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"P_422390",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_290090",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_382790",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -3210,6 +3254,11 @@
 		{
 			"ParentName":"P_880030GR",
 			"ComponentName":"P_410000GR",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_880030GR",
+			"ComponentName":"P_420000GR",
 			"Weight":1
 		},
 		{
@@ -4894,7 +4943,57 @@
 		},
 		{
 			"ParentName":"Neue_Kostenstellen",
+			"ComponentName":"P_290090",
+			"Weight":1
+		},
+		{
+			"ParentName":"Neue_Kostenstellen",
+			"ComponentName":"P_382790",
+			"Weight":1
+		},
+		{
+			"ParentName":"Neue_Kostenstellen",
 			"ComponentName":"P_CSV_Import_Test1",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_420000GR",
+			"ComponentName":"P_422090GR",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_420000GR",
+			"ComponentName":"P_422190GR",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_420000GR",
+			"ComponentName":"P_422290GR",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_420000GR",
+			"ComponentName":"P_422390GR",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_422090GR",
+			"ComponentName":"P_ 422090",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_422190GR",
+			"ComponentName":"P_422190",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_422290GR",
+			"ComponentName":"P_422290",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_422390GR",
+			"ComponentName":"P_422390",
 			"Weight":1
 		}
 	],
