@@ -18,6 +18,7 @@ DimensionElementComponentAddDirect ('Vertrieb' ,vVVS ,  vKD_NR, 1);
 #region Data
 AttrPuts (vAlias , 'Vertrieb' , vKD_NR , 'Caption');
 AttrPutS( vUDA, 'Vertrieb', vKD_NR, 'Typ' ); 
+AttrPutS( vKD_NR, 'Vertrieb', vKD_NR, 'KD_NR' ); 
 #endregion
 #region Epilog
 

@@ -14,6 +14,18 @@
 		{
 			"Name":"Feb_24",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"Mrz_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Apr_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mai_24",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -26,6 +38,21 @@
 		{
 			"ParentName":"Zeit",
 			"ComponentName":"Feb_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Mrz_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Apr_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Mai_24",
 			"Weight":0
 		}
 	],

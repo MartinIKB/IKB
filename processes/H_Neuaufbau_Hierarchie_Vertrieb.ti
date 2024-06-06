@@ -12,7 +12,9 @@ DimensionDeleteAllElements ('Vertrieb');
 
 DimensionElementInsert ('Vertrieb','','Vertrieb','C');
 
-AttrInsert ('Vertrieb' , '' , 'Bezeichnung' , 'A');
+AttrInsert ('Vertrieb' , '' , 'Caption' , 'A');
+AttrInsert ('Vertrieb' , '' , 'Typ' , 'S');
+AttrInsert ('Vertrieb' , '' , 'KD_NR' , 'S');
 
 #endregion
 #region Metadata

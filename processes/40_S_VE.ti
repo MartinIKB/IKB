@@ -14,4 +14,6 @@ DimensionElementComponentAddDirect ('Vertrieb' , vVS ,  vVE, 1);
 
 
 AttrPutS( vUDA, 'Vertrieb', vVE, 'Typ' );
+
+
 #endregion

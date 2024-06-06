@@ -61,13 +61,6 @@ if(!Kennzahlen@='Zinsueberschuss_Eigenmittel',
 ,
 if(!Kennzahlen@='Zinsueberschuss_Foerdermittel',
    (['Ist_EUR']/['durch_Volumen_Foerdermittel','Ist_EUR'])/  DB('ZZ_Monatsfaktor',!Zeit,'Monatsfaktor'),0)));
-   
-
-###### Übernahme der Stringwerte ########
-['Ist_TEUR']=S:DB('BER_23',!Vertrieb,!Produkte,!Zeit,'Ist_EUR',!Freigabe,!Kennzahlen);
-['Ist_Marge']=S:DB('BER_23',!Vertrieb,!Produkte,!Zeit,'Ist_EUR',!Freigabe,!Kennzahlen);
-['Version']=S:DB('BER_23',!Vertrieb,!Produkte,!Zeit,'Ist_EUR',!Freigabe,!Kennzahlen);
-
 
 
 ###### Ist_TEUR  ##########
@@ -78,12 +71,30 @@ if(!Kennzahlen@='Zinsueberschuss_Foerdermittel',
 ,['Ist_EUR']/1000);
 
 
-######## Ermittlung KEZ_RELEVANT ##########
-['KEZ_RELEVANT']= if (ABS(['Deckungsbeitrag_III'])+ABS(['Risikovorsorge_Kreditgeschaeft'])
-                     +ABS(['verdiente_Risikokosten'])+ABS(['EK_Kosten_KUKA'])+ABS(['durchschn_Volumen_zinstragendes_Geschaeft_(Mio._EUR)'])
-                     +ABS(['Stichtagskreditvolumen_per_dato'])+ABS(['Stichtagskreditvolumen_per_GJ_Anfang'])
-                     +ABS(['Neugeschaeft'])+ABS(['Durchschn_Risikoaktiva_per_dato'])<>0,1,0);
+######## Ermittlung der Hilfs_KEZ ##########
+['KEZ_RELEVANT']= if (ABS(['Deckungsbeitrag_III','Ist_EUR'])+ABS(['Risikovorsorge_Kreditgeschaeft','Ist_EUR'])
+                     +ABS(['verdiente_Risikokosten','Ist_EUR'])+ABS(['EK_Kosten_KUKA','Ist_EUR'])+ABS(['durchschn_Volumen_zinstragendes_Geschaeft_(Mio._EUR)','Ist_EUR'])
+                     +ABS(['Stichtagskreditvolumen_per_dato','Ist_EUR'])+ABS(['Stichtagskreditvolumen_per_GJ_Anfang','Ist_EUR'])
+                     +ABS(['Neugeschaeft','Ist_EUR'])+ABS(['Durchschn_Risikoaktiva_per_dato','Ist_EUR'])<>0
+                     ,1
+                     ,0);
                      
+['KEZ_LEER']= if (ABS(['Deckungsbeitrag_III','Ist_EUR'])+ABS(['Risikovorsorge_Kreditgeschaeft','Ist_EUR'])
+                 +ABS(['verdiente_Risikokosten','Ist_EUR'])+ABS(['EK_Kosten_KUKA','Ist_EUR'])+ABS(['durchschn_Volumen_zinstragendes_Geschaeft_(Mio._EUR)','Ist_EUR'])
+                 +ABS(['Stichtagskreditvolumen_per_dato','Ist_EUR'])+ABS(['Stichtagskreditvolumen_per_GJ_Anfang','Ist_EUR'])
+                 +ABS(['Neugeschaeft','Ist_EUR'])+ABS(['Durchschn_Risikoaktiva_per_dato','Ist_EUR'])<>0
+                 %
+                 ABS(['Deckungsbeitrag_III','Ist_Marge'])+ABS(['Risikovorsorge_Kreditgeschaeft','Ist_Marge'])
+                 +ABS(['verdiente_Risikokosten','Ist_Marge'])+ABS(['EK_Kosten_KUKA','Ist_Marge'])+ABS(['durchschn_Volumen_zinstragendes_Geschaeft_(Mio._EUR)','Ist_Marge'])
+                 +ABS(['Stichtagskreditvolumen_per_dato','Ist_Marge'])+ABS(['Stichtagskreditvolumen_per_GJ_Anfang','Ist_Marge'])
+                 +ABS(['Neugeschaeft','Ist_Marge'])+ABS(['Durchschn_Risikoaktiva_per_dato','Ist_Marge'])<>0
+                 ,1
+                 ,0);
+                     
+['KEZ_LEER_PRV']=if (ABS(['Provisionsueberschuss_SONST_ZUE','Ist_EUR'])+ABS(['Provisionsueberschuss_SONST_ZUE','Ist_Marge'])<>0
+                 ,1
+                 ,0);
+
                      
 ####### Umwandlung Produktzugehörigkeit in Text #############                     
 ['PRODUKTZUGEHOERIGKEIT_TEXT']=s:if (['Produktzugehörigkeit']=1,'Corporate_Foerdermittel',
@@ -98,6 +109,21 @@ if(!Kennzahlen@='Zinsueberschuss_Foerdermittel',
          % ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Kunde')
           & ['KEZ_RELEVANT']=1
         ,ATTRS( 'Vertrieb', !Vertrieb, 'VVS' ),STET);
+
+['KD_NR']=s:IF( ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Kunde'
+           ,ATTRS( 'Vertrieb', !Vertrieb, 'KD_NR')
+           ,IF (ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Vertragsstamm'
+           ,ATTRS( 'Vertrieb', ELPAR('Vertrieb',!Vertrieb,1), 'KD_NR')
+           ,if(SUBST(!Vertrieb,1,2)@='V_'
+           ,ATTRS( 'Vertrieb', ELPAR('Vertrieb',ELPAR('Vertrieb',!Vertrieb,1),1), 'KD_NR')
+           ,STET)));
+
+
+
+###### Übernahme der Stringwerte ########
+['Ist_TEUR']=S:DB('BER_23',!Vertrieb,!Produkte,!Zeit,'Ist_EUR',!Freigabe,!Kennzahlen);
+['Ist_Marge']=S:DB('BER_23',!Vertrieb,!Produkte,!Zeit,'Ist_EUR',!Freigabe,!Kennzahlen);
+['Version']=S:DB('BER_23',!Vertrieb,!Produkte,!Zeit,'Ist_EUR',!Freigabe,!Kennzahlen);
 
 
 ####### Berechnung ÜBER-/Unterdeckung
@@ -176,12 +202,28 @@ FEEDERS;
                                           ,['Deckungsbeitrag_III_mit_aktuellen_Fundingkosten_nach_RV'];
 ['Deckungsbeitrag_II']=>['Deckungsbeitrag_II_mit_aktuellen_Fundingkosten']
                        ,['Deckungsbeitrag_II_Risikovorsorge'];
+                       
+                       
+#####  Feeding der Hilfs-KEZ  #####
+['Deckungsbeitrag_III']=>['KEZ_LEER'];
+['verdiente_Risikokosten']=>['KEZ_LEER'];
+['EK_Kosten_KUKA']=>['KEZ_LEER'];
+['durchschn_Volumen_zinstragendes_Geschaeft_(Mio._EUR)']=>['KEZ_LEER'];
+['Stichtagskreditvolumen_per_dato']=>['KEZ_LEER'];
+['Stichtagskreditvolumen_per_GJ_Anfang']=>['KEZ_LEER'];
+['Neugeschaeft']=>['KEZ_LEER'];
+['Durchschn_Risikoaktiva_per_dato']=>['KEZ_LEER'];
 
+['Deckungsbeitrag_III']=>['KEZ_RELEVANT'];
+['verdiente_Risikokosten']=>['KEZ_RELEVANT'];
+['EK_Kosten_KUKA']=>['KEZ_RELEVANT'];
+['durchschn_Volumen_zinstragendes_Geschaeft_(Mio._EUR)']=>['KEZ_RELEVANT'];
+['Stichtagskreditvolumen_per_dato']=>['KEZ_RELEVANT'];
+['Stichtagskreditvolumen_per_GJ_Anfang']=>['KEZ_RELEVANT'];
+['Neugeschaeft']=>['KEZ_RELEVANT'];
+['Durchschn_Risikoaktiva_per_dato']=>['KEZ_RELEVANT'];
 
-
-
-
-
+['Provisionsueberschuss_SONST_ZUE']=>['KEZ_LEER_PRV'];
 
 
 
