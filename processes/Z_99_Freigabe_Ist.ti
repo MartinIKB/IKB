@@ -1,5 +1,5 @@
 #region Prolog
-s_View_target = 'KST_View_Test';
+s_View_target = 'KST_View_Test_Ist';
 s_Subset_target = s_View_target |'_Subset' ;
 sCube = 'KST';
 
@@ -9,11 +9,14 @@ ViewCreate (sCube, s_View_target, 1);
 
 # Subsets erstellen
 SubsetCreatebyMDX(s_Subset_target, '{FILTER( {TM1SUBSETALL( [Zeit] )}, Instr([Zeit].[Flag_Freigegeben], "Freigegeben") > 0 )}', 1 );
+SubsetCreatebyMDX('s_Version', '{[Version].[Version].[Ist_EUR]}');
+
 SubsetCreatebyMDX('s_Freigabe', '{[Freigabe].[Freigabe].[Freigabe]}', 1 );
 
 
 ViewSubsetAssign (sCube, s_View_target, 'Zeit', s_Subset_target);
 ViewSubsetAssign (sCube, s_View_target , 'Freigabe', 's_Freigabe');
+ViewSubsetAssign (sCube, s_View_target , 'Version', 's_Version');
 
 # Alle Daten auf des Subsets löschen
 ViewZeroOut (sCube, s_View_target);

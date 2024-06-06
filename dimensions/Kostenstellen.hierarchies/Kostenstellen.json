@@ -2222,6 +2222,30 @@
 		{
 			"Name":"P_382790",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"P_29092",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_804784",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_804785",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_382790GR",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"P_804786",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_330190",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -3057,6 +3081,11 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"P_380000GR",
+			"ComponentName":"P_382790GR",
+			"Weight":1
+		},
+		{
 			"ParentName":"P_382190GR",
 			"ComponentName":"P_382190",
 			"Weight":1
@@ -3738,6 +3767,11 @@
 		},
 		{
 			"ParentName":"P_880042GR",
+			"ComponentName":"P_29092",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_880042GR",
 			"ComponentName":"P_CLOS",
 			"Weight":1
 		},
@@ -4234,6 +4268,21 @@
 		{
 			"ParentName":"P_881060GR",
 			"ComponentName":"P_804783",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_881060GR",
+			"ComponentName":"P_804784",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_881060GR",
+			"ComponentName":"P_804785",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_881060GR",
+			"ComponentName":"P_804786",
 			"Weight":1
 		},
 		{
@@ -4953,6 +5002,16 @@
 		},
 		{
 			"ParentName":"Neue_Kostenstellen",
+			"ComponentName":"P_29092",
+			"Weight":1
+		},
+		{
+			"ParentName":"Neue_Kostenstellen",
+			"ComponentName":"P_330190",
+			"Weight":1
+		},
+		{
+			"ParentName":"Neue_Kostenstellen",
 			"ComponentName":"P_CSV_Import_Test1",
 			"Weight":1
 		},
@@ -4994,6 +5053,11 @@
 		{
 			"ParentName":"P_422390GR",
 			"ComponentName":"P_422390",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_382790GR",
+			"ComponentName":"P_382790",
 			"Weight":1
 		}
 	],

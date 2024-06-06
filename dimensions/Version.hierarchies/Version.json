@@ -90,6 +90,14 @@
 		{
 			"Name":"vj_EUR_GJ",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"Plan_TEUR",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Abweichungsgrößen",
+			"Type":"Consolidated"
 		}
 	],
 	"Edges":
@@ -101,7 +109,17 @@
 		},
 		{
 			"ParentName":"Version",
+			"ComponentName":"Ist_TEUR",
+			"Weight":0
+		},
+		{
+			"ParentName":"Version",
 			"ComponentName":"Plan_EUR",
+			"Weight":0
+		},
+		{
+			"ParentName":"Version",
+			"ComponentName":"Plan_TEUR",
 			"Weight":0
 		},
 		{
@@ -111,42 +129,7 @@
 		},
 		{
 			"ParentName":"Version",
-			"ComponentName":"Ist_TEUR",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"Abweichung_Ist-Plan_in_EUR",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"Abweichung_Plan-Ist_in_EUR",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"Abweichung_Ist-Plan_in_%",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"Abweichung_Plan-Ist_in_%",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
 			"ComponentName":"Plan_EUR_GJ",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"ABW_Ist_Plan_ABSOLUT_EUR_GJ",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"Auslastung_Ist_Plan_Marge_GJ",
 			"Weight":0
 		},
 		{
@@ -161,44 +144,82 @@
 		},
 		{
 			"ParentName":"Version",
-			"ComponentName":"abweichung_plan_ist_in_EUR_GJ",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"abweichung_ist_plan_in_EUR_GJ",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"auslastung_in_prozent_GJ",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"auslastung_vj_in_prozent_GJ",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
-			"ComponentName":"abweichung_vj_ist_in_EUR_GJ",
-			"Weight":0
-		},
-		{
-			"ParentName":"Version",
 			"ComponentName":"vj_EUR_GJ",
 			"Weight":0
 		},
 		{
 			"ParentName":"Version",
+			"ComponentName":"Abweichungsgrößen",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"Abweichung_Ist-Plan_in_EUR",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"Abweichung_Plan-Ist_in_EUR",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"Abweichung_Ist-Plan_in_%",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"Abweichung_Plan-Ist_in_%",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"ABW_Ist_Plan_ABSOLUT_EUR_GJ",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"Auslastung_Ist_Plan_Marge_GJ",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"abweichung_plan_ist_in_EUR_GJ",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"abweichung_ist_plan_in_EUR_GJ",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"auslastung_in_prozent_GJ",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"auslastung_vj_in_prozent_GJ",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
+			"ComponentName":"abweichung_vj_ist_in_EUR_GJ",
+			"Weight":0
+		},
+		{
+			"ParentName":"Abweichungsgrößen",
 			"ComponentName":"Abweichung_VJ-Ist_in_EUR",
 			"Weight":0
 		},
 		{
-			"ParentName":"Version",
+			"ParentName":"Abweichungsgrößen",
 			"ComponentName":"Abweichung_VJ-Ist_in_%",
 			"Weight":0
 		}
 	],
-	"Subsets@Code.links":[]
+	"Subsets@Code.links":
+	[
+		"Version.subsets/s_Version.json"
+	]
 }

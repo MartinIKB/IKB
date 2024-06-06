@@ -16,6 +16,17 @@ SKIPCHECK;
 ['Ressort_Trutwein']=['P_370000GR']+['P_380000GR']+['P_410000GR'];
 
 
+#Berechnung Version
+['Abweichung_Ist-Plan_in_EUR']=['Ist_EUR']-['Plan_EUR'];
+['Abweichung_Ist-Plan_in_%']=['Abweichung_Ist-Plan_in_EUR']/['Plan_EUR']*100;
+
+['Plan_EUR_GJ']=DB( 'KST', !Kostenstellen, !Kostenarten, !Freigabe, !Sichtweise, 'Plan_EUR', ElementParent('Zeit','Zeit', !Zeit, 1 ) );
+['abweichung_plan_ist_in_EUR_GJ']=['Ist_EUR']-['Plan_EUR_GJ'];
+
+['abweichung_ist_plan_in_EUR_GJ']=['Ist_EUR']-['Plan_EUR_GJ'];
+['auslastung_in_prozent_GJ']=['Ist_EUR']/['Plan_EUR_GJ']*100;
+
+
 #Berechnete Positionen Kostenarten
 ['Berater_Gutachter_Kosten_ohne_Rating']=['21108BG.GUV']-['KTO_3440500014'];
 ['Infoaufwand_ohne_kalk_Verrechnung']=['206INF.GV2']-['KTO_252']-['KTO_2520'];
@@ -37,6 +48,9 @@ SKIPCHECK;
 ['Unt_Aufsichtsrechtl_SK_in_Proz_der_SK']=['Unternehmens_Aufsichtsrechtl_Sachkosten']/['2S.GV2'];
 
 
+
+
+
 #GJ 2023
 ['kumuliert', 'Jan_23']=['Jan_23','monatlich'];
 ['kumuliert', 'Feb_23']=['Jan_23','monatlich']+['Feb_23','monatlich'];
@@ -53,7 +67,6 @@ SKIPCHECK;
 ['kumuliert', 'Adj_23']=['Dez_23','kumuliert']+['Adj_23','monatlich'];
 ['kumuliert', 'GJ_2023']=['Adj_23','kumuliert'];
 ['monatlich', 'GJ_2023']=0;
-
 
 #GJ 2024
 ['kumuliert', 'Jan_24']=['Jan_24','monatlich'];
@@ -72,7 +85,6 @@ SKIPCHECK;
 ['kumuliert', 'GJ_2024']=['Adj_24','kumuliert'];
 ['monatlich', 'GJ_2024']=0;
 
-
 #GJ 2025
 ['kumuliert', 'Jan_25']=['Jan_25','monatlich'];
 ['kumuliert', 'Feb_25']=['Jan_25','monatlich']+['Feb_25','monatlich'];
@@ -90,6 +102,7 @@ SKIPCHECK;
 ['kumuliert', 'GJ_2025']=['Adj_25','kumuliert'];
 ['monatlich', 'GJ_2025']=0;
 
+
 # Kumulierte Werte auf das obere Dimensionselement Sichtweise schreiben
 ['Sichtweise'] = ['kumuliert'];
 
@@ -97,12 +110,15 @@ SKIPCHECK;
 ['Kostenstellen'] = ['K0020_HIER'];
 
 ['Ist_TEUR']=['Ist_EUR'] / 1000;
+['Plan_TEUR']=['Plan_EUR'] / 1000;
+
 
 FEEDERS;
 ['monatlich']=>['kumuliert'];
 ['monatlich']=>['Sichtweise'];
 
 ['Ist_EUR']=>['Ist_TEUR'];
+['Plan_EUR']=>['Plan_EUR_GJ'];
 
 ['Infrastrukturkosten']=>['Infrastrukturkosten_in_Proz_der_SK'];
 ['Personalabhängige_Sachkosten']=>['Personalabh_SK_in_Proz_der_SK'];

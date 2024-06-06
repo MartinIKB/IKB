@@ -1,8 +1,8 @@
 {
 	"@type":"Process",
-	"Name":"Z_99_Freigabe",
+	"Name":"Z_99_Freigabe_Ist",
 	"HasSecurityAccess":false,
-	"Code@Code.link":"Z_99_Freigabe.ti",
+	"Code@Code.link":"Z_99_Freigabe_Ist.ti",
 	"UIData":"_ParameterConstraints=e30=€",
 	"VariablesUIData":
 	[
@@ -19,7 +19,7 @@
 		"Type":"TM1CubeView",
 		"dataSourceNameForClient":"KST",
 		"dataSourceNameForServer":"KST",
-		"view":"View_KST_Test"
+		"view":"View_KST_Test_Ist"
 	},
 	"Parameters":[],
 	"Variables":

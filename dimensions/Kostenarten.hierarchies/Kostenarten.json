@@ -4301,6 +4301,11 @@
 		},
 		{
 			"ParentName":"21107ESF.GUV",
+			"ComponentName":"KTO_3440200071",
+			"Weight":1
+		},
+		{
+			"ParentName":"21107ESF.GUV",
 			"ComponentName":"21107ESF.GUV_Meldedaten",
 			"Weight":1
 		},
@@ -4671,11 +4676,6 @@
 		},
 		{
 			"ParentName":"21209BMB.GUV",
-			"ComponentName":"KTO_3440200071",
-			"Weight":1
-		},
-		{
-			"ParentName":"21209BMB.GUV",
 			"ComponentName":"21209BMB.GUV_Meldedaten",
 			"Weight":1
 		},
@@ -4957,157 +4957,157 @@
 		{
 			"ParentName":"Hilfswerte",
 			"ComponentName":"AKT_MONAT_FLAG",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Hilfswerte",
 			"ComponentName":"Monatsfaktor",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"2_Berechnete_Positionen",
 			"ComponentName":"Hilfswerte",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"2_Berechnete_Positionen",
 			"ComponentName":"Sonstige_Positionen",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"2_Berechnete_Positionen",
 			"ComponentName":"Verhältniszahlen",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"Berater_Gutachter_Kosten_ohne_Rating",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"Infoaufwand_ohne_kalk_Verrechnung",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"Infoaufwand_ohne_kalk_Verrechnung_und_ohne_Data",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"Infrastrukturkosten",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"IT-Aufwand_ohne_kalk_Verrechnung",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"IT-Aufwand_ohne_kalk_Verrechung_ohne_sonst_Aufwand",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"KTO_6100",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"Personalabhängige_Sachkosten",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"Sachkosten_ohne_Rating",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"Strategische_Sachkosten",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Positionen",
 			"ComponentName":"Unternehmens_Aufsichtsrechtl_Sachkosten",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen",
 			"ComponentName":"Infrastrukturkosten_in_Proz_der_SK",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen",
 			"ComponentName":"Personalabh_SK_in_Proz_der_SK",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen",
 			"ComponentName":"Personalaufwand_in_Proz_der_VWK",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen",
 			"ComponentName":"SK_in_Proz_der_VWK",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen",
 			"ComponentName":"Strategische_SK_in_Proz_der_SK",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen",
 			"ComponentName":"Unt_Aufsichtsrechtl_SK_in_Proz_der_SK",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen",
 			"ComponentName":"Verhältniszahlen_in_Hundert",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen_in_Hundert",
 			"ComponentName":"Infrastrukturkosten_in_Proz_der_SK_in_Hundert",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen_in_Hundert",
 			"ComponentName":"Personalabh_SK_in_Proz_der_SK_in_Hundert",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen_in_Hundert",
 			"ComponentName":"Personalaufwand_in_Proz_der_VWK_in_Hundert",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen_in_Hundert",
 			"ComponentName":"SK_in_Proz_der_VWK_in_Hundert",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen_in_Hundert",
 			"ComponentName":"Strategische_SK_in_Proz_der_SK_in_Hundert",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Verhältniszahlen_in_Hundert",
 			"ComponentName":"Unt_Aufsichtsrechtl_SK_in_Proz_der_SK_in_Hundert",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Kostenarten",
 			"ComponentName":"2_Berechnete_Positionen",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Kostenarten",
 			"ComponentName":"3_Sonstige_Informationen",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Sonstige_Kostenarten",
@@ -5142,17 +5142,17 @@
 		{
 			"ParentName":"3_Sonstige_Informationen",
 			"ComponentName":"MAV",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"3_Sonstige_Informationen",
 			"ComponentName":"DVAK",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"3_Sonstige_Informationen",
 			"ComponentName":"VAK",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"6RESTRUK",

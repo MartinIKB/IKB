@@ -29,6 +29,8 @@
 	},
 	"Views@Code.links":
 	[
-		"KST.views/View_KST_Test.json"
+		"KST.views/View_KST_Test.json",
+		"KST.views/View_KST_Test_Ist.json",
+		"KST.views/View_KST_Test_Plan.json"
 	]
 }
