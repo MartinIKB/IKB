@@ -306,6 +306,10 @@
 		{
 			"Name":"KEZ_EINZEL_PVS",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"MLZ_BASIS",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -623,6 +627,11 @@
 		{
 			"ParentName":"Zusatzdaten",
 			"ComponentName":"KDNR_KD",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zusatzdaten",
+			"ComponentName":"MLZ_BASIS",
 			"Weight":0
 		},
 		{

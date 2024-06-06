@@ -38,6 +38,18 @@
 		{
 			"Name":"Stichtag: 29.02.2024",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 31.03.2024",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 30.04.2024",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 31.05.2024",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -80,6 +92,21 @@
 		{
 			"ParentName":"GJ_2024",
 			"ComponentName":"Stichtag: 29.02.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 31.03.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 30.04.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 31.05.2024",
 			"Weight":0
 		}
 	],

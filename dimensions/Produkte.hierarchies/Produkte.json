@@ -997,7 +997,7 @@
 		},
 		{
 			"Name":"P_NA",
-			"Type":"Numeric"
+			"Type":"Consolidated"
 		},
 		{
 			"Name":"P_PVS_NA",
@@ -1065,6 +1065,14 @@
 		},
 		{
 			"Name":"P_NVR_ASSET_BASED_LENDING",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_261013_TI",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_262045_TI",
 			"Type":"Numeric"
 		}
 	],
@@ -2318,6 +2326,16 @@
 		{
 			"ParentName":"P_260099GR",
 			"ComponentName":"P_260090",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_NA",
+			"ComponentName":"P_261013_TI",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_NA",
+			"ComponentName":"P_262045_TI",
 			"Weight":1
 		},
 		{

@@ -16,4 +16,7 @@ DimensionElementComponentAddDirect ('Vertrieb' , vVVS ,  vKD_NR, 1);
 
 AttrPuts (vAlias , 'Vertrieb' , vKD_NR , 'Caption');
 AttrPutS( vTyp, 'Vertrieb', vKD_NR, 'Typ' );
+AttrPutS( vKD_NR, 'Vertrieb', vKD_NR, 'KD_NR' );
+AttrPutS( DELET( vVVS, 1,2), 'Vertrieb', vKD_NR, 'VVS' );
+
 #endregion

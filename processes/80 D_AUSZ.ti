@@ -43,7 +43,7 @@ CellIncrementN( vBarwert_eff_Kap,'MER', 'Barwert_eff_Kap', vVersion, vSichtweise
 CellIncrementN( vEK_gebunden,'MER', 'EK_gebunden', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
 CellIncrementN( vNominalkapital,'MER', 'Nominalkapital', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
 CellIncrementN( vEffektives_Kapital,'MER', 'Effektives_Kapital', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
-CellIncrementN( vMLZ,'MER', 'MLZ', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
+CellIncrementN( vMLZ,'MER', 'MLZ_BASIS', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
 CellIncrementN( vNeugeschaeftsvolumen_Eigenmittel,'MER', 'Neugeschaeftsvolumen_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
 CellIncrementN( vNeugeschaeftsvolumen_Foerdermittel,'MER', 'Neugeschaeftsvolumen_Foerdermittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);
 CellIncrementN( vZinsmarge_nach_Risikokosten_Eigenmittel,'MER', 'Zinsmarge_nach_Risikokosten_Eigenmittel', vVersion, vSichtweise, vFreigabe, vZeit, vCash_Flow_Datum, vProdukte, vVERTRIEB);

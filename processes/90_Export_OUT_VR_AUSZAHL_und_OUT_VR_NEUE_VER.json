@@ -1,0 +1,13 @@
+{
+	"@type":"Process",
+	"Name":"90_Export_OUT_VR_AUSZAHL_und_OUT_VR_NEUE_VER",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"90_Export_OUT_VR_AUSZAHL_und_OUT_VR_NEUE_VER.ti",
+	"UIData":"_ParameterConstraints=e30=€",
+	"DataSource":
+	{
+		"Type":"None"
+	},
+	"Parameters":[],
+	"Variables":[]
+}

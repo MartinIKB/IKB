@@ -1,10 +1,17 @@
+FEEDSTRINGS;
+
 SKIPCHECK;
 
 ['Bruttoergebnis_nach_Risikokosten']=['Bruttoergebnis']-['Risikokosten'];
 
+#### Ermittlung durchschnittliche MLZ ####
+['MLZ_GEWICHTET']=N:['MLZ_BASIS','Ist_EUR']*['Neugeschaeftsvolumen','Ist_EUR'];
+['MLZ']=['MLZ_GEWICHTET']/['Neugeschaeftsvolumen'];
+
 
 #### Ist_TEUR ####
 ['Ist_TEUR']=if (ELISANC('Kennzahlen','Hilfsgrößen' , !Kennzahlen )=0
+             % !Kennzahlen@='MLZ_GEWICHTET'
 ,
 ['Ist_EUR']/1000
 ,
@@ -24,12 +31,95 @@ SKIPCHECK;
 , if (!Kennzahlen@='Zinsmarge_nach_Risikokosten_Eigenmittel'
 , ['Ist_EUR']/['Barwert_eff_Kap_Eigenmittel','Ist_EUR']*100*['Effektives_Kapital_Eigenmittel','Ist_EUR']/['Nominalkapital_Eigenmittel','Ist_EUR']
 , if (!Kennzahlen@='Zinsmarge_nach_Risikokosten_Eigenmittel'
-, ['Ist_EUR']/['Barwert_eff_Kap_Foerdermittel','Ist_EUR']*100*['Effektives_Kapital_Foerdermittel','Ist_EUR']/['Nominalkapital_Foerdermittel','Ist_EUR'],0)))));
+, ['Ist_EUR']/['Barwert_eff_Kap_Foerdermittel','Ist_EUR']*100*['Effektives_Kapital_Foerdermittel','Ist_EUR']/['Nominalkapital_Foerdermittel','Ist_EUR']
+,0)))));
+
+
+
+####  Berechnung Hilfsgrößen  ####
+['KEZ_EINZELLISTE']=IF((ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Vertrag'
+                    & !Sichtweise@='Auszahlungen'
+                    & ABS(['DB_III_kalk_Prov','Ist_EUR'])+ABS(['EK_gebunden','Ist_EUR'])
+                      +ABS(['EK_Kosten','Ist_EUR'])+ABS(['Vol_Bruttoauszahlungen','Ist_EUR'])<>0)
+                    %
+                    (ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Vertrag'
+                    & !Sichtweise@='Neue_Zusagen'
+                    & ABS(['DB_III_kalk_Prov','Ist_EUR'])+ABS(['Vol_Neue_Zusagen','Ist_EUR'])<>0)
+                   ,1
+                   ,0);                    
+
+['KEZ_GEFUELLT_COGNOS']=IF((!Sichtweise@='Auszahlungen'
+                        & ABS(['DB_III_kalk_Prov','Ist_EUR'])+ABS(['EK_gebunden','Ist_EUR'])
+                         +ABS(['EK_Kosten','Ist_EUR'])+ABS(['Vol_Bruttoauszahlungen','Ist_EUR'])<>0)
+                        %
+                         (!Sichtweise@='Neue_Zusagen'
+                        & ABS(['DB_III_kalk_Prov','Ist_EUR'])+ABS(['Vol_Neue_Zusagen','Ist_EUR'])
+                          +ABS(['Vol_Bestandszusagen','Ist_EUR'])<>0)
+                       ,1
+                       ,0);
+
+['KEZ_LEER_AUSZAHLUNGEN']=['KEZ_GEFUELLT_COGNOS'];
+
+['KEZ_EINZEL_PVS']= if (ELLEV( 'Produkte', !Produkte )=0
+                        & ABS(['VOL_BESTANDSZUSAGEN_REVOLVER'])<>0
+                        ,1
+                        ,0);
+
+
+['VVS']=IF(ATTRS('Vertrieb',!Vertrieb,'Typ')@='Kunde'
+             ,NUMBR(ElementName( 'Vertrieb','Vertrieb', Elementindex ('Vertrieb','Vertrieb',ELPAR( 'Vertrieb', !Vertrieb, 1 ))))
+             ,IF (ATTRS('Vertrieb',!Vertrieb,'Typ')@='Vertragsstamm'
+             ,NUMBR(ElementName( 'Vertrieb','Vertrieb', Elementindex ('Vertrieb','Vertrieb',ELPAR('Vertrieb',ELPAR( 'Vertrieb', !Vertrieb, 1 ),1))))
+             ,IF (ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Vertrag'
+              % ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Revolver'
+             ,NUMBR(ElementName( 'Vertrieb','Vertrieb', Elementindex ('Vertrieb','Vertrieb',ELPAR('Vertrieb',ELPAR('Vertrieb',ELPAR( 'Vertrieb', !Vertrieb, 1 ),1),1))))
+             ,0
+           )));
+           
+['KDNR']=IF(ATTRS('Vertrieb',!Vertrieb,'Typ')@='Kunde'
+             ,NUMBR(ElementName( 'Vertrieb','Vertrieb', Elementindex ('Vertrieb','Vertrieb',!Vertrieb )))
+             ,IF (ATTRS('Vertrieb',!Vertrieb,'Typ')@='Vertragsstamm'
+             ,NUMBR(ElementName( 'Vertrieb','Vertrieb', Elementindex ('Vertrieb','Vertrieb',ELPAR('Vertrieb',!Vertrieb,1))))
+             ,IF (ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Vertrag'
+              % ATTRS( 'Vertrieb',!Vertrieb,'Typ')@='Revolver'             
+             ,NUMBR(ElementName( 'Vertrieb','Vertrieb', Elementindex ('Vertrieb','Vertrieb',ELPAR('Vertrieb',ELPAR('Vertrieb',!Vertrieb,1),1))))
+             ,0
+           )));     
 
 
 Feeders;
+['Neugeschaeftsvolumen']=>['MLZ_GEWICHTET'];
+['Neugeschaeftsvolumen']=>['MLZ'];
+
 ['Bruttoergebnis']=>['Bruttoergebnis_nach_Risikokosten'];
 ['Risikokosten']=>['Bruttoergebnis_nach_Risikokosten'];
 
 ['Ist_EUR']=>['Ist_TEUR'];
 ['Ist_EUR']=>['Ist_Marge'];
+
+
+####  Hilfsgrößen  ####
+['DB_III_kalk_Prov']=>['KEZ_EINZELLISTE'];
+['EK_gebunden']=>['KEZ_EINZELLISTE'];
+['EK_Kosten']=>['KEZ_EINZELLISTE'];
+['Vol_Bruttoauszahlungen']=>['KEZ_EINZELLISTE'];
+['Vol_Neue_Zusagen']=>['KEZ_EINZELLISTE'];
+
+['DB_III_kalk_Prov']=>['KEZ_GEFUELLT_COGNOS'];
+['EK_gebunden']=>['KEZ_GEFUELLT_COGNOS'];
+['EK_Kosten']=>['KEZ_GEFUELLT_COGNOS'];
+['Vol_Bruttoauszahlungen']=>['KEZ_GEFUELLT_COGNOS'];
+['Vol_Neue_Zusagen']=>['KEZ_GEFUELLT_COGNOS'];
+
+['DB_III_kalk_Prov']=>['KEZ_LEER_AUSZAHLUNGEN'];
+['EK_gebunden']=>['KEZ_LEER_AUSZAHLUNGEN'];
+['EK_Kosten']=>['KEZ_LEER_AUSZAHLUNGEN'];
+['Vol_Bruttoauszahlungen']=>['KEZ_LEER_AUSZAHLUNGEN'];
+['Vol_Neue_Zusagen']=>['KEZ_LEER_AUSZAHLUNGEN'];
+
+['VOL_BESTANDSZUSAGEN_REVOLVER']=>['KEZ_EINZEL_PVS'];
+
+['KEZ_GEFUELLT_COGNOS']=>['KDNR'];
+['KEZ_GEFUELLT_COGNOS']=>['VVS'];
+
+
