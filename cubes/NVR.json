@@ -30,6 +30,7 @@
 	"Views@Code.links":
 	[
 		"NVR.views/View_NVR_Entwicklung.json",
-		"NVR.views/View_NVR_Test.json"
+		"NVR.views/View_NVR_Test.json",
+		"NVR.views/View_Test_Kosten.json"
 	]
 }

@@ -5224,7 +5224,551 @@
 			"Type":"Numeric"
 		},
 		{
-			"Name":"TESTEST",
+			"Name":"14015_130003",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"20981_130003",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"458247_130007",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"490278_130009",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"161041_130014",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"133061_150011",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"4149_160007",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"119723_170013",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"118098_170020",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"332044_220310",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"125151_130009",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"12278_130013",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"472431_160005",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"155673_160012",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"490656_160012",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"11491",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"V_20_IR_112267_22_0_0_VA_20240223_130007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_118098_8_0_0_VA_20240111_170020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_118098_8_1_0_VA_20240111_170020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_118098_8_1_1_VA_20240111_170020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_118098_8_1_2_VA_20240131_170020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_119723_12_0_0_VA_20240226_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_119723_12_0_1_VA_20240226_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_119723_12_0_2_VA_20240226_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_133061_2_0_0_VA_20240201_150011",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_14015_22_0_0_VA_20240228_130003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_142969_18_0_80_VA_20240115_160005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_145357_114_1_1_VA_20240220_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_161041_501_1_0_VA_20240219_130014",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_187697_17_0_0_VA_20240205_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_20981_14_0_0_VA_20240222_130003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_332044_1_0_0_VA_20240215_220310",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_4149_43_0_0_VA_20240228_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_458247_7_0_0_VA_20240228_130007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_475203_502_14_0_VA_20240229_180001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_477683_1_26_0_VA_20240227_180001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_484669_1_12_0_VA_20240219_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_489150_1_0_0_VA_20240205_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_489150_1_0_0_VA_20240215_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_489150_2_0_0_VA_20240205_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_489150_2_0_0_VA_20240215_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_489150_3_0_0_VA_20240208_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_489150_3_0_0_VA_20240215_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_490278_1_0_0_VA_20240223_130009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_7019_3_0_0_VU_20240228_140022",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV__NA_11491",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_12278_130013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_125151_130009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_14015_130003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_155673_160012",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_472431_160005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_490656_160012",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"435443_170013",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"V_20_UB_435443_506_0_80_VA_20240229_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"125298_130009",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"167771_130009",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"14015_130014",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"443793_140011",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"187714_150010",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"17514_170020",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"484601_180003",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"125151_130014",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"133762",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"137812",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"V_20_IR_112351_502_19_0_VA_20240328_170009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_113067_20_0_0_VA_20240314_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_12278_75_0_0_VA_20240301_130013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_12278_76_0_0_VA_20240301_130013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_125298_1_0_0_VA_20240325_130009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_14015_22_0_0_VA_20240228_130014",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_145357_111_1_0_VU_20240328_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_145357_112_1_0_VA_20240328_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_145357_111_1_1_VA_20240328_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_145357_113_1_1_VA_20240328_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_145357_114_1_1_VA_20240328_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_167771_5_0_0_VA_20240312_130009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_17514_22_1_0_VU_20240328_170020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_176538_15_0_0_VA_20240311_130013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_182507_6_1_0_VA_20240311_130013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_187714_18_0_80_VA_20240331_150010",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_291327_501_28_80_VA_20240331_180003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_418376_3_0_0_VA_20240322_130014",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_426359_524_8_0_VA_20240327_100005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_443793_502_1_0_VA_20240305_140011",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_454871_13_1_0_VA_20240308_140005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_454871_13_1_1_VU_20240308_140005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_454871_13_1_2_VU_20240308_140005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_454871_13_1_3_VU_20240308_140005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_454871_13_1_4_VU_20240308_140005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_454871_13_1_5_VU_20240308_140005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_469416_3_0_80_VA_20240331_180005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_474436_505_1_0_VA_20240328_170009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_475203_502_15_0_VA_20240328_180001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_477683_1_27_0_VA_20240325_180001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_478781_2_3_0_VU_20240328_160005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_484601_2_1_0_VA_20240328_180003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_484669_1_14_0_VA_20240328_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_485273_1_4_0_VA_20240328_180004",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_485478_1_3_0_VA_20240312_180003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_489583_2_1_0_VA_20240313_150011",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_490130_503_2_0_VA_20240319_150002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_125151_130014",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV__NA_133762",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV__NA_137812",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_435443_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_484601_180003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"276678_130007",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"295839_130014",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"483942_140022",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"469342_160005",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"108041_160007",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"278371_170013",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"121794_170020",
+			"Type":"Consolidated"
+		},
+		{
+			"Name":"V_20_IR_10485_502_4_0_VA_20240430_130013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_10485_502_4_0_VU_20240430_130013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_108041_6_1_0_VA_20240410_160007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_119723_12_0_0_VA_20240405_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_119723_12_0_1_VA_20240405_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_119723_12_0_2_VA_20240405_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_13239_6_0_0_VA_20240430_150002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_13239_7_0_0_VA_20240430_150002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_13239_8_0_0_VA_20240430_150002",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_20981_14_0_0_VA_20240411_130003",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_276678_502_1_0_VA_20240423_130007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_278371_1_1_0_VA_20240430_170013",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_280121_9_0_0_VA_20240408_130009",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_295839_3_1_0_VA_20240426_130014",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_458247_7_0_0_VA_20240402_130007",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_469342_4_0_0_VA_20240416_160005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_UB_469342_4_0_1_VA_20240416_160005",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_475203_502_16_0_VA_20240430_180001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_477683_1_29_0_VA_20240423_180001",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_483942_1_0_0_VA_20240422_140022",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_483942_2_0_0_VA_20240417_140022",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_20_IR_484059_510_0_0_VA_20240430_140011",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_121794_170020",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"V_PRV_469342_160005",
 			"Type":"Numeric"
 		}
 	],
@@ -5387,11 +5931,6 @@
 		},
 		{
 			"ParentName":"A_100005",
-			"ComponentName":"426359_100005",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_100005",
 			"ComponentName":"434137_100005",
 			"Weight":1
 		},
@@ -5403,6 +5942,11 @@
 		{
 			"ParentName":"A_100005",
 			"ComponentName":"472405_100005",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_100005",
+			"ComponentName":"426359_100005",
 			"Weight":1
 		},
 		{
@@ -5457,6 +6001,11 @@
 		},
 		{
 			"ParentName":"A_100009",
+			"ComponentName":"489980_100009",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_100009",
 			"ComponentName":"184570_100009",
 			"Weight":1
 		},
@@ -5468,11 +6017,6 @@
 		{
 			"ParentName":"A_100009",
 			"ComponentName":"298480_100009",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_100009",
-			"ComponentName":"489980_100009",
 			"Weight":1
 		},
 		{
@@ -5921,6 +6465,21 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"A_Zentrale",
+			"ComponentName":"133762",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_Zentrale",
+			"ComponentName":"11491",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_Zentrale",
+			"ComponentName":"137812",
+			"Weight":1
+		},
+		{
 			"ParentName":"A_109999",
 			"ComponentName":"A_109999_Kostendummy",
 			"Weight":1
@@ -6067,6 +6626,16 @@
 		},
 		{
 			"ParentName":"A_130003",
+			"ComponentName":"14015_130003",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130003",
+			"ComponentName":"20981_130003",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130003",
 			"ComponentName":"172892_130003",
 			"Weight":1
 		},
@@ -6088,11 +6657,6 @@
 		{
 			"ParentName":"A_130007",
 			"ComponentName":"105914_130007",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_130007",
-			"ComponentName":"112267_130007",
 			"Weight":1
 		},
 		{
@@ -6152,12 +6716,27 @@
 		},
 		{
 			"ParentName":"A_130007",
-			"ComponentName":"333334_130007",
+			"ComponentName":"112267_130007",
 			"Weight":1
 		},
 		{
 			"ParentName":"A_130007",
 			"ComponentName":"15322_130007",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130007",
+			"ComponentName":"276678_130007",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130007",
+			"ComponentName":"458247_130007",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130007",
+			"ComponentName":"333334_130007",
 			"Weight":1
 		},
 		{
@@ -6183,6 +6762,26 @@
 		{
 			"ParentName":"A_130009",
 			"ComponentName":"485033_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130009",
+			"ComponentName":"125151_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130009",
+			"ComponentName":"125298_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130009",
+			"ComponentName":"167771_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130009",
+			"ComponentName":"490278_130009",
 			"Weight":1
 		},
 		{
@@ -6227,11 +6826,6 @@
 		},
 		{
 			"ParentName":"A_130013",
-			"ComponentName":"133762_130013",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_130013",
 			"ComponentName":"3057_130013",
 			"Weight":1
 		},
@@ -6242,7 +6836,22 @@
 		},
 		{
 			"ParentName":"A_130013",
+			"ComponentName":"12278_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130013",
+			"ComponentName":"10485_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130013",
 			"ComponentName":"123647_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130013",
+			"ComponentName":"133762_130013",
 			"Weight":1
 		},
 		{
@@ -6271,18 +6880,8 @@
 			"Weight":1
 		},
 		{
-			"ParentName":"A_130013",
-			"ComponentName":"10485_130013",
-			"Weight":1
-		},
-		{
 			"ParentName":"A_130014",
 			"ComponentName":"334096_130014",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_130014",
-			"ComponentName":"418376_130014",
 			"Weight":1
 		},
 		{
@@ -6293,6 +6892,31 @@
 		{
 			"ParentName":"A_130014",
 			"ComponentName":"396527_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130014",
+			"ComponentName":"14015_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130014",
+			"ComponentName":"161041_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130014",
+			"ComponentName":"295839_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130014",
+			"ComponentName":"418376_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_130014",
+			"ComponentName":"125151_130014",
 			"Weight":1
 		},
 		{
@@ -6887,6 +7511,16 @@
 		},
 		{
 			"ParentName":"A_140011",
+			"ComponentName":"443793_140011",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_140011",
+			"ComponentName":"489842_140011",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_140011",
 			"ComponentName":"411419_140011",
 			"Weight":1
 		},
@@ -6898,11 +7532,6 @@
 		{
 			"ParentName":"A_140011",
 			"ComponentName":"484059_140011",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_140011",
-			"ComponentName":"489842_140011",
 			"Weight":1
 		},
 		{
@@ -6928,6 +7557,11 @@
 		{
 			"ParentName":"A_140022",
 			"ComponentName":"330449_140022",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_140022",
+			"ComponentName":"483942_140022",
 			"Weight":1
 		},
 		{
@@ -7137,6 +7771,11 @@
 		},
 		{
 			"ParentName":"A_150010",
+			"ComponentName":"187714_150010",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_150010",
 			"ComponentName":"158536_150010",
 			"Weight":1
 		},
@@ -7167,17 +7806,22 @@
 		},
 		{
 			"ParentName":"A_150011",
-			"ComponentName":"489583_150011",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_150011",
 			"ComponentName":"488261_150011",
 			"Weight":1
 		},
 		{
 			"ParentName":"A_150011",
 			"ComponentName":"9715_150011",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_150011",
+			"ComponentName":"133061_150011",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_150011",
+			"ComponentName":"489583_150011",
 			"Weight":1
 		},
 		{
@@ -7322,11 +7966,6 @@
 		},
 		{
 			"ParentName":"A_160005",
-			"ComponentName":"143389_160005",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_160005",
 			"ComponentName":"145889_160005",
 			"Weight":1
 		},
@@ -7352,12 +7991,22 @@
 		},
 		{
 			"ParentName":"A_160005",
+			"ComponentName":"490651_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160005",
+			"ComponentName":"142969_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160005",
 			"ComponentName":"478781_160005",
 			"Weight":1
 		},
 		{
 			"ParentName":"A_160005",
-			"ComponentName":"490651_160005",
+			"ComponentName":"143389_160005",
 			"Weight":1
 		},
 		{
@@ -7377,17 +8026,22 @@
 		},
 		{
 			"ParentName":"A_160005",
-			"ComponentName":"5464_160005",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_160005",
-			"ComponentName":"142969_160005",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_160005",
 			"ComponentName":"325025_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160005",
+			"ComponentName":"469342_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160005",
+			"ComponentName":"472431_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160005",
+			"ComponentName":"5464_160005",
 			"Weight":1
 		},
 		{
@@ -7407,17 +8061,7 @@
 		},
 		{
 			"ParentName":"A_160007",
-			"ComponentName":"145357_160007",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_160007",
 			"ComponentName":"18417_160007",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_160007",
-			"ComponentName":"187697_160007",
 			"Weight":1
 		},
 		{
@@ -7428,6 +8072,26 @@
 		{
 			"ParentName":"A_160007",
 			"ComponentName":"182450_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160007",
+			"ComponentName":"108041_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160007",
+			"ComponentName":"145357_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160007",
+			"ComponentName":"187697_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160007",
+			"ComponentName":"4149_160007",
 			"Weight":1
 		},
 		{
@@ -7487,7 +8151,12 @@
 		},
 		{
 			"ParentName":"A_160012",
-			"ComponentName":"490183_160012",
+			"ComponentName":"164062_160012",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160012",
+			"ComponentName":"165528_160012",
 			"Weight":1
 		},
 		{
@@ -7497,12 +8166,17 @@
 		},
 		{
 			"ParentName":"A_160012",
-			"ComponentName":"164062_160012",
+			"ComponentName":"155673_160012",
 			"Weight":1
 		},
 		{
 			"ParentName":"A_160012",
-			"ComponentName":"165528_160012",
+			"ComponentName":"490183_160012",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_160012",
+			"ComponentName":"490656_160012",
 			"Weight":1
 		},
 		{
@@ -7677,12 +8351,17 @@
 		},
 		{
 			"ParentName":"A_170009",
+			"ComponentName":"16482_170009",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_170009",
 			"ComponentName":"112351_170009",
 			"Weight":1
 		},
 		{
 			"ParentName":"A_170009",
-			"ComponentName":"16482_170009",
+			"ComponentName":"171599_170009",
 			"Weight":1
 		},
 		{
@@ -7708,11 +8387,6 @@
 		{
 			"ParentName":"A_170009",
 			"ComponentName":"475098_170009",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_170009",
-			"ComponentName":"171599_170009",
 			"Weight":1
 		},
 		{
@@ -7753,11 +8427,6 @@
 		{
 			"ParentName":"A_170011",
 			"ComponentName":"118098_170011",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_170013",
-			"ComponentName":"113067_170013",
 			"Weight":1
 		},
 		{
@@ -7822,6 +8491,26 @@
 		},
 		{
 			"ParentName":"A_170013",
+			"ComponentName":"113067_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_170013",
+			"ComponentName":"119723_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_170013",
+			"ComponentName":"278371_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_170013",
+			"ComponentName":"435443_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_170013",
 			"ComponentName":"476943_170013",
 			"Weight":1
 		},
@@ -7837,7 +8526,22 @@
 		},
 		{
 			"ParentName":"A_170020",
+			"ComponentName":"118098_170020",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_170020",
+			"ComponentName":"17514_170020",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_170020",
 			"ComponentName":"117435_170020",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_170020",
+			"ComponentName":"121794_170020",
 			"Weight":1
 		},
 		{
@@ -7922,16 +8626,6 @@
 		},
 		{
 			"ParentName":"A_180003",
-			"ComponentName":"482159_180003",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_180003",
-			"ComponentName":"483274_180003",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_180003",
 			"ComponentName":"485188_180003",
 			"Weight":1
 		},
@@ -7943,6 +8637,21 @@
 		{
 			"ParentName":"A_180003",
 			"ComponentName":"291327_180003",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_180003",
+			"ComponentName":"482159_180003",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_180003",
+			"ComponentName":"483274_180003",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_180003",
+			"ComponentName":"484601_180003",
 			"Weight":1
 		},
 		{
@@ -7982,6 +8691,11 @@
 		},
 		{
 			"ParentName":"A_180004",
+			"ComponentName":"485273_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_180004",
 			"ComponentName":"485274_180004",
 			"Weight":1
 		},
@@ -7996,11 +8710,6 @@
 			"Weight":1
 		},
 		{
-			"ParentName":"A_180004",
-			"ComponentName":"485273_180004",
-			"Weight":1
-		},
-		{
 			"ParentName":"A_180005",
 			"ComponentName":"478379_180005",
 			"Weight":1
@@ -8008,11 +8717,6 @@
 		{
 			"ParentName":"A_180005",
 			"ComponentName":"482917_180005",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_180005",
-			"ComponentName":"484550_180005",
 			"Weight":1
 		},
 		{
@@ -8033,6 +8737,11 @@
 		{
 			"ParentName":"A_180005",
 			"ComponentName":"476473_180005",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_180005",
+			"ComponentName":"484550_180005",
 			"Weight":1
 		},
 		{
@@ -8287,11 +8996,6 @@
 		},
 		{
 			"ParentName":"A_220305",
-			"ComponentName":"454039_220305",
-			"Weight":1
-		},
-		{
-			"ParentName":"A_220305",
 			"ComponentName":"456906_220305",
 			"Weight":1
 		},
@@ -8303,6 +9007,11 @@
 		{
 			"ParentName":"A_220305",
 			"ComponentName":"126367_220305",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_220305",
+			"ComponentName":"454039_220305",
 			"Weight":1
 		},
 		{
@@ -8333,6 +9042,11 @@
 		{
 			"ParentName":"A_220310",
 			"ComponentName":"475773_220310",
+			"Weight":1
+		},
+		{
+			"ParentName":"A_220310",
+			"ComponentName":"332044_220310",
 			"Weight":1
 		},
 		{
@@ -8528,7 +9242,7 @@
 		{
 			"ParentName":"A_Zusaetzliche_Einheiten",
 			"ComponentName":"A_Vertrieb_Kostendummy",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"122538_100005",
@@ -8921,6 +9635,11 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"112267_130007",
+			"ComponentName":"V_20_IR_112267_22_0_0_VA_20240223_130007",
+			"Weight":1
+		},
+		{
 			"ParentName":"125995_130007",
 			"ComponentName":"V_20_IR_125995_3_0_0_VA_20230526_130007",
 			"Weight":1
@@ -9067,6 +9786,11 @@
 		},
 		{
 			"ParentName":"280121_130009",
+			"ComponentName":"V_20_IR_280121_9_0_0_VA_20240408_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"280121_130009",
 			"ComponentName":"V_PRV_280121_130009",
 			"Weight":1
 		},
@@ -9122,6 +9846,16 @@
 		},
 		{
 			"ParentName":"10485_130013",
+			"ComponentName":"V_20_IR_10485_502_4_0_VA_20240430_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"10485_130013",
+			"ComponentName":"V_20_IR_10485_502_4_0_VU_20240430_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"10485_130013",
 			"ComponentName":"V_PRV_10485_130013",
 			"Weight":1
 		},
@@ -9153,6 +9887,11 @@
 		{
 			"ParentName":"176538_130013",
 			"ComponentName":"V_20_IR_176538_15_0_0_VA_20231025_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"176538_130013",
+			"ComponentName":"V_20_IR_176538_15_0_0_VA_20240311_130013",
 			"Weight":1
 		},
 		{
@@ -9193,6 +9932,11 @@
 		{
 			"ParentName":"182507_130013",
 			"ComponentName":"V_20_IR_182507_7_0_0_VA_20230127_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"182507_130013",
+			"ComponentName":"V_20_IR_182507_6_1_0_VA_20240311_130013",
 			"Weight":1
 		},
 		{
@@ -9346,6 +10090,11 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"418376_130014",
+			"ComponentName":"V_20_IR_418376_3_0_0_VA_20240322_130014",
+			"Weight":1
+		},
+		{
 			"ParentName":"430110_130014",
 			"ComponentName":"V_20_IR_430110_2_0_0_VA_20230403_130014",
 			"Weight":1
@@ -9462,6 +10211,11 @@
 		},
 		{
 			"ParentName":"484059_140011",
+			"ComponentName":"V_20_IR_484059_510_0_0_VA_20240430_140011",
+			"Weight":1
+		},
+		{
+			"ParentName":"484059_140011",
 			"ComponentName":"V_PRV_484059_140011",
 			"Weight":1
 		},
@@ -9531,6 +10285,11 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"7019_140022",
+			"ComponentName":"V_20_IR_7019_3_0_0_VU_20240228_140022",
+			"Weight":1
+		},
+		{
 			"ParentName":"177753_150002",
 			"ComponentName":"V_20_IR_177753_4_0_0_VA_20231013_150002",
 			"Weight":1
@@ -9578,6 +10337,11 @@
 		{
 			"ParentName":"490130_150002",
 			"ComponentName":"V_20_IR_490130_503_1_0_VA_20240117_150002",
+			"Weight":1
+		},
+		{
+			"ParentName":"490130_150002",
+			"ComponentName":"V_20_IR_490130_503_2_0_VA_20240319_150002",
 			"Weight":1
 		},
 		{
@@ -9731,6 +10495,11 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"489583_150011",
+			"ComponentName":"V_20_IR_489583_2_1_0_VA_20240313_150011",
+			"Weight":1
+		},
+		{
 			"ParentName":"134289_160005",
 			"ComponentName":"V_20_IR_134289_8_0_0_VA_20230112_160005",
 			"Weight":1
@@ -9753,6 +10522,11 @@
 		{
 			"ParentName":"142969_160005",
 			"ComponentName":"V_20_IR_142969_18_0_0_VA_20240115_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"142969_160005",
+			"ComponentName":"V_20_UB_142969_18_0_80_VA_20240115_160005",
 			"Weight":1
 		},
 		{
@@ -9836,6 +10610,11 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"478781_160005",
+			"ComponentName":"V_20_IR_478781_2_3_0_VU_20240328_160005",
+			"Weight":1
+		},
+		{
 			"ParentName":"484573_160005",
 			"ComponentName":"V_20_IR_484573_4_1_0_VA_20230306_160005",
 			"Weight":1
@@ -9906,6 +10685,36 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"145357_160007",
+			"ComponentName":"V_20_IR_145357_111_1_0_VU_20240328_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"145357_160007",
+			"ComponentName":"V_20_IR_145357_112_1_0_VA_20240328_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"145357_160007",
+			"ComponentName":"V_20_UB_145357_111_1_1_VA_20240328_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"145357_160007",
+			"ComponentName":"V_20_UB_145357_113_1_1_VA_20240328_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"145357_160007",
+			"ComponentName":"V_20_UB_145357_114_1_1_VA_20240220_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"145357_160007",
+			"ComponentName":"V_20_UB_145357_114_1_1_VA_20240328_160007",
+			"Weight":1
+		},
+		{
 			"ParentName":"18417_160007",
 			"ComponentName":"V_20_IR_18417_24_0_0_VA_20230829_160007",
 			"Weight":1
@@ -9923,6 +10732,11 @@
 		{
 			"ParentName":"187697_160007",
 			"ComponentName":"V_20_IR_187697_20_0_0_VA_20230920_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"187697_160007",
+			"ComponentName":"V_20_IR_187697_17_0_0_VA_20240205_160007",
 			"Weight":1
 		},
 		{
@@ -10121,6 +10935,11 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"112351_170009",
+			"ComponentName":"V_20_IR_112351_502_19_0_VA_20240328_170009",
+			"Weight":1
+		},
+		{
 			"ParentName":"115461_170009",
 			"ComponentName":"V_20_IR_115461_1_1_0_VA_20230406_170009",
 			"Weight":1
@@ -10303,6 +11122,11 @@
 		{
 			"ParentName":"113067_170013",
 			"ComponentName":"V_20_UB_113067_19_0_1_VA_20230530_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"113067_170013",
+			"ComponentName":"V_20_IR_113067_20_0_0_VA_20240314_170013",
 			"Weight":1
 		},
 		{
@@ -10512,6 +11336,21 @@
 		},
 		{
 			"ParentName":"475203_180001",
+			"ComponentName":"V_20_IR_475203_502_14_0_VA_20240229_180001",
+			"Weight":1
+		},
+		{
+			"ParentName":"475203_180001",
+			"ComponentName":"V_20_IR_475203_502_15_0_VA_20240328_180001",
+			"Weight":1
+		},
+		{
+			"ParentName":"475203_180001",
+			"ComponentName":"V_20_IR_475203_502_16_0_VA_20240430_180001",
+			"Weight":1
+		},
+		{
+			"ParentName":"475203_180001",
 			"ComponentName":"V_PRV_475203_180001",
 			"Weight":1
 		},
@@ -10573,6 +11412,21 @@
 		{
 			"ParentName":"477683_180001",
 			"ComponentName":"V_20_IR_477683_1_25_0_VA_20240110_180001",
+			"Weight":1
+		},
+		{
+			"ParentName":"477683_180001",
+			"ComponentName":"V_20_IR_477683_1_26_0_VA_20240227_180001",
+			"Weight":1
+		},
+		{
+			"ParentName":"477683_180001",
+			"ComponentName":"V_20_IR_477683_1_27_0_VA_20240325_180001",
+			"Weight":1
+		},
+		{
+			"ParentName":"477683_180001",
+			"ComponentName":"V_20_IR_477683_1_29_0_VA_20240423_180001",
 			"Weight":1
 		},
 		{
@@ -10658,6 +11512,11 @@
 		{
 			"ParentName":"291327_180003",
 			"ComponentName":"V_20_IR_291327_5_0_0_VA_20231218_180003",
+			"Weight":1
+		},
+		{
+			"ParentName":"291327_180003",
+			"ComponentName":"V_20_UB_291327_501_28_80_VA_20240331_180003",
 			"Weight":1
 		},
 		{
@@ -10793,6 +11652,11 @@
 		{
 			"ParentName":"485478_180003",
 			"ComponentName":"V_20_IR_485478_1_2_0_VA_20230316_180003",
+			"Weight":1
+		},
+		{
+			"ParentName":"485478_180003",
+			"ComponentName":"V_20_IR_485478_1_3_0_VA_20240312_180003",
 			"Weight":1
 		},
 		{
@@ -10957,6 +11821,16 @@
 		},
 		{
 			"ParentName":"484669_180004",
+			"ComponentName":"V_20_IR_484669_1_12_0_VA_20240219_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"484669_180004",
+			"ComponentName":"V_20_IR_484669_1_14_0_VA_20240328_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"484669_180004",
 			"ComponentName":"V_PRV_484669_180004",
 			"Weight":1
 		},
@@ -10968,6 +11842,11 @@
 		{
 			"ParentName":"485273_180004",
 			"ComponentName":"V_20_IR_485273_1_3_0_VA_20240115_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"485273_180004",
+			"ComponentName":"V_20_IR_485273_1_4_0_VA_20240328_180004",
 			"Weight":1
 		},
 		{
@@ -11017,6 +11896,36 @@
 		},
 		{
 			"ParentName":"489150_180004",
+			"ComponentName":"V_20_IR_489150_1_0_0_VA_20240205_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"489150_180004",
+			"ComponentName":"V_20_IR_489150_1_0_0_VA_20240215_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"489150_180004",
+			"ComponentName":"V_20_IR_489150_2_0_0_VA_20240205_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"489150_180004",
+			"ComponentName":"V_20_IR_489150_2_0_0_VA_20240215_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"489150_180004",
+			"ComponentName":"V_20_IR_489150_3_0_0_VA_20240208_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"489150_180004",
+			"ComponentName":"V_20_IR_489150_3_0_0_VA_20240215_180004",
+			"Weight":1
+		},
+		{
+			"ParentName":"489150_180004",
 			"ComponentName":"V_PRV_489150_180004",
 			"Weight":1
 		},
@@ -11033,6 +11942,11 @@
 		{
 			"ParentName":"469416_180005",
 			"ComponentName":"V_20_IR_469416_2_9_0_VA_20230419_180005",
+			"Weight":1
+		},
+		{
+			"ParentName":"469416_180005",
+			"ComponentName":"V_20_UB_469416_3_0_80_VA_20240331_180005",
 			"Weight":1
 		},
 		{
@@ -11216,6 +12130,11 @@
 			"Weight":1
 		},
 		{
+			"ParentName":"426359_100005",
+			"ComponentName":"V_20_IR_426359_524_8_0_VA_20240327_100005",
+			"Weight":1
+		},
+		{
 			"ParentName":"434137_100005",
 			"ComponentName":"V_PRV_434137_100005",
 			"Weight":1
@@ -11297,6 +12216,36 @@
 		},
 		{
 			"ParentName":"454871_140005",
+			"ComponentName":"V_20_IR_454871_13_1_0_VA_20240308_140005",
+			"Weight":1
+		},
+		{
+			"ParentName":"454871_140005",
+			"ComponentName":"V_20_UB_454871_13_1_1_VU_20240308_140005",
+			"Weight":1
+		},
+		{
+			"ParentName":"454871_140005",
+			"ComponentName":"V_20_UB_454871_13_1_2_VU_20240308_140005",
+			"Weight":1
+		},
+		{
+			"ParentName":"454871_140005",
+			"ComponentName":"V_20_UB_454871_13_1_3_VU_20240308_140005",
+			"Weight":1
+		},
+		{
+			"ParentName":"454871_140005",
+			"ComponentName":"V_20_UB_454871_13_1_4_VU_20240308_140005",
+			"Weight":1
+		},
+		{
+			"ParentName":"454871_140005",
+			"ComponentName":"V_20_UB_454871_13_1_5_VU_20240308_140005",
+			"Weight":1
+		},
+		{
+			"ParentName":"454871_140005",
 			"ComponentName":"V_PRV_454871_140005",
 			"Weight":1
 		},
@@ -11323,6 +12272,21 @@
 		{
 			"ParentName":"129422_150002",
 			"ComponentName":"V_PRV_129422_150002",
+			"Weight":1
+		},
+		{
+			"ParentName":"13239_150002",
+			"ComponentName":"V_20_IR_13239_6_0_0_VA_20240430_150002",
+			"Weight":1
+		},
+		{
+			"ParentName":"13239_150002",
+			"ComponentName":"V_20_IR_13239_7_0_0_VA_20240430_150002",
+			"Weight":1
+		},
+		{
+			"ParentName":"13239_150002",
+			"ComponentName":"V_20_IR_13239_8_0_0_VA_20240430_150002",
 			"Weight":1
 		},
 		{
@@ -11438,6 +12402,11 @@
 		{
 			"ParentName":"459678_170009",
 			"ComponentName":"V_PRV_459678_170009",
+			"Weight":1
+		},
+		{
+			"ParentName":"474436_170009",
+			"ComponentName":"V_20_IR_474436_505_1_0_VA_20240328_170009",
 			"Weight":1
 		},
 		{
@@ -11751,8 +12720,263 @@
 			"Weight":1
 		},
 		{
-			"ParentName":"Vertrieb",
-			"ComponentName":"TESTEST",
+			"ParentName":"14015_130003",
+			"ComponentName":"V_20_IR_14015_22_0_0_VA_20240228_130003",
+			"Weight":1
+		},
+		{
+			"ParentName":"14015_130003",
+			"ComponentName":"V_PRV_14015_130003",
+			"Weight":1
+		},
+		{
+			"ParentName":"20981_130003",
+			"ComponentName":"V_20_IR_20981_14_0_0_VA_20240222_130003",
+			"Weight":1
+		},
+		{
+			"ParentName":"20981_130003",
+			"ComponentName":"V_20_IR_20981_14_0_0_VA_20240411_130003",
+			"Weight":1
+		},
+		{
+			"ParentName":"458247_130007",
+			"ComponentName":"V_20_IR_458247_7_0_0_VA_20240228_130007",
+			"Weight":1
+		},
+		{
+			"ParentName":"458247_130007",
+			"ComponentName":"V_20_IR_458247_7_0_0_VA_20240402_130007",
+			"Weight":1
+		},
+		{
+			"ParentName":"490278_130009",
+			"ComponentName":"V_20_IR_490278_1_0_0_VA_20240223_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"161041_130014",
+			"ComponentName":"V_20_IR_161041_501_1_0_VA_20240219_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"133061_150011",
+			"ComponentName":"V_20_IR_133061_2_0_0_VA_20240201_150011",
+			"Weight":1
+		},
+		{
+			"ParentName":"4149_160007",
+			"ComponentName":"V_20_IR_4149_43_0_0_VA_20240228_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"119723_170013",
+			"ComponentName":"V_20_IR_119723_12_0_0_VA_20240226_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"119723_170013",
+			"ComponentName":"V_20_IR_119723_12_0_0_VA_20240405_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"119723_170013",
+			"ComponentName":"V_20_UB_119723_12_0_1_VA_20240226_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"119723_170013",
+			"ComponentName":"V_20_UB_119723_12_0_1_VA_20240405_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"119723_170013",
+			"ComponentName":"V_20_UB_119723_12_0_2_VA_20240226_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"119723_170013",
+			"ComponentName":"V_20_UB_119723_12_0_2_VA_20240405_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"118098_170020",
+			"ComponentName":"V_20_IR_118098_8_0_0_VA_20240111_170020",
+			"Weight":1
+		},
+		{
+			"ParentName":"118098_170020",
+			"ComponentName":"V_20_IR_118098_8_1_0_VA_20240111_170020",
+			"Weight":1
+		},
+		{
+			"ParentName":"118098_170020",
+			"ComponentName":"V_20_UB_118098_8_1_1_VA_20240111_170020",
+			"Weight":1
+		},
+		{
+			"ParentName":"118098_170020",
+			"ComponentName":"V_20_UB_118098_8_1_2_VA_20240131_170020",
+			"Weight":1
+		},
+		{
+			"ParentName":"332044_220310",
+			"ComponentName":"V_20_IR_332044_1_0_0_VA_20240215_220310",
+			"Weight":1
+		},
+		{
+			"ParentName":"125151_130009",
+			"ComponentName":"V_PRV_125151_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"12278_130013",
+			"ComponentName":"V_PRV_12278_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"12278_130013",
+			"ComponentName":"V_20_IR_12278_75_0_0_VA_20240301_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"12278_130013",
+			"ComponentName":"V_20_IR_12278_76_0_0_VA_20240301_130013",
+			"Weight":1
+		},
+		{
+			"ParentName":"472431_160005",
+			"ComponentName":"V_PRV_472431_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"155673_160012",
+			"ComponentName":"V_PRV_155673_160012",
+			"Weight":1
+		},
+		{
+			"ParentName":"490656_160012",
+			"ComponentName":"V_PRV_490656_160012",
+			"Weight":1
+		},
+		{
+			"ParentName":"11491",
+			"ComponentName":"V_PRV__NA_11491",
+			"Weight":1
+		},
+		{
+			"ParentName":"435443_170013",
+			"ComponentName":"V_20_UB_435443_506_0_80_VA_20240229_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"435443_170013",
+			"ComponentName":"V_PRV_435443_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"125298_130009",
+			"ComponentName":"V_20_IR_125298_1_0_0_VA_20240325_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"167771_130009",
+			"ComponentName":"V_20_IR_167771_5_0_0_VA_20240312_130009",
+			"Weight":1
+		},
+		{
+			"ParentName":"14015_130014",
+			"ComponentName":"V_20_IR_14015_22_0_0_VA_20240228_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"443793_140011",
+			"ComponentName":"V_20_IR_443793_502_1_0_VA_20240305_140011",
+			"Weight":1
+		},
+		{
+			"ParentName":"187714_150010",
+			"ComponentName":"V_20_UB_187714_18_0_80_VA_20240331_150010",
+			"Weight":1
+		},
+		{
+			"ParentName":"17514_170020",
+			"ComponentName":"V_20_IR_17514_22_1_0_VU_20240328_170020",
+			"Weight":1
+		},
+		{
+			"ParentName":"484601_180003",
+			"ComponentName":"V_20_IR_484601_2_1_0_VA_20240328_180003",
+			"Weight":1
+		},
+		{
+			"ParentName":"484601_180003",
+			"ComponentName":"V_PRV_484601_180003",
+			"Weight":1
+		},
+		{
+			"ParentName":"125151_130014",
+			"ComponentName":"V_PRV_125151_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"133762",
+			"ComponentName":"V_PRV__NA_133762",
+			"Weight":1
+		},
+		{
+			"ParentName":"137812",
+			"ComponentName":"V_PRV__NA_137812",
+			"Weight":1
+		},
+		{
+			"ParentName":"276678_130007",
+			"ComponentName":"V_20_IR_276678_502_1_0_VA_20240423_130007",
+			"Weight":1
+		},
+		{
+			"ParentName":"295839_130014",
+			"ComponentName":"V_20_IR_295839_3_1_0_VA_20240426_130014",
+			"Weight":1
+		},
+		{
+			"ParentName":"483942_140022",
+			"ComponentName":"V_20_IR_483942_1_0_0_VA_20240422_140022",
+			"Weight":1
+		},
+		{
+			"ParentName":"483942_140022",
+			"ComponentName":"V_20_IR_483942_2_0_0_VA_20240417_140022",
+			"Weight":1
+		},
+		{
+			"ParentName":"469342_160005",
+			"ComponentName":"V_20_IR_469342_4_0_0_VA_20240416_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"469342_160005",
+			"ComponentName":"V_20_UB_469342_4_0_1_VA_20240416_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"469342_160005",
+			"ComponentName":"V_PRV_469342_160005",
+			"Weight":1
+		},
+		{
+			"ParentName":"108041_160007",
+			"ComponentName":"V_20_IR_108041_6_1_0_VA_20240410_160007",
+			"Weight":1
+		},
+		{
+			"ParentName":"278371_170013",
+			"ComponentName":"V_20_IR_278371_1_1_0_VA_20240430_170013",
+			"Weight":1
+		},
+		{
+			"ParentName":"121794_170020",
+			"ComponentName":"V_PRV_121794_170020",
 			"Weight":1
 		}
 	],

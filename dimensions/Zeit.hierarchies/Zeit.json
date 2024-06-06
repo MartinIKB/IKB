@@ -66,6 +66,18 @@
 		{
 			"Name":"Jan_24",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"Feb_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Mrz_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Apr_24",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -143,6 +155,21 @@
 		{
 			"ParentName":"GJ_2024",
 			"ComponentName":"Jan_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Feb_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Mrz_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Apr_24",
 			"Weight":0
 		}
 	],

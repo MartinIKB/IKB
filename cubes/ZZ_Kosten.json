@@ -1,16 +1,10 @@
 {
 	"@type":"Cube",
-	"Name":"}Hold_Business Analytics_Ralf Schulze_}}_NVR",
+	"Name":"ZZ_Kosten",
 	"Dimensions":
 	[
 		{
 			"@id":"Dimensions('Kennzahlen')"
-		},
-		{
-			"@id":"Dimensions('Version')"
-		},
-		{
-			"@id":"Dimensions('Freigabe')"
 		},
 		{
 			"@id":"Dimensions('Zeit')"
@@ -20,10 +14,11 @@
 		},
 		{
 			"@id":"Dimensions('Vertrieb')"
-		},
-		{
-			"@id":"Dimensions('}Hold')"
 		}
 	],
-	"Views@Code.links":[]
+	"Rules@Code.link":"ZZ_Kosten.rules",
+	"Views@Code.links":
+	[
+		"ZZ_Kosten.views/View_ZZ_Kosten_Befüllung.json"
+	]
 }

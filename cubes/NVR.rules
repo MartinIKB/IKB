@@ -72,9 +72,46 @@ SKIPCHECK;
 ['DB_4','Ist_EUR','Planergebnis_Produkte','Vertrieb']=DB( 'ZZ_Plandaten', 'DB_4', !Zeit, 'Planergebnis_Vertrieb'  );
 
 
+# Berechnung Plan-Ist-Abweichung
+['Plan_Ist_Abgleich_Vertrieb_Absolut']=IF(!Kennzahlen@<>'Ertrag_Kosten_Relation_Vertrieb_ohne_Übernahmefinanzierung'
+                                        , ['Vertrieb']-['Planergebnis_Vertrieb']
+                                        , 0);
+                                        
+['Plan_Ist_Abgleich_Vertrieb_Prozentual']=IF(!Kennzahlen@='Direkte_Kosten_Produkteinheiten'                        
+                                          % !Kennzahlen@='Kosten_3_Marktfolge'
+                                          % !Kennzahlen@='Kosten_4'
+                                          % !Kennzahlen@='Kosten_5'
+                                          % !Kennzahlen@='Direkte_Kosten_Vertrieb_Industriegruppen'
+                                          % !Kennzahlen@='Direkte_Kosten_Vertrieb'
+                                          % !Kennzahlen@='Direkte_Kosten_Industriegruppen'
+                                          , (['Vertrieb']-['Planergebnis_Vertrieb'])/['Planergebnis_Vertrieb']*-100
+                                          , IF( !Kennzahlen@='DB_4'
+                                              & !Produkte@<>'Produkte'
+                                              , 0
+                                              , (['Vertrieb']-['Planergebnis_Vertrieb'])/['Planergebnis_Vertrieb']*100
+                                          ));
+                                          
+['Plan_Ist_Abgleich_Produkte_Abs']=['Produkte']-['Planergebnis_Produkte'];
+
+['Plan_Ist_Abgleich_Produkte_Proz']=IF(!Kennzahlen@='Direkte_Kosten_Produkteinheiten'                        
+                                          % !Kennzahlen@='Kosten_3_Marktfolge'
+                                          % !Kennzahlen@='Kosten_4'
+                                          % !Kennzahlen@='Kosten_5'
+                                          % !Kennzahlen@='Direkte_Kosten_Vertrieb_Industriegruppen'
+                                          % !Kennzahlen@='Direkte_Kosten_Vertrieb'
+                                          % !Kennzahlen@='Direkte_Kosten_Industriegruppen'
+                                          , (['Produkte']-['Planergebnis_Produkte'])/['Planergebnis_Produkte']*-100
+                                          , IF( !Kennzahlen@='DB_4'
+                                              & !Vertrieb@<>'Vertrieb'
+                                              , 0
+                                              , (['Produkte']-['Planergebnis_Produkte'])/['Planergebnis_Produkte']*100
+                                          ));
+                                          
+
 # Berechnung Versionen
 ['Ist_TEUR']=if (!Kennzahlen@='Hilfskkennzahlen'
               % !Kennzahlen@='Ertrag_Kosten_Relation_Produkt'
+              % !Kennzahlen@='Ertrag_Kosten_Relation_Vertrieb'                     
               % !Kennzahlen@='Ertrag_Kosten_Relation_Vertrieb_ohne_Übernahmefinanzierung'
               % !Kennzahlen@='Kredit_Bestandswert_inkl_WAV'
               % ELISANC( 'Kennzahlen', 'Hilfskennzahlen', !Kennzahlen )=1
@@ -84,6 +121,7 @@ SKIPCHECK;
 
 ['Ist_Mio_EUR']=if (!Kennzahlen@='Hilfskkennzahlen'
               % !Kennzahlen@='Ertrag_Kosten_Relation_Produkt'
+              % !Kennzahlen@='Ertrag_Kosten_Relation_Vertrieb'             
               % !Kennzahlen@='Ertrag_Kosten_Relation_Vertrieb_ohne_Übernahmefinanzierung'
               % !Kennzahlen@='Kredit_Bestandswert_inkl_WAV'
               % ELISANC( 'Kennzahlen', 'Hilfskennzahlen', !Kennzahlen )=1
@@ -143,7 +181,7 @@ SKIPCHECK;
                     % !Kennzahlen@='Kredit_Volumen_Auszahlungen_Leveraged_Finance_anteilig'
                     % !Kennzahlen@='Kredit_Volumen_Auszahlungen_Strukturierungsberatung_NL_anteilig'
                     % !Kennzahlen@='Kredit_Volumen_Auszahlungen_Strukturierung_Corporates_anteilig'
-              , ['Ist_TEUR']
+              , 0
               , 0
                   ))))))))));
                   
@@ -231,22 +269,22 @@ SKIPCHECK;
           
 # Berechnung Hilfskennzahlen          
 ['KEZ_GEFUELLT_COGNOS']=if (!Vertrieb@='Vertrieb'
-                        %   ['Total_Revenues','Ist_EUR']
-                          + ['Volumina_Neugeschaeft_anteilig','Ist_EUR']
-                          + ['Kredit_Bestandswert_inkl_WAV','Ist_EUR']
-                          + ['Kredit_Stichtagskreditvolumen','Ist_EUR']
-                          + ['Kundenderivate_Fair_Value','Ist_EUR']
-                          + ['KSA_RWA_Derivate_Bestand','Ist_EUR']
-                          + ['KSA_RWA_Kredit_Bestand','Ist_EUR']
-                          + ['BER_DB_3_nach_Risikovorsorge','Ist_EUR']
+                        %   ABS(['Total_Revenues','Ist_EUR'])
+                          + ABS(['Volumina_Neugeschaeft_anteilig','Ist_EUR'])
+                          + ABS(['Kredit_Bestandswert_inkl_WAV','Ist_EUR'])
+                          + ABS(['Kredit_Stichtagskreditvolumen','Ist_EUR'])
+                          + ABS(['Kundenderivate_Fair_Value','Ist_EUR'])
+                          + ABS(['KSA_RWA_Derivate_Bestand','Ist_EUR'])
+                          + ABS(['KSA_RWA_Kredit_Bestand','Ist_EUR'])
+                          + ABS(['BER_DB_3_nach_Risikovorsorge','Ist_EUR'])
                           <> 0
                          ,1
                          ,0
                           );
 
 
-['KEZ_LEER']= if (['Total_Revenues','Ist_EUR']
-                + ['Volumina_Neugeschaeft','Ist_EUR']=0
+['KEZ_LEER']= if (ABS(['Total_Revenues','Ist_EUR'])
+                + ABS(['Volumina_Neugeschaeft','Ist_EUR'])=0
                 & !Vertrieb@<>'Vertrieb'
                 ,1
                 ,0);
@@ -260,13 +298,88 @@ SKIPCHECK;
                       ,3
                       ,0
                       )));
+
+['KEZ_PRODUKT_SONSTIGES_GEFUELLT_COGNOS']=IF (['DB_4','Ist_EUR','Sonstiges']<>0
+                                          ,1
+                                          ,0);
+                                          
+['KEZ_EINZELLISTE']=IF (ATTRS('Vertrieb',!Vertrieb,'Typ')@='Kunde'
+                                   & ABS(['Total_Revenues','Ist_EUR'])
+                                    +ABS(['Volumina_Neugeschaeft_anteilig','Ist_EUR'])<>0
+                                   ,1
+                                   ,0
+                                   );                                      
+
+
+['KEZ_EINZELLISTE_VERTRAGSEBENE']=IF (ATTRS('Vertrieb',!Vertrieb,'Typ')@='Vertrag'
+                                   & ABS(['Total_Revenues','Ist_EUR'])
+                                    +ABS(['Volumina_Neugeschaeft_anteilig','Ist_EUR'])<>0
+                                   ,1
+                                   ,0
+                                   );
+
+['KEZ_AVS']=IF (ATTRS('Vertrieb',!Vertrieb,'Typ')@='AVS'
+                                   & ABS(['Total_Revenues','Ist_EUR'])
+                                    +ABS(['Volumina_Neugeschaeft_anteilig','Ist_EUR'])<>0
+                                   ,1
+                                   ,0
+                                   );
+
                           
                           
 ['KD_NR']=NUMBR(ATTRS( 'Vertrieb',!Vertrieb,'KD_NR'));
 ['VVS']=NUMBR(ATTRS( 'Vertrieb',!Vertrieb,'VVS'));
 
 Feeders;
+
 ['Ist_EUR']=>['Ist_TEUR'];
 ['Ist_EUR']=>['Ist_Mio_EUR'];
+['Ist_EUR']=>['Ist_Marge'];
+
 ['Total_Revenues','Ist_EUR']=>['Ertrag_Kosten_Relation_Produkt'];
 ['Total_Revenues','Ist_EUR']=>['Ertrag_Kosten_Relation_Vertrieb'];
+
+['Provisionsergebnis']=>['Provisionen_Neugeschaeft_Eigenmittel'];
+['Provisionsergebnis']=>['Provisionen_Neugeschaeft_Foerdermittel'];
+['Provisionsergebnis']=>['Provisionen_Neugeschaeft_Strukturierung_Corporates'];
+['Provisionsergebnis']=>['Provisionen_Neugeschaeft_Leveraged_Finance'];
+['Provisionsergebnis']=>['Provisionen_Neugeschaeft_Sonstiges'];
+
+['Total_Revenues']=>['Bruttoergebnis_ohne_Uebernahmefinanzierung'];
+['Total_Revenues']=>['Ertrag_Kosten_Relation_Produkt'];
+['Total_Revenues']=>['Ertrag_Kosten_Relation_Vertrieb'];
+
+['Bruttoergebnis_ohne_Uebernahmefinanzierung']=>['Ertrag_Kosten_Relation_Vertrieb_ohne_Übernahmefinanzierung'];
+
+['Total_Revenues','Ist_EUR']=>['KEZ_GEFUELLT_COGNOS'];
+['Volumina_Neugeschaeft_anteilig','Ist_EUR']=>['KEZ_GEFUELLT_COGNOS'];
+['Kredit_Bestandswert_inkl_WAV','Ist_EUR']=>['KEZ_GEFUELLT_COGNOS'];
+['Kredit_Stichtagskreditvolumen','Ist_EUR']=>['KEZ_GEFUELLT_COGNOS'];
+['Kundenderivate_Fair_Value','Ist_EUR']=>['KEZ_GEFUELLT_COGNOS'];
+['KSA_RWA_Derivate_Bestand','Ist_EUR']=>['KEZ_GEFUELLT_COGNOS'];
+['KSA_RWA_Kredit_Bestand','Ist_EUR']=>['KEZ_GEFUELLT_COGNOS'];
+['BER_DB_3_nach_Risikovorsorge','Ist_EUR']=>['KEZ_GEFUELLT_COGNOS'];
+
+['Total_Revenues','Ist_EUR']=>['KEZ_LEER'];
+['Volumina_Neugeschaeft_anteilig','Ist_EUR']=>['KEZ_LEER'];
+
+['KEZ_GEFUELLT_COGNOS']=>['KEZ_Kunde_Vertrag'];
+['KEZ_GEFUELLT_COGNOS']=>['KD_NR'];
+['KEZ_GEFUELLT_COGNOS']=>['VVS'];
+
+['DB_4','Ist_EUR','Sonstiges']=>['KEZ_PRODUKT_SONSTIGES_GEFUELLT_COGNOS'];
+
+['Total_Revenues']=>['KEZ_EINZELLISTE'];
+['Volumina_Neugeschaeft_anteilig']=>['KEZ_EINZELLISTE'];
+
+
+['Total_Revenues']=>['KEZ_EINZELLISTE_VERTRAGSEBENE'];
+['Volumina_Neugeschaeft_anteilig']=>['KEZ_EINZELLISTE_VERTRAGSEBENE'];
+
+['Total_Revenues']=>['KEZ_AVS'];
+['Volumina_Neugeschaeft_anteilig']=>['KEZ_AVS'];
+
+['Vertrieb']=>['Plan_Ist_Abgleich_Vertrieb_Absolut'];
+['Vertrieb']=>['Plan_Ist_Abgleich_Vertrieb_Prozentual'];
+['Produkte']=>['Plan_Ist_Abgleich_Produkte_Abs'];
+['Produkte']=>['Plan_Ist_Abgleich_Produkte_Proz'];

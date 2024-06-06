@@ -138,6 +138,10 @@
 		{
 			"Name":"Produkte_NA",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"Produkte_Kostendummy",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -275,6 +279,11 @@
 		{
 			"ParentName":"Sonstiges",
 			"ComponentName":"Produkte_NA",
+			"Weight":1
+		},
+		{
+			"ParentName":"Sonstiges",
+			"ComponentName":"Produkte_Kostendummy",
 			"Weight":1
 		},
 		{

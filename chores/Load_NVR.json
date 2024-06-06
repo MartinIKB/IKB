@@ -93,11 +93,19 @@
 			"Parameters":[],
 			"Process":
 			{
-				"@id":"Processes('52_D_KOST')"
+				"@id":"Processes('52_D_Load_ZZ_Kosten')"
 			}
 		},
 		{
 			"Step":11,
+			"Parameters":[],
+			"Process":
+			{
+				"@id":"Processes('53_D_KOST')"
+			}
+		},
+		{
+			"Step":12,
 			"Parameters":[],
 			"Process":
 			{

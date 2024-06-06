@@ -13,6 +13,7 @@
 			"@id":"Dimensions('Vertrieb')"
 		}
 	],
+	"Rules@Code.link":"ZZ_Plandaten.rules",
 	"MeasuresDimension":
 	{
 		"@id":"Dimensions('ZZ_Plankennzahlen')"
