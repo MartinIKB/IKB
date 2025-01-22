@@ -1,5 +1,8 @@
 SKIPCHECK;
 
+#VAK dürfen nicht kumuliert werden auf dem GJ-Element
+['VAK', 'kumuliert']=0;
+
 #Berechnete Positionen Kostenstellen
 ['Vertrieb_Nord']=['P_100000GR']+['P_160000GR']+['P_170000GR'];
 ['Vertrieb_Sued']=['P_130000GR']+['P_140000GR']+['P_150000GR']+['P_880019GR'];
@@ -20,7 +23,11 @@ SKIPCHECK;
 ['Abweichung_Ist-Plan_in_EUR']=['Ist_EUR']-['Plan_EUR'];
 ['Abweichung_Ist-Plan_in_%']=['Abweichung_Ist-Plan_in_EUR']/['Plan_EUR']*100;
 
-['Plan_EUR_GJ']=DB( 'KST', !Kostenstellen, !Kostenarten, !Freigabe, !Sichtweise, 'Plan_EUR', ElementParent('Zeit','Zeit', !Zeit, 1 ) );
+
+['Plan_EUR_GJ']=IF(ELLEV( 'Zeit', !Zeit )=0 
+               , DB( 'KST', !Kostenstellen, !Kostenarten, !Freigabe, !Sichtweise, 'Plan_EUR', ElementParent('Zeit','Zeit', !Zeit, 1 ) )
+               , ['Plan_EUR']);
+
 ['abweichung_plan_ist_in_EUR_GJ']=['Ist_EUR']-['Plan_EUR_GJ'];
 
 ['abweichung_ist_plan_in_EUR_GJ']=['Ist_EUR']-['Plan_EUR_GJ'];
@@ -69,37 +76,177 @@ SKIPCHECK;
 ['monatlich', 'GJ_2023']=0;
 
 #GJ 2024
-['kumuliert', 'Jan_24']=['Jan_24','monatlich'];
-['kumuliert', 'Feb_24']=['Jan_24','monatlich']+['Feb_24','monatlich'];
-['kumuliert', 'Mrz_24']=['Feb_24','kumuliert']+['Mrz_24','monatlich'];
-['kumuliert', 'Apr_24']=['Mrz_24','kumuliert']+['Apr_24','monatlich'];
-['kumuliert', 'Mai_24']=['Apr_24','kumuliert']+['Mai_24','monatlich'];
-['kumuliert', 'Jun_24']=['Mai_24','kumuliert']+['Jun_24','monatlich'];
-['kumuliert', 'Jul_24']=['Jun_24','kumuliert']+['Jul_24','monatlich'];
-['kumuliert', 'Aug_24']=['Jul_24','kumuliert']+['Aug_24','monatlich'];
-['kumuliert', 'Sep_24']=['Aug_24','kumuliert']+['Sep_24','monatlich'];
-['kumuliert', 'Okt_24']=['Sep_24','kumuliert']+['Okt_24','monatlich'];
-['kumuliert', 'Nov_24']=['Okt_24','kumuliert']+['Nov_24','monatlich'];
-['kumuliert', 'Dez_24']=['Nov_24','kumuliert']+['Dez_24','monatlich'];
-['kumuliert', 'Adj_24']=['Dez_24','kumuliert']+['Adj_24','monatlich'];
-['kumuliert', 'GJ_2024']=['Adj_24','kumuliert'];
+['kumuliert', 'Jan_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Jan_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Jan_24','monatlich']
+                            , 0)
+                        , ['Jan_24','monatlich']);
+['kumuliert', 'Feb_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Feb_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Jan_24','monatlich']+['Feb_24','monatlich']
+                            , 0)
+                        , ['Jan_24','monatlich']+['Feb_24','monatlich']);
+['kumuliert', 'Mrz_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Mrz_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Feb_24','kumuliert']+['Mrz_24','monatlich']
+                            , 0)
+                        , ['Feb_24','kumuliert']+['Mrz_24','monatlich']);
+['kumuliert', 'Apr_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Apr_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Mrz_24','kumuliert']+['Apr_24','monatlich']
+                            , 0)
+                        , ['Mrz_24','kumuliert']+['Apr_24','monatlich']);
+['kumuliert', 'Mai_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Mai_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Apr_24','kumuliert']+['Mai_24','monatlich']
+                            , 0)
+                        , ['Apr_24','kumuliert']+['Mai_24','monatlich']);
+['kumuliert', 'Jun_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Jun_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Mai_24','kumuliert']+['Jun_24','monatlich']
+                            , 0)
+                        , ['Mai_24','kumuliert']+['Jun_24','monatlich']);
+['kumuliert', 'Jul_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Jul_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Jun_24','kumuliert']+['Jul_24','monatlich']
+                            , 0)
+                        , ['Jun_24','kumuliert']+['Jul_24','monatlich']);
+['kumuliert', 'Aug_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Aug_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Jul_24','kumuliert']+['Aug_24','monatlich']
+                            , 0)
+                        , ['Jul_24','kumuliert']+['Aug_24','monatlich']);
+['kumuliert', 'Sep_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Sep_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Aug_24','kumuliert']+['Sep_24','monatlich']
+                            , 0)
+                        , ['Aug_24','kumuliert']+['Sep_24','monatlich']);
+['kumuliert', 'Okt_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Okt_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Sep_24','kumuliert']+['Okt_24','monatlich']
+                            , 0)
+                        , ['Sep_24','kumuliert']+['Okt_24','monatlich']);
+['kumuliert', 'Nov_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Nov_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Okt_24','kumuliert']+['Nov_24','monatlich']
+                            , 0)
+                        , ['Okt_24','kumuliert']+['Nov_24','monatlich']);
+['kumuliert', 'Dez_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Dez_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Nov_24','kumuliert']+['Dez_24','monatlich']
+                            , 0)
+                        , ['Nov_24','kumuliert']+['Dez_24','monatlich']);
+['kumuliert', 'Adj_24']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Adj_24','Flag_Freigegeben')@='Freigegeben'
+                            , ['Dez_24','kumuliert']+['Adj_24','monatlich']
+                            , 0)
+                        , ['Dez_24','kumuliert']+['Adj_24','monatlich']);
+['kumuliert', 'GJ_2024']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','GJ_2024','Flag_Freigegeben')@='Freigegeben'
+                                 , if (!Version@='Plan_EUR'
+                                 , ['Adj_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Jan_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Jan_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Feb_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Feb_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Mrz_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Mrz_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Apr_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Apr_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Mai_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Mai_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Jun_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Jun_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Jul_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Jul_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Aug_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Aug_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Sep_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Sep_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Okt_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Okt_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Nov_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Nov_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Dez_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Dez_24','kumuliert','Test']
+                                 , if (attrs('Zeit','Adj_24','Flag_Aktueller_Monat')@='Kalkulation'
+                                   , ['Adj_24','kumuliert','Test']
+                                   ,  0 ))))))))))))))
+                            , 0)
+                        , ['Adj_24','kumuliert']);
 ['monatlich', 'GJ_2024']=0;
 
 #GJ 2025
-['kumuliert', 'Jan_25']=['Jan_25','monatlich'];
-['kumuliert', 'Feb_25']=['Jan_25','monatlich']+['Feb_25','monatlich'];
-['kumuliert', 'Mrz_25']=['Feb_25','kumuliert']+['Mrz_25','monatlich'];
-['kumuliert', 'Apr_25']=['Mrz_25','kumuliert']+['Apr_25','monatlich'];
-['kumuliert', 'Mai_25']=['Apr_25','kumuliert']+['Mai_25','monatlich'];
-['kumuliert', 'Jun_25']=['Mai_25','kumuliert']+['Jun_25','monatlich'];
-['kumuliert', 'Jul_25']=['Jun_25','kumuliert']+['Jul_25','monatlich'];
-['kumuliert', 'Aug_25']=['Jul_25','kumuliert']+['Aug_25','monatlich'];
-['kumuliert', 'Sep_25']=['Aug_25','kumuliert']+['Sep_25','monatlich'];
-['kumuliert', 'Okt_25']=['Sep_25','kumuliert']+['Okt_25','monatlich'];
-['kumuliert', 'Nov_25']=['Okt_25','kumuliert']+['Nov_25','monatlich'];
-['kumuliert', 'Dez_25']=['Nov_25','kumuliert']+['Dez_25','monatlich'];
-['kumuliert', 'Adj_25']=['Dez_25','kumuliert']+['Adj_25','monatlich'];
-['kumuliert', 'GJ_2025']=['Adj_25','kumuliert'];
+['kumuliert', 'Jan_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Jan_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Jan_25','monatlich']
+                            , 0)
+                        , ['Jan_25','monatlich']);
+['kumuliert', 'Feb_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Feb_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Jan_25','monatlich']+['Feb_25','monatlich']
+                            , 0)
+                        , ['Jan_25','monatlich']+['Feb_25','monatlich']);
+['kumuliert', 'Mrz_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Mrz_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Feb_25','kumuliert']+['Mrz_25','monatlich']
+                            , 0)
+                        , ['Feb_25','kumuliert']+['Mrz_25','monatlich']);
+['kumuliert', 'Apr_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Apr_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Mrz_25','kumuliert']+['Apr_25','monatlich']
+                            , 0)
+                        , ['Mrz_25','kumuliert']+['Apr_25','monatlich']);
+['kumuliert', 'Mai_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Mai_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Apr_25','kumuliert']+['Mai_25','monatlich']
+                            , 0)
+                        , ['Apr_25','monatlich']+['Mai_25','monatlich']);
+['kumuliert', 'Jun_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Jun_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Mai_25','kumuliert']+['Jun_25','monatlich']
+                            , 0)
+                        , ['Mai_25','kumuliert']+['Jun_25','monatlich']);
+['kumuliert', 'Jul_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Jul_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Jun_25','kumuliert']+['Jul_25','monatlich']
+                            , 0)
+                        , ['Jun_25','kumuliert']+['Jul_25','monatlich']);
+['kumuliert', 'Aug_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Aug_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Jul_25','kumuliert']+['Aug_25','monatlich']
+                            , 0)
+                        , ['Jul_25','kumuliert']+['Aug_25','monatlich']);
+['kumuliert', 'Sep_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Sep_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Aug_25','kumuliert']+['Sep_25','monatlich']
+                            , 0)
+                        , ['Aug_25','kumuliert']+['Sep_25','monatlich']);
+['kumuliert', 'Okt_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Okt_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Sep_25','kumuliert']+['Okt_25','monatlich']
+                            , 0)
+                        , ['Sep_25','kumuliert']+['Okt_25','monatlich']);
+['kumuliert', 'Nov_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Nov_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Okt_25','kumuliert']+['Nov_25','monatlich']
+                            , 0)
+                        , ['Okt_25','kumuliert']+['Nov_25','monatlich']);
+['kumuliert', 'Dez_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Dez_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Nov_25','kumuliert']+['Dez_25','monatlich']
+                            , 0)
+                        , ['Nov_25','kumuliert']+['Dez_25','monatlich']);
+['kumuliert', 'Adj_25']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','Adj_25','Flag_Freigegeben')@='Freigegeben'
+                            , ['Dez_25','kumuliert']+['Adj_25','monatlich']
+                            , 0)
+                        , ['Dez_25','kumuliert']+['Adj_25','monatlich']);
+['kumuliert', 'GJ_2025']=if(!Freigabe@='Freigabe'
+                            , if (ATTRS('Zeit','GJ_2025','Flag_Freigegeben')@='Freigegeben'
+                            , ['Adj_25','kumuliert','Test']
+                            , 0)
+                        , ['Adj_25','kumuliert']);
 ['monatlich', 'GJ_2025']=0;
 
 
@@ -111,6 +258,7 @@ SKIPCHECK;
 
 ['Ist_TEUR']=['Ist_EUR'] / 1000;
 ['Plan_TEUR']=['Plan_EUR'] / 1000;
+
 
 
 FEEDERS;

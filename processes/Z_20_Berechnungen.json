@@ -3,7 +3,7 @@
 	"Name":"Z_20_Berechnungen",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"Z_20_Berechnungen.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"DataSource":
 	{
 		"Type":"TM1DimensionSubset",

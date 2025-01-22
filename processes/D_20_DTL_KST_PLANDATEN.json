@@ -3,16 +3,16 @@
 	"Name":"D_20_DTL_KST_PLANDATEN",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"D_20_DTL_KST_PLANDATEN.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=33€ColType=827€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=33\fColType=827\f"
 	],
 	"DataSource":
 	{

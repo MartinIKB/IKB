@@ -229,17 +229,17 @@
 		{
 			"ParentName":"Zeit",
 			"ComponentName":"GJ_2023",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Zeit",
 			"ComponentName":"GJ_2024",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"Zeit",
 			"ComponentName":"GJ_2025",
-			"Weight":1
+			"Weight":0
 		},
 		{
 			"ParentName":"GJ_2023",

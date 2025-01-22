@@ -764,10 +764,6 @@
 			"Type":"Consolidated"
 		},
 		{
-			"Name":"KTO_34407000017",
-			"Type":"Numeric"
-		},
-		{
 			"Name":"KTO_3440700005",
 			"Type":"Numeric"
 		},
@@ -2690,6 +2686,10 @@
 		{
 			"Name":"AFA_IMM_VG_ERWORBEN_Meldedaten",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"KTO_3440700019",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -3801,11 +3801,6 @@
 		},
 		{
 			"ParentName":"20606SDV.GUV",
-			"ComponentName":"KTO_34407000017",
-			"Weight":1
-		},
-		{
-			"ParentName":"20606SDV.GUV",
 			"ComponentName":"KTO_3440700005",
 			"Weight":1
 		},
@@ -3857,6 +3852,11 @@
 		{
 			"ParentName":"20606SDV.GUV",
 			"ComponentName":"KTO_3440700018",
+			"Weight":1
+		},
+		{
+			"ParentName":"20606SDV.GUV",
+			"ComponentName":"KTO_3440700019",
 			"Weight":1
 		},
 		{
@@ -5292,6 +5292,11 @@
 		{
 			"ParentName":"Neue_Kostenarten",
 			"ComponentName":"KTO_4680300037",
+			"Weight":1
+		},
+		{
+			"ParentName":"Neue_Kostenarten",
+			"ComponentName":"KTO_3440700019",
 			"Weight":1
 		},
 		{

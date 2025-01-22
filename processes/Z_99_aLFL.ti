@@ -10,10 +10,13 @@ ViewCreate (sCube, s_View_target, 1);
 # Subsets erstellen
 #SubsetCreatebyMDX(s_Subset_target, '{[Freigabe].[Freigabe].[Freigabe]}', 1 );
 SubsetCreatebyMDX('s_Freigabe', '{[Freigabe].[Freigabe].[Freigabe]}', 1 );
+SubsetCreatebyMDX('s_Zeit', '{[Zeit].[Zeit].[Sep_24]}', 1 );
+
 
 
 #ViewSubsetAssign (sCube, s_View_target, 'Zeit', s_Subset_target);
 ViewSubsetAssign (sCube, s_View_target , 'Freigabe', 's_Freigabe');
+ViewSubsetAssign (sCube, s_View_target , 'Zeit', 's_Zeit');
 
 # Alle Daten auf des Subsets löschen
 ViewZeroOut (sCube, s_View_target);

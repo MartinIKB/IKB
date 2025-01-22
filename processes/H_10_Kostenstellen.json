@@ -3,12 +3,12 @@
 	"Name":"H_10_Kostenstellen",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"H_10_Kostenstellen.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f"
 	],
 	"DataSource":
 	{

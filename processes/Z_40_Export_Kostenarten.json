@@ -3,10 +3,10 @@
 	"Name":"Z_40_Export_Kostenarten",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"Z_40_Export_Kostenarten.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€"
+		"VarType=32\fColType=827\f"
 	],
 	"DataSource":
 	{

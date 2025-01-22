@@ -9,7 +9,7 @@ ViewCreate (sCube, s_View_target, 1);
 
 # Subsets erstellen
 SubsetCreatebyMDX(s_Subset_target, '{FILTER( {TM1SUBSETALL( [Zeit] )}, Instr([Zeit].[Flag_Freigegeben], "Freigegeben") > 0 )}', 1 );
-SubsetCreatebyMDX('s_Version', '{[Version].[Version].[Ist_EUR]}');
+SubsetCreatebyMDX('s_Version', '{[Version].[Version].[Ist_EUR]}',1);
 
 SubsetCreatebyMDX('s_Freigabe', '{[Freigabe].[Freigabe].[Freigabe]}', 1 );
 
