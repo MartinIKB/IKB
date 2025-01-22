@@ -50,6 +50,34 @@
 		{
 			"Name":"Stichtag: 31.05.2024",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 30.06.2024",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 31.07.2024",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 31.08.2024",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 30.09.2024",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 31.10.2024",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 30.11.2024",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Stichtag: 31.12.2024",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -107,6 +135,41 @@
 		{
 			"ParentName":"GJ_2024",
 			"ComponentName":"Stichtag: 31.05.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 30.06.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 31.07.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 31.08.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 30.09.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 31.10.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 30.11.2024",
+			"Weight":0
+		},
+		{
+			"ParentName":"GJ_2024",
+			"ComponentName":"Stichtag: 31.12.2024",
 			"Weight":0
 		}
 	],

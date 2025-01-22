@@ -3,18 +3,18 @@
 	"Name":"84_D_REVO",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"84_D_REVO.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=33€ColType=827€",
-		"IgnoredInputVarName=V8€VarType=32€ColType=1165€",
-		"VarType=32€ColType=827€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"IgnoredInputVarName=V8\fVarType=32\fColType=1165\f",
+		"VarType=32\fColType=827\f"
 	],
 	"DataSource":
 	{

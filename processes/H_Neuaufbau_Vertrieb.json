@@ -3,19 +3,19 @@
 	"Name":"H_Neuaufbau_Vertrieb",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"H_Neuaufbau_Vertrieb.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"IgnoredInputVarName=V1€VarType=32€ColType=1165€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"IgnoredInputVarName=V5€VarType=32€ColType=1165€",
-		"IgnoredInputVarName=V6€VarType=32€ColType=1165€",
-		"IgnoredInputVarName=V7€VarType=32€ColType=1165€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€"
+		"IgnoredInputVarName=V1\fVarType=32\fColType=1165\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"IgnoredInputVarName=V5\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=V6\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=V7\fVarType=32\fColType=1165\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f"
 	],
 	"DataSource":
 	{

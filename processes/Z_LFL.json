@@ -3,7 +3,7 @@
 	"Name":"Z_LFL",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"Z_LFL.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"DataSource":
 	{
 		"Type":"None"

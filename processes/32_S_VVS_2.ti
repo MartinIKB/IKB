@@ -9,3 +9,8 @@ endif;
 
 
 #endregion
+#region Data
+
+AttrPuts (vName , 'Vertrieb' , vChild , 'Caption'); 
+AttrPuts ('AVS' , 'Vertrieb' , vChild , 'Typ'); 
+#endregion
