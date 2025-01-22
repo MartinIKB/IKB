@@ -3,13 +3,13 @@
 	"Name":"41_S_VE2",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"41_S_VE2.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"IgnoredInputVarName=V3€VarType=32€ColType=1165€",
-		"VarType=32€ColType=827€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"IgnoredInputVarName=V3\fVarType=32\fColType=1165\f",
+		"VarType=32\fColType=827\f"
 	],
 	"DataSource":
 	{

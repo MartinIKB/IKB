@@ -78,6 +78,7 @@ CellPutN( vKredit_Volumen_Auszahlungen_Immobilienfinanzierung_anteilig, 'NVR', '
 CellPutN( vProvisionsüberschuss_Neugeschäft_Sonstige, 'NVR', 'Provisionsüberschuss_Neugeschäft_Sonstige', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
 CellPutN( vBarwert_Zinsmarge_nach_Risikokosten_T3, 'NVR', 'Barwert_Zinsmarge_nach_Risikokosten_T3', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
 CellPutN( vKredit_Volumen_Auszahlungen_T3, 'NVR', 'Kredit_Volumen_Auszahlungen_T3', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
+CellPutN( vKredit_Volumen_Auszahlungen_T3_anteilig, 'NVR', 'Kredit_Volumen_Auszahlungen_T3_anteilig', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
 CellPutN( vProvisionsüberschuss_Neugeschäft_Sonstige, 'NVR', 'Provisionsüberschuss_Neugeschäft_Sonstige', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
 CellPutN( vProvisionsüberschuss_Neugeschäft_Sonstige, 'NVR', 'Provisionsüberschuss_Neugeschäft_Sonstige', vVersion, vFreigabe, vZeit, vProdukte, vVertrieb );
 

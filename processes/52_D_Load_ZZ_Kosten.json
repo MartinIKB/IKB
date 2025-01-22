@@ -3,22 +3,22 @@
 	"Name":"52_D_Load_ZZ_Kosten",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"52_D_Load_ZZ_Kosten.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"IgnoredInputVarName=V1€VarType=32€ColType=1165€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€"
+		"IgnoredInputVarName=V1\fVarType=32\fColType=1165\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f"
 	],
 	"DataSource":
 	{

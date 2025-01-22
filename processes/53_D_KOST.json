@@ -3,14 +3,14 @@
 	"Name":"53_D_KOST",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"53_D_KOST.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=33€ColType=827€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=33\fColType=827\f"
 	],
 	"DataSource":
 	{

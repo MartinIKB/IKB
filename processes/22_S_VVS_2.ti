@@ -2,8 +2,11 @@
 
 
 if (DimensionElementExists( 'Vertrieb', vChild )=0);
-   DimensionElementInsertDirect( 'Vertrieb','', vCHILD, 'N' );
+   DimensionElementInsertDirect( 'Vertrieb','', vCHILD, 'C' );
    DimensionElementComponentAddDirect ('Vertrieb' , vPARENT ,  vCHILD, 1);
 endif;
 
+#endregion
+#region Data
+AttrPuts (vName , 'Vertrieb' , vChild , 'Caption'); 
 #endregion

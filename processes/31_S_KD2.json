@@ -3,14 +3,14 @@
 	"Name":"31_S_KD2",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"31_S_KD2.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"IgnoredInputVarName=V4€VarType=32€ColType=1165€",
-		"VarType=32€ColType=827€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"IgnoredInputVarName=V4\fVarType=32\fColType=1165\f",
+		"VarType=32\fColType=827\f"
 	],
 	"DataSource":
 	{
