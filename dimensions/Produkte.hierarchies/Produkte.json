@@ -1194,6 +1194,14 @@
 		{
 			"Name":"P_0",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"P_261013_TI",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"P_262045_TI",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -2581,6 +2589,16 @@
 		{
 			"ParentName":"P_REST",
 			"ComponentName":"P_0",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_REST",
+			"ComponentName":"P_261013_TI",
+			"Weight":1
+		},
+		{
+			"ParentName":"P_REST",
+			"ComponentName":"P_262045_TI",
 			"Weight":1
 		},
 		{

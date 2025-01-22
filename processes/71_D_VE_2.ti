@@ -59,10 +59,12 @@ endif;
 if (ATTRS('Vertrieb', ElementParent( 'Vertrieb', 'Vertrieb', vVertrieb_Level_VS, 1 ),'Typ')@='Kunde');
   vVertrieb_Level_KD=ElementParent( 'Vertrieb', 'Vertrieb', vVertrieb_Level_VS, 1 );
 Endif;
-AttrPutS( vVVS, 'Vertrieb', vVertrieb, 'VVS', '' );
-AttrPutS( vVVS, 'Vertrieb',vVertrieb_Level_VS,'VVS', '' );
-AttrPutS( vVVS, 'Vertrieb',vVertrieb_Level_KD,'VVS', '' );
 
+if (vVVS@<>'');
+  AttrPutS( vVVS, 'Vertrieb', vVertrieb, 'VVS', '' );
+  AttrPutS( vVVS, 'Vertrieb',vVertrieb_Level_VS,'VVS', '' );
+  AttrPutS( vVVS, 'Vertrieb',vVertrieb_Level_KD,'VVS', '' );
+endif;
 
 
 #endregion

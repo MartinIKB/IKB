@@ -43,7 +43,8 @@ SKIPCHECK;
 ###### Ist_Marge #########
 ['Ist_Marge']=if ((ELISANC('Kennzahlen','BER' , !Kennzahlen )=1
                    % ELISANC('Kennzahlen','PRV_SZUE_Nachrichtliche_Kennzahlen' , !Kennzahlen )=1
-                   % !Kennzahlen @='Risikovorsorge_Kreditgeschaeft')
+                   % !Kennzahlen @='Risikovorsorge_Kreditgeschaeft'
+                   % !Kennzahlen @='verdiente_Risikokosten')
 & !Kennzahlen @<> 'Zinsueberschuss_Eigenmittel'
 & !Kennzahlen @<> 'Zinsueberschuss_Foerdermittel' 
 & !Kennzahlen @<> 'Zinsaufwand_Eigenmittel'

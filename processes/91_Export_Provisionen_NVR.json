@@ -3,7 +3,7 @@
 	"Name":"91_Export_Provisionen_NVR",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"91_Export_Provisionen_NVR.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"DataSource":
 	{
 		"Type":"None"

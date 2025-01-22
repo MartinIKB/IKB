@@ -3,15 +3,15 @@
 	"Name":"40_S_VE",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"40_S_VE.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"IgnoredInputVarName=v4€VarType=32€ColType=1165€",
-		"VarType=32€ColType=827€",
-		"IgnoredInputVarName=V5€VarType=32€ColType=1165€",
-		"IgnoredInputVarName=vKD_NR€VarType=32€ColType=1165€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"IgnoredInputVarName=v4\fVarType=32\fColType=1165\f",
+		"VarType=32\fColType=827\f",
+		"IgnoredInputVarName=V5\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=vKD_NR\fVarType=32\fColType=1165\f"
 	],
 	"DataSource":
 	{

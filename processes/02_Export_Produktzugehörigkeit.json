@@ -3,7 +3,7 @@
 	"Name":"02_Export_Produktzugehörigkeit",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"02_Export_Produktzugehörigkeit.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"DataSource":
 	{
 		"Type":"None"

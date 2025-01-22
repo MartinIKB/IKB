@@ -3,14 +3,14 @@
 	"Name":"12_S_VVS_3",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"12_S_VVS_3.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"IgnoredInputVarName=V1€VarType=32€ColType=1165€",
-		"IgnoredInputVarName=V3€VarType=32€ColType=1165€",
-		"IgnoredInputVarName=V2€VarType=32€ColType=1165€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"IgnoredInputVarName=V1\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=V3\fVarType=32\fColType=1165\f",
+		"IgnoredInputVarName=V2\fVarType=32\fColType=1165\f"
 	],
 	"DataSource":
 	{

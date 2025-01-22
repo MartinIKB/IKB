@@ -31,6 +31,7 @@
 	[
 		"BER.views/Einzelliste_BER.json",
 		"BER.views/Prüfung_BER_24.json",
+		"BER.views/Prüfung Load BER.json",
 		"BER.views/View_BER_Entwicklung.json",
 		"BER.views/View_BER_Test.json"
 	]

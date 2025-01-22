@@ -26,6 +26,34 @@
 		{
 			"Name":"Mai_24",
 			"Type":"Numeric"
+		},
+		{
+			"Name":"Jun_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Jul_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Aug_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Sep_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Okt_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Nov_24",
+			"Type":"Numeric"
+		},
+		{
+			"Name":"Dez_24",
+			"Type":"Numeric"
 		}
 	],
 	"Edges":
@@ -53,6 +81,41 @@
 		{
 			"ParentName":"Zeit",
 			"ComponentName":"Mai_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Jun_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Jul_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Aug_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Sep_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Okt_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Nov_24",
+			"Weight":0
+		},
+		{
+			"ParentName":"Zeit",
+			"ComponentName":"Dez_24",
 			"Weight":0
 		}
 	],

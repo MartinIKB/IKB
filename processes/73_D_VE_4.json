@@ -3,21 +3,21 @@
 	"Name":"73_D_VE_4",
 	"HasSecurityAccess":false,
 	"Code@Code.link":"73_D_VE_4.ti",
-	"UIData":"_ParameterConstraints=e30=€",
+	"UIData":"_ParameterConstraints=e30=\f",
 	"VariablesUIData":
 	[
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=32€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€",
-		"IgnoredInputVarName=vFAIR_VALUE_ERGEBNIS€VarType=33€ColType=1165€",
-		"VarType=33€ColType=827€",
-		"VarType=33€ColType=827€",
-		"VarType=32€ColType=827€"
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=32\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"IgnoredInputVarName=vFAIR_VALUE_ERGEBNIS\fVarType=33\fColType=1165\f",
+		"VarType=33\fColType=827\f",
+		"VarType=33\fColType=827\f",
+		"VarType=32\fColType=827\f"
 	],
 	"DataSource":
 	{
