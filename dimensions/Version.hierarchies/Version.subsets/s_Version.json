@@ -1,0 +1,5 @@
+{
+	"@type":"Subset",
+	"Name":"s_Version",
+	"Expression":"{[Version].[Version].[Ist_EUR]}"
+}

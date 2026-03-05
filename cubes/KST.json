@@ -1,0 +1,36 @@
+{
+	"@type":"Cube",
+	"Name":"KST",
+	"Dimensions":
+	[
+		{
+			"@id":"Dimensions('Kostenstellen')"
+		},
+		{
+			"@id":"Dimensions('Kostenarten')"
+		},
+		{
+			"@id":"Dimensions('Freigabe')"
+		},
+		{
+			"@id":"Dimensions('Sichtweise')"
+		},
+		{
+			"@id":"Dimensions('Version')"
+		},
+		{
+			"@id":"Dimensions('Zeit')"
+		}
+	],
+	"Rules@Code.link":"KST.rules",
+	"MeasuresDimension":
+	{
+		"@id":"Dimensions('Version')"
+	},
+	"Views@Code.links":
+	[
+		"KST.views/View_KST_Test.json",
+		"KST.views/View_KST_Test_Ist.json",
+		"KST.views/View_KST_Test_Plan.json"
+	]
+}

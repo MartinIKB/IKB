@@ -1,0 +1,29 @@
+{
+	"@type":"Process",
+	"Name":"Z_30_Export_Kostenstellen",
+	"HasSecurityAccess":false,
+	"Code@Code.link":"Z_30_Export_Kostenstellen.ti",
+	"UIData":"_ParameterConstraints=e30=\f",
+	"VariablesUIData":
+	[
+		"VarType=32\fColType=827\f"
+	],
+	"DataSource":
+	{
+		"Type":"TM1DimensionSubset",
+		"dataSourceNameForClient":"Kostenstellen:Kostenstellen",
+		"dataSourceNameForServer":"Kostenstellen:Kostenstellen",
+		"subset":"All"
+	},
+	"Parameters":[],
+	"Variables":
+	[
+		{
+			"Name":"vKostenstelle",
+			"Type":"String",
+			"Position":1,
+			"StartByte":0,
+			"EndByte":0
+		}
+	]
+}

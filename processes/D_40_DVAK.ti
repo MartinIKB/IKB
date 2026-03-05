@@ -1,0 +1,25 @@
+#region Prolog
+MinorErrorLogMax = -1;
+OnMinorErrorDoItemSkip = 1;
+dCube= 'KST';
+CurrentLogSetting = CubeGetLogChanges(dCube);
+CubeSetLogChanges(dCube, 0);
+NumRowsRead = 0;
+NumRowsProcessed = 0;
+SetInputCharacterSet('TM1CS_ISO_8859_1');
+
+#endregion
+#region Metadata
+NumRowsRead = NumRowsRead + 1;
+CellPutN(vWert, dCube, vKostenstelle, vKostenart, 'Entwicklung', vSichtweise, vVersion, vMonatsscheibe);
+CellPutN(vWert, dCube, vKostenstelle, vKostenart, 'Test', vSichtweise, vVersion, vMonatsscheibe);
+NumRowsProcessed = NumRowsProcessed + 1;
+
+#endregion
+#region Epilog
+If (pResult @<> '');
+  TextOutput(pResult, NumberToString(NumRowsRead), NumberToString(NumRowsProcessed));
+EndIf;
+CubeSaveData(dCube);
+CubeSetLogChanges(dCube, CurrentLogSetting);
+#endregion
